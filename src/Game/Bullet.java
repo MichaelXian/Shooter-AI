@@ -4,18 +4,22 @@ package Game;
 import Utility.Vector;
 
 public class Bullet {
-    private double radius;
+    public static final double DAMAGE = 25;
+    public static final double RADIUS = 2.5;
     private Vector position;
     private Vector velocity;
 
+    /**
+     * Constructs a new Bullet with given position and velocity
+     * @param position
+     * @param velocity
+     */
     public Bullet(Vector position, Vector velocity) {
         this.position = position;
         this.velocity = velocity;
     }
 
-    public double getRadius() {
-        return radius;
-    }
+    // Getters
 
     public Vector getPosition() {
         return position;
@@ -41,6 +45,11 @@ public class Bullet {
         return velocity.y();
     }
 
+    // End of getters
+
+    /**
+     * Sets the new position with current velocity
+     */
     public void next() {
         position = position.add(velocity);
     }
