@@ -91,8 +91,8 @@ public class Vector {
      * @return a new vector that's been rotated
      */
     public Vector rotate(double rotation) {
-        double newX = cos(rotation) * x - sin(rotation) * y;
-        double newY = sin(rotation) * x + cos(rotation) * y;
+        double newX = cos(-rotation) * x - sin(-rotation) * y;
+        double newY = sin(-rotation) * x + cos(-rotation) * y;
         return new Vector(newX, newY);
     }
 

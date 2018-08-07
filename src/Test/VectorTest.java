@@ -1,13 +1,13 @@
 package Test;
 
 import Utility.Vector;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static java.lang.Math.cos;
 import static java.lang.Math.pow;
 import static java.lang.StrictMath.sin;
 import static java.lang.StrictMath.sqrt;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class VectorTest {
     Vector v0 = new Vector(1,2);
@@ -46,8 +46,8 @@ public class VectorTest {
     @Test
     public void testRotate() {
         v3 = v0.rotate(1);
-        double x = cos(1) * v0.x() - sin(1) * v0.y();
-        double y = sin(1) * v0.x() + cos(1) * v0.y();
+        double x = cos(-1) * v0.x() - sin(-1) * v0.y();
+        double y = sin(-1) * v0.x() + cos(-1) * v0.y();
         v4 = new Vector(x,y);
         assertEquals(v3, v4);
     }
