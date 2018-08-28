@@ -11,14 +11,29 @@ import Utility.Triangle;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 
-public class GUI extends JPanel {
+public class GUI extends JPanel implements ActionListener {
+    private static final int DELAY = 10;
     private Game game;
+    private Timer timer;
     public GUI() {
         game = new Game(true, new AI(), new AI(), this, new Evolver());
+        addKeyListener(new TAdapter());
+        setTimer();
+    }
+
+    /**
+     * Starts timer
+     */
+    private void setTimer() {
+        timer = new Timer(DELAY, this);
+        timer.start();
     }
 
     @Override
@@ -31,18 +46,27 @@ public class GUI extends JPanel {
         System.out.println("paint");
     }
 
-    public void step() {
+    /**
+     * Called whenever timer finishes
+     * @param e
+     */
+    @Override
+    public void actionPerformed(ActionEvent e) {
         game.update();
         repaint();
     }
 
-    public void keyReleased(KeyEvent e) {
-        game.keyReleased(e);
-    }
+    private class TAdapter extends KeyAdapter {
 
-    public void keyPressed(KeyEvent e) {
+        @Override
+        public void keyReleased(KeyEvent e) {
+            game.keyReleased(e);
+        }
 
-        game.keyPressed(e);
+        @Override
+        public void keyPressed(KeyEvent e) {
+            game.keyPressed(e);
+        }
     }
 
     /**
