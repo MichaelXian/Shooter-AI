@@ -113,7 +113,7 @@ public class Game extends Observable {
     }
 
     public void keyPressed(KeyEvent e) {
-        System.out.println("asdf");
+
         ship1.getController().keyPressed(e);
     }
 

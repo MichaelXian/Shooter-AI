@@ -15,7 +15,7 @@ import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 
-public class GUI extends JPanel{
+public class GUI extends JPanel {
     private Game game;
     public GUI() {
         game = new Game(true, new AI(), new AI(), this, new Evolver());
@@ -28,6 +28,12 @@ public class GUI extends JPanel{
         setupGraphics(graphics);
         drawShips(graphics);
         drawBullets(graphics);
+        System.out.println("paint");
+    }
+
+    public void step() {
+        game.update();
+        repaint();
     }
 
     public void keyReleased(KeyEvent e) {
