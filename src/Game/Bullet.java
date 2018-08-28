@@ -3,7 +3,7 @@ package Game;
 
 import Utility.Vector;
 
-public class Bullet {
+public class Bullet implements Entity {
     public static final double DAMAGE = 25;
     public static final double RADIUS = 5;
     public static final double SPEED = 1;
@@ -20,12 +20,22 @@ public class Bullet {
         this.velocity = heading.scale(SPEED + speed);
     }
 
+
+    /**
+     * Sets the new position with current velocity
+     */
+    public void next() {
+        position = position.add(velocity);
+    }
+
     // Getters
 
+    @Override
     public Vector getPosition() {
         return position;
     }
 
+    @Override
     public Vector getVelocity() {
         return velocity;
     }
@@ -48,11 +58,6 @@ public class Bullet {
 
     // End of getters
 
-    /**
-     * Sets the new position with current velocity
-     */
-    public void next() {
-        position = position.add(velocity);
-    }
+
 }
 

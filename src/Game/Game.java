@@ -5,12 +5,10 @@ import Controllers.Player;
 import Evolution.Evolver;
 import UI.GUI;
 import UI.ShooterAI;
+import Utility.Geometry;
 import Utility.Vector;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Observable;
+import java.util.*;
 
 public class Game extends Observable {
     public final int FRACTION = 8; // how far from edges the ships spawn
@@ -18,7 +16,11 @@ public class Game extends Observable {
     public final Vector SHIP_SPAWN_2 = new Vector(ShooterAI.WIDTH*(FRACTION - 1)/FRACTION, ShooterAI.HEIGHT/2);
     private GUI gui;
     private List<Bullet> bullets;
+    private Bullet bullet1;
+    private Bullet bullet2;
     private List<Ship> ships;
+    private Ship ship1;
+    private Ship ship2;
     private Evolver evolver;
     private Map<String, Double> data;
 
@@ -36,8 +38,37 @@ public class Game extends Observable {
         bullets = new ArrayList<>();
         ships = new ArrayList<>();
         spawnShips(player, ai1, ai2);
+        ship1 = ships.get(0);
+        ship2 = ships.get(1);
         // for testing
         bullets.add(new Bullet(new Vector(ShooterAI.WIDTH/2, ShooterAI.HEIGHT/2), new Vector(0,1), 0d));
+        data = new HashMap<>();
+        updateData();
+    }
+
+    /**
+     * Updates the data
+     */
+    private void updateData() {
+        bullet1 = (Bullet) Geometry.closestTo(bullets, ship1.getPosition());
+        bullet2 = (Bullet) Geometry.closestTo(bullets, ship2.getPosition());
+        data.put("ship1X", ship1.getPosition().x());
+        data.put("ship1Y", ship1.getPosition().y());
+        data.put("ship1VelX", ship1.getPosition().x());
+        data.put("ship1VelY", ship1.getPosition().y());
+        data.put("ship2X", ship2.getPosition().x());
+        data.put("ship2Y", ship2.getPosition().y());
+        data.put("ship2VelX", ship2.getPosition().x());
+        data.put("ship2VelY", ship2.getPosition().y());
+        data.put("bul1X", bullet1.getX());
+        data.put("bul1Y", bullet1.getY());
+        data.put("bul1VelX", bullet1.getVelX());
+        data.put("bul1VelY", bullet1.getVelY());
+        data.put("bul2X", bullet2.getX());
+        data.put("bul2Y", bullet2.getY());
+        data.put("bul2VelX", bullet2.getVelX());
+        data.put("bul2VelY", bullet2.getVelY());
+        data.put("key", 0d);
     }
 
     /**
@@ -54,6 +85,18 @@ public class Game extends Observable {
         ships.add(new Ship(SHIP_SPAWN_2, ai2, this));
     }
 
+    /**
+     * Creates a bullet with given position and heading
+     * @param position location of bullet
+     * @param heading heading of bullet
+     * @param speed speed of ship that fired it
+     */
+    public void shoot(Vector position, Vector heading, Double speed) {
+        bullets.add(new Bullet(position, heading, speed));
+    }
+
+
+
     // Getters
 
     public List<Ship> getShips() {
@@ -67,13 +110,5 @@ public class Game extends Observable {
 
     // End of Getters
 
-    /**
-     * Creates a bullet with given position and heading
-     * @param position location of bullet
-     * @param heading heading of bullet
-     * @param speed speed of ship that fired it
-     */
-    public void shoot(Vector position, Vector heading, Double speed) {
-        bullets.add(new Bullet(position, heading, speed));
-    }
+
 }

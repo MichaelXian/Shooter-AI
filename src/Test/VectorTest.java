@@ -70,5 +70,11 @@ public class VectorTest {
         assertEquals(v3, v4);
     }
 
+    @Test
+    public void testLength() {
+        double x = v0.x();
+        double y = v0.y();
+        assertEquals(v0.length(), sqrt(pow(x,2)+pow(y,2)));
+    }
 
 }

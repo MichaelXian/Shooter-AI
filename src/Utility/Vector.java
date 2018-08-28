@@ -21,18 +21,6 @@ public class Vector {
         this.y = y;
     }
 
-    // Getters
-
-    public double x() {
-        return x;
-    }
-
-    public double y() {
-        return y;
-    }
-
-    // End of getters
-
     /**
      * Add a vector to this one
      * @param vector the vector to add
@@ -51,8 +39,21 @@ public class Vector {
         return new Vector(x - vector.x(), y - vector.y());
     }
 
+    /**
+     * Returns length of vector
+     * @return length of vector
+     */
     public double length() {
         return sqrt(pow(x,2) + pow(y,2));
+    }
+
+    /**
+     * Returns the distance from this vector and the given vector
+     * @param vector vector to measure distance between
+     * @return the distance
+     */
+    public double distance(Vector vector) {
+        return this.sub(vector).length();
     }
 
     /**
@@ -114,4 +115,18 @@ public class Vector {
 
         return Objects.hash(x, y);
     }
+
+    // Getters
+
+    public double x() {
+        return x;
+    }
+
+    public double y() {
+        return y;
+    }
+
+    // End of getters
+
+
 }

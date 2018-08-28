@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
 
-public class Ship implements Observer {
+public class Ship implements Observer, Entity {
     public static final double HEIGHT = 50;
     public static final double WIDTH = 25;
     public static final double MAX_HEALTH = 100;
@@ -33,25 +33,6 @@ public class Ship implements Observer {
         velocity = new Vector(0,0);
     }
 
-    // Getters
-
-    public double getHealth() {
-        return health;
-    }
-
-    public double getRotation() {
-        return rotation;
-    }
-
-    public Vector getPosition() {
-        return position;
-    }
-
-    public Vector getHeading() {
-        return heading;
-    }
-
-    // End of getters
 
     /**
      * Turns the ship clockwise
@@ -87,6 +68,11 @@ public class Ship implements Observer {
     }
 
 
+    /**
+     * Asks controller what to do, then does it
+     * @param observable
+     * @param object
+     */
     @Override
     public void update(Observable observable, Object object) {
         Map<String, Double> data = (Map<String, Double>) object;
@@ -107,4 +93,30 @@ public class Ship implements Observer {
             this.game.shoot(position, heading, this.velocity.length());
         }
     }
+
+    // Getters
+
+    public double getHealth() {
+        return health;
+    }
+
+    public double getRotation() {
+        return rotation;
+    }
+    @Override
+    public Vector getPosition() {
+        return position;
+    }
+
+    @Override
+    public Vector getVelocity() {
+        return velocity;
+    }
+
+    public Vector getHeading() {
+        return heading;
+    }
+
+    // End of getters
+
 }
