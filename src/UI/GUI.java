@@ -42,6 +42,7 @@ public class GUI extends JPanel {
                 RenderingHints.VALUE_RENDER_QUALITY);
 
         graphics.setRenderingHints(rh);
+        //set color
         Paint paint = new Color(0,0,0);
         graphics.setPaint(paint);
     }

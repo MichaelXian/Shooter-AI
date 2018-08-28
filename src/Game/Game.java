@@ -100,6 +100,8 @@ public class Game extends Observable {
      * Updates the state of the game
      */
     public void update() {
+        updateData();
+        notifyObservers(data); //updates ships
         for (Bullet b: bullets) {
             b.update();
         }
