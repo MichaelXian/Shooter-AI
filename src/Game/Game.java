@@ -8,6 +8,7 @@ import UI.ShooterAI;
 import Utility.Geometry;
 import Utility.Vector;
 
+import java.awt.event.KeyEvent;
 import java.util.*;
 
 public class Game extends Observable {
@@ -106,6 +107,16 @@ public class Game extends Observable {
             b.update();
         }
     }
+
+    public void keyReleased(KeyEvent e) {
+        ship1.getController().keyReleased(e);
+    }
+
+    public void keyPressed(KeyEvent e) {
+        System.out.println("asdf");
+        ship1.getController().keyPressed(e);
+    }
+
 
     // Getters
 

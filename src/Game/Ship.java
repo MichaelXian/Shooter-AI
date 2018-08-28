@@ -117,6 +117,10 @@ public class Ship implements Observer, Entity {
         return heading;
     }
 
+    public Controller getController() {
+        return controller;
+    }
+
     // End of getters
 
 }

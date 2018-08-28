@@ -11,10 +11,11 @@ import Utility.Triangle;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 
-public class GUI extends JPanel {
+public class GUI extends JPanel{
     private Game game;
     public GUI() {
         game = new Game(true, new AI(), new AI(), this, new Evolver());
@@ -29,8 +30,17 @@ public class GUI extends JPanel {
         drawBullets(graphics);
     }
 
+    public void keyReleased(KeyEvent e) {
+        game.keyReleased(e);
+    }
+
+    public void keyPressed(KeyEvent e) {
+
+        game.keyPressed(e);
+    }
+
     /**
-     *
+     * sets up anti-aliasing/color
      */
     private void setupGraphics(Graphics2D graphics) {
         // Do anti-aliasing and stuff
