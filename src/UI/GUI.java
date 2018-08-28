@@ -17,13 +17,17 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
+import java.awt.geom.Rectangle2D;
 
 public class GUI extends JPanel implements ActionListener {
     private static final int DELAY = 10;
+    public static final int HEIGHT = ShooterAI.HEIGHT;
+    public static final int WIDTH = 750;
     private Game game;
     private Timer timer;
     public GUI() {
         game = new Game(true, new AI(), new AI(), this, new Evolver());
+        setFocusable(true);
         addKeyListener(new TAdapter());
         setTimer();
     }
@@ -43,7 +47,12 @@ public class GUI extends JPanel implements ActionListener {
         setupGraphics(graphics);
         drawShips(graphics);
         drawBullets(graphics);
-        System.out.println("paint");
+        drawDivider(graphics);
+    }
+
+    private void drawDivider(Graphics2D graphics) {
+        Rectangle2D divider = new Rectangle2D.Double(WIDTH, 0, 1, HEIGHT);
+        graphics.fill(divider);
     }
 
     /**
@@ -65,6 +74,7 @@ public class GUI extends JPanel implements ActionListener {
 
         @Override
         public void keyPressed(KeyEvent e) {
+            System.out.println("pressed");
             game.keyPressed(e);
         }
     }

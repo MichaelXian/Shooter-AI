@@ -19,9 +19,9 @@ public class Triangle {
         Vector right;
         Path2D path;
         // Create triangle centred at 0,0
-        top = new Vector(0, -height/2);
-        left = new Vector(-width/2, height/2);
-        right = new Vector(width/2, height/2);
+        top = new Vector(0, height/2);
+        left = new Vector(-width/2, -height/2);
+        right = new Vector(width/2, -height/2);
         // Apply Rotation
         top = top.rotate(rotation);
         left = left.rotate(rotation);

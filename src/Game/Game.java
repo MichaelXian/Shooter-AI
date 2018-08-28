@@ -13,8 +13,10 @@ import java.util.*;
 
 public class Game extends Observable {
     public final int FRACTION = 8; // how far from edges the ships spawn
-    public final Vector SHIP_SPAWN_1 = new Vector(ShooterAI.WIDTH/FRACTION, ShooterAI.HEIGHT/2);
-    public final Vector SHIP_SPAWN_2 = new Vector(ShooterAI.WIDTH*(FRACTION - 1)/FRACTION, ShooterAI.HEIGHT/2);
+    public final int WIDTH = 750;
+    public final int HEIGHT = ShooterAI.HEIGHT;
+    public final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
+    public final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
     private GUI gui;
     private List<Bullet> bullets;
     private Bullet bullet1;
@@ -42,9 +44,18 @@ public class Game extends Observable {
         ship1 = ships.get(0);
         ship2 = ships.get(1);
         // for testing
-        bullets.add(new Bullet(new Vector(ShooterAI.WIDTH/2, ShooterAI.HEIGHT/2), new Vector(0,1), 0d));
+        bullets.add(new Bullet(new Vector(-10, -10), new Vector(0,0), 0d, ship1));
         data = new HashMap<>();
         updateData();
+        addObservers();
+    }
+
+    /**
+     * Adds ships as observers
+     */
+    private void addObservers() {
+        addObserver(ship1);
+        addObserver(ship2);
     }
 
     /**
@@ -70,7 +81,6 @@ public class Game extends Observable {
         data.put("bul2Y", bullet2.getY());
         data.put("bul2VelX", bullet2.getVelX());
         data.put("bul2VelY", bullet2.getVelY());
-        data.put("key", 0d);
     }
 
     /**
@@ -92,9 +102,10 @@ public class Game extends Observable {
      * @param position location of bullet
      * @param heading heading of bullet
      * @param speed speed of ship that fired it
+     * @param owner the ship that fired it
      */
-    public void shoot(Vector position, Vector heading, Double speed) {
-        bullets.add(new Bullet(position, heading, speed));
+    public void shoot(Vector position, Vector heading, Double speed, Ship owner) {
+        bullets.add(new Bullet(position, heading, speed, owner));
     }
 
     /**
@@ -102,6 +113,7 @@ public class Game extends Observable {
      */
     public void update() {
         updateData();
+        setChanged();
         notifyObservers(data); //updates ships
         for (Bullet b: bullets) {
             b.update();
@@ -113,7 +125,6 @@ public class Game extends Observable {
     }
 
     public void keyPressed(KeyEvent e) {
-
         ship1.getController().keyPressed(e);
     }
 

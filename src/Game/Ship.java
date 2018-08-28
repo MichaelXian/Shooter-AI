@@ -13,8 +13,9 @@ public class Ship implements Observer, Entity {
     public static final double WIDTH = 25;
     public static final double MAX_HEALTH = 100;
     // public static final double MASS = 1;
-    private static final double ACCELERATION = 1;
-    private static final double TURNSPEED = 0.01;
+    private static final double ACCELERATION = 0.1;
+    private static final double TURNSPEED = 0.05;
+    private static final int DELAY = 250;
     private Vector position;
     private Vector velocity;
     private Vector heading;
@@ -22,6 +23,7 @@ public class Ship implements Observer, Entity {
     private double health;
     private Controller controller;
     private Game game;
+    private double lastFired;
 
     Ship(Vector position, Controller controller, Game game) {
         rotation = 0;
@@ -31,6 +33,7 @@ public class Ship implements Observer, Entity {
         heading = new Vector(0,1);
         health = MAX_HEALTH;
         velocity = new Vector(0,0);
+        lastFired = 0;
     }
 
 
@@ -38,16 +41,16 @@ public class Ship implements Observer, Entity {
      * Turns the ship clockwise
      */
     public void turnRight() {
-        rotation += TURNSPEED;
-        heading = heading.rotate(TURNSPEED);
+        rotation -= TURNSPEED;
+        heading = heading.rotate(-TURNSPEED);
     }
 
     /**
      * Turns the ship counter-clockwise
      */
     public void turnLeft() {
-        rotation -= TURNSPEED;
-        heading = heading.rotate(-TURNSPEED);
+        rotation += TURNSPEED;
+        heading = heading.rotate(TURNSPEED);
     }
 
     /**
@@ -55,7 +58,7 @@ public class Ship implements Observer, Entity {
      */
     public void accelerate() {
         Vector impulse = heading.scale(ACCELERATION);
-        velocity.add(impulse);
+        velocity = velocity.add(impulse);
 
     }
 
@@ -64,7 +67,14 @@ public class Ship implements Observer, Entity {
      */
     public void decelerate() {
         Vector impulse = heading.scale(ACCELERATION);
-        velocity.sub(impulse);
+        velocity = velocity.sub(impulse);
+    }
+
+    /**
+     * moves the ship according to it's velocity
+     */
+    private void move() {
+        position = position.add(velocity);
     }
 
 
@@ -90,9 +100,22 @@ public class Ship implements Observer, Entity {
             turnRight();
         }
         if (result.get(4)) {
-            this.game.shoot(position, heading, this.velocity.length());
+            shoot();
+
+        }
+        move();
+    }
+
+    /**
+     * Fires a bullet, if enough time has passed
+     */
+    private void shoot() {
+        if (System.currentTimeMillis() - lastFired > DELAY) {
+            lastFired = System.currentTimeMillis();
+            this.game.shoot(position, heading, this.velocity.length(), this);
         }
     }
+
 
     // Getters
 
