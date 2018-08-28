@@ -51,14 +51,18 @@ public class Vector {
         return new Vector(x - vector.x(), y - vector.y());
     }
 
+    public double length() {
+        return sqrt(pow(x,2) + pow(y,2));
+    }
+
     /**
      * Sets the length to 1
      *
      * @return a new normalized vector
      */
     public Vector normalize() {
-        double newX = x / (sqrt(pow(x,2) + pow(y,2)));
-        double newY = y / (sqrt(pow(x,2) + pow(y,2)));
+        double newX = x / length();
+        double newY = y / length();
         return new Vector(newX, newY);
     }
 

@@ -1,11 +1,18 @@
 package Controllers;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Player implements Controller {
 
     @Override
-    public ArrayList<Boolean> update(ArrayList<Double> data) {
-        return null;
+    public ArrayList<Boolean> update(Map<String, Double> data) {
+        ArrayList<Boolean> ret = new ArrayList<>();
+        ret.add(false);
+        ret.add(false);
+        ret.add(false);
+        ret.add(false);
+        ret.add(false);
+        return ret;
     }
 }

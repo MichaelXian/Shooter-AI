@@ -5,7 +5,7 @@ import Utility.Vector;
 
 public class Bullet {
     public static final double DAMAGE = 25;
-    public static final double RADIUS = 2.5;
+    public static final double RADIUS = 5;
     public static final double SPEED = 1;
     private Vector position;
     private Vector velocity;
@@ -15,9 +15,9 @@ public class Bullet {
      * @param position
      * @param heading
      */
-    public Bullet(Vector position, Vector heading) {
+    public Bullet(Vector position, Vector heading, Double speed) {
         this.position = position;
-        this.velocity = heading.scale(SPEED);
+        this.velocity = heading.scale(SPEED + speed);
     }
 
     // Getters

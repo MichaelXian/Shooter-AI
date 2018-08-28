@@ -1,7 +1,8 @@
 package Controllers;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public interface Controller {
-    ArrayList<Boolean> update (ArrayList<Double> data);
+    ArrayList<Boolean> update (Map<String, Double> data);
 }

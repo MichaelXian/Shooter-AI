@@ -6,30 +6,6 @@ public class Triangle {
 
 
     /**
-     * Uses the given parameters to determine the locations of the points on the triangle
-     * @param position centre of triangle
-     * @param height
-     * @param width
-     * @param rotation rotation of the triangle (radians, CCW)
-     */
-    public Triangle(Vector position, Double width, Double height, Double rotation) {
-        /*
-        // Create triangle centred at 0,0
-        top = new Vector(0, height/2);
-        left = new Vector(-width/2, -height/2);
-        right = new Vector(width/2, -height/2);
-        // Apply Rotation
-        top = top.rotate(rotation);
-        left = left.rotate(rotation);
-        right = right.rotate(rotation);
-        // Translate
-        top = top.add(position);
-        left = left.add(position);
-        right = right.add(position);
-        */
-    }
-
-    /**
      * Turns the parameters into a path representing a triangle
      * @param position  the centre of the triangle
      * @param width

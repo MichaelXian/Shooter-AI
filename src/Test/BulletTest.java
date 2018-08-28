@@ -17,7 +17,7 @@ public class BulletTest {
     public void testNext() {
         Vector position = new Vector(0,0);
         Vector velocity = new Vector(1,1);
-        Bullet bullet = new Bullet(position, velocity);
+        Bullet bullet = new Bullet(position, velocity, 0d);
         bullet.next();
         assertEquals(position.add(velocity), bullet.getPosition());
         bullet.next();

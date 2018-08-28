@@ -4,6 +4,7 @@ import Controllers.Controller;
 import Utility.Vector;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Observable;
 import java.util.Observer;
 
@@ -88,7 +89,7 @@ public class Ship implements Observer {
 
     @Override
     public void update(Observable observable, Object object) {
-        ArrayList<Double> data = (ArrayList<Double>) object;
+        Map<String, Double> data = (Map<String, Double>) object;
         ArrayList<Boolean>result = controller.update(data);
         if (result.get(0)) {
             accelerate();
@@ -103,7 +104,7 @@ public class Ship implements Observer {
             turnRight();
         }
         if (result.get(4)) {
-            this.game.shoot(position, heading);
+            this.game.shoot(position, heading, this.velocity.length());
         }
     }
 }
