@@ -24,7 +24,7 @@ public class Bullet implements Entity {
     /**
      * Sets the new position with current velocity
      */
-    public void next() {
+    public void update() {
         position = position.add(velocity);
     }
 

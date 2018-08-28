@@ -14,13 +14,13 @@ public class BulletTest {
     }
 
     @Test
-    public void testNext() {
+    public void testUpdate() {
         Vector position = new Vector(0,0);
         Vector velocity = new Vector(1,1);
         Bullet bullet = new Bullet(position, velocity, 0d);
-        bullet.next();
+        bullet.update();
         assertEquals(position.add(velocity), bullet.getPosition());
-        bullet.next();
+        bullet.update();
         assertEquals(position.add(velocity).add(velocity), bullet.getPosition());
     }
 

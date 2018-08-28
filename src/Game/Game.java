@@ -50,8 +50,9 @@ public class Game extends Observable {
      * Updates the data
      */
     private void updateData() {
-        bullet1 = (Bullet) Geometry.closestTo(bullets, ship1.getPosition());
-        bullet2 = (Bullet) Geometry.closestTo(bullets, ship2.getPosition());
+        List<Entity> bulletsList = (List<Entity>)(List<?>) bullets;
+        bullet1 = (Bullet) Geometry.closestTo(bulletsList, ship1.getPosition());
+        bullet2 = (Bullet) Geometry.closestTo(bulletsList, ship2.getPosition());
         data.put("ship1X", ship1.getPosition().x());
         data.put("ship1Y", ship1.getPosition().y());
         data.put("ship1VelX", ship1.getPosition().x());
@@ -95,7 +96,14 @@ public class Game extends Observable {
         bullets.add(new Bullet(position, heading, speed));
     }
 
-
+    /**
+     * Updates the state of the game
+     */
+    public void update() {
+        for (Bullet b: bullets) {
+            b.update();
+        }
+    }
 
     // Getters
 
