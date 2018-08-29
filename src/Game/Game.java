@@ -17,6 +17,7 @@ public class Game extends Observable {
     public final String DRAW = "No Winner";
     public final String FIRST_WIN = "Ship 1 Won";
     public final String SECOND_WIN = "Ship 2 Won";
+    private final int DELAY = 10;
     private final int FRACTION = 8; // how far from edges the ships spawn
     private final int WIDTH = 750;
     private final int HEIGHT = ShooterAI.HEIGHT;
@@ -32,7 +33,9 @@ public class Game extends Observable {
     private Evolver evolver;
     private Map<String, Double> data;
     private String winner;
-    private int ticks;
+    private Integer ticks;
+    private Double gameEnd;
+    private boolean firstEnd;
 
 
     /**
@@ -43,6 +46,8 @@ public class Game extends Observable {
      * @param gameDrawer the gameDrawer
      */
     public Game(Boolean player, AI ai1, AI ai2, GameDrawer gameDrawer, Evolver evolver) {
+        firstEnd = false;
+        gameEnd = new Double(MAX_TICKS);
         this.ticks = 0;
         this.evolver = evolver;
         this.gameDrawer = gameDrawer;
@@ -145,6 +150,7 @@ public class Game extends Observable {
         data.put("bul2VelX", bullet2.getVelX());
         data.put("bul2VelY", bullet2.getVelY());
         data.put("gameOver", winnerDouble);
+        data.put("gameEnd", gameEnd);
     }
 
 
@@ -169,6 +175,10 @@ public class Game extends Observable {
      * Updates the state of the game
      */
     public void update() {
+        gameEndTimer();
+        if (new Double(ticks) - gameEnd > DELAY) {
+            gameEnd = -1d;
+        }
         ticks ++;
         updateData();
         setChanged();
@@ -184,6 +194,16 @@ public class Game extends Observable {
             for (Bullet b : bullets2) {
                 b.update();
             }
+        }
+    }
+
+    /**
+     * Counts down from gameOver to gameEnd, so the winner text displays
+     */
+    private void gameEndTimer() {
+        if (firstEnd) {
+            firstEnd = false;
+            gameEnd = new Double(ticks);
         }
     }
 

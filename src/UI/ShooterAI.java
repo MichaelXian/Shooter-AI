@@ -6,7 +6,6 @@ import java.awt.*;
 public class ShooterAI extends JFrame{
     public static final int WIDTH = 2000;
     public static final int HEIGHT = 750;
-    private static final int DELAY = 10;
     private Timer timer;
     private GameDrawer gameDrawer;
     public ShooterAI() {

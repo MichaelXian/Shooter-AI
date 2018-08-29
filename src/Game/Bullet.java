@@ -6,7 +6,7 @@ import Utility.Vector;
 public class Bullet implements Entity {
     public static final double DAMAGE = 25;
     public static final double RADIUS = 5;
-    public static final double SPEED = 5;
+    public static final double SPEED = 15;
     private Vector position;
     private Vector velocity;
 

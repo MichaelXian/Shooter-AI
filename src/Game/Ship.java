@@ -13,8 +13,8 @@ public class Ship implements Observer, Entity {
     public static final double WIDTH = 25;
     public static final double MAX_HEALTH = 100;
     // public static final double MASS = 1;
-    private static final double ACCELERATION = 0.1;
-    private static final double TURNSPEED = 0.05;
+    private static final double ACCELERATION = 0.3;
+    private static final double TURNSPEED = 0.15;
     private static final int DELAY = 250;
     private Vector position;
     private Vector velocity;

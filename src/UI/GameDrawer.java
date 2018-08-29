@@ -20,7 +20,7 @@ import java.awt.geom.Path2D;
 import java.awt.geom.Rectangle2D;
 
 public class GameDrawer extends JPanel implements ActionListener {
-    private static final int DELAY = 10;
+    private static final int DELAY = 1000/30;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private Boolean first = true;
