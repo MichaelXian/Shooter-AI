@@ -5,18 +5,24 @@ import Controllers.Player;
 import Evolution.Evolver;
 import UI.GameDrawer;
 import UI.ShooterAI;
-import Utility.Geometry;
+import Utility.*;
 import Utility.Vector;
 
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.*;
+import java.util.List;
 
 public class Game extends Observable {
-    public final int FRACTION = 8; // how far from edges the ships spawn
-    public final int WIDTH = 750;
-    public final int HEIGHT = ShooterAI.HEIGHT;
-    public final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
-    public final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
+    public final String DRAW = "No Winner";
+    public final String FIRST_WIN = "Ship 1 Won";
+    public final String SECOND_WIN = "Ship 2 Won";
+    private final int FRACTION = 8; // how far from edges the ships spawn
+    private final int WIDTH = 750;
+    private final int HEIGHT = ShooterAI.HEIGHT;
+    private final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
+    private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
+    private final int MAX_TICKS = 100*60;
     private GameDrawer gameDrawer;
     private List<Bullet> bullets;
     private List<Bullet> bullets1;
@@ -27,6 +33,7 @@ public class Game extends Observable {
     private Evolver evolver;
     private Map<String, Double> data;
     private String winner;
+    private int ticks;
 
 
     /**
@@ -37,7 +44,7 @@ public class Game extends Observable {
      * @param gameDrawer the gameDrawer
      */
     public Game(Boolean player, AI ai1, AI ai2, GameDrawer gameDrawer, Evolver evolver) {
-        this.winner = "No Winner";
+        this.ticks = 0;
         this.evolver = evolver;
         this.gameDrawer = gameDrawer;
         bullets = new ArrayList<>();
@@ -47,26 +54,13 @@ public class Game extends Observable {
         spawnShips(player, ai1, ai2);
         ship1 = ships.get(0);
         ship2 = ships.get(1);
-        // so that nearest bullet is never null
         initialBullets();
-        //bullets.add(new Bullet(new Vector(-10, -10), new Vector(0,0), 0d, ship1));
         data = new HashMap<>();
         updateData();
         addObservers();
     }
 
-
-    /**
-     * Makes the surviving ship the winner
-     */
-    private void killShip(Ship ship) {
-        if (ship == ship1) {
-            this.winner = ship1.getName() + " won";
-        } else {
-            this.winner = ship2.getName() + " won";
-        }
-    }
-
+    // Start of initialization methods
 
     /**
      * Creates first bullets so that there is always a nearest bullet
@@ -85,6 +79,42 @@ public class Game extends Observable {
         addObserver(ship1);
         addObserver(ship2);
     }
+
+    /**
+     * Spawns the ships
+     * @param player whether the first ship is player controlled or not
+     */
+    private void spawnShips(Boolean player, AI ai1, AI ai2) {
+        // create first ship, and choose controller based on player or ai
+        if (player) {
+            ships.add(new Ship(SHIP_SPAWN_1, new Player(), this));
+        } else {
+            ships.add(new Ship(SHIP_SPAWN_1, ai1, this));
+        }
+        ships.add(new Ship(SHIP_SPAWN_2, ai2, this));
+    }
+
+    // End of initialization methods
+
+    /**
+     * Makes the surviving ship the winner
+     */
+    private void killShip(Ship ship) {
+        if (ship == ship1) {
+            winner = FIRST_WIN;
+        } else {
+            winner = SECOND_WIN;
+        }
+    }
+
+    /**
+     * Makes the game a draw, where neither ship wins
+     */
+    private void drawGame() {
+        winner = DRAW;
+    }
+
+
 
     /**
      * Updates the data
@@ -112,19 +142,7 @@ public class Game extends Observable {
         data.put("bul2VelY", bullet2.getVelY());
     }
 
-    /**
-     * Spawns the ships
-     * @param player whether the first ship is player controlled or not
-     */
-    private void spawnShips(Boolean player, AI ai1, AI ai2) {
-        // create first ship, and choose controller based on player or ai
-        if (player) {
-            ships.add(new Ship(SHIP_SPAWN_1, new Player(), this));
-        } else {
-            ships.add(new Ship(SHIP_SPAWN_1, ai1, this));
-        }
-        ships.add(new Ship(SHIP_SPAWN_2, ai2, this));
-    }
+
 
     /**
      * Creates a bullet with given position and heading
@@ -147,13 +165,43 @@ public class Game extends Observable {
      * Updates the state of the game
      */
     public void update() {
-        updateData();
-        setChanged();
-        notifyObservers(data); //updates ships
-        for (Bullet b: bullets) {
-            b.update();
+        ticks ++;
+        if (ticks >= MAX_TICKS) {
+            drawGame();
+        } else {
+            checkCollisions();
+            updateData();
+            setChanged();
+            notifyObservers(data); //updates ships
+            for (Bullet b : bullets) {
+                b.update();
+            }
+
         }
     }
+
+    /**
+     * Checks for collisions of ships and enemy bullets
+     */
+    private void checkCollisions() {
+        // test for ship1
+        Shape shipShape = Triangle.toPath(ship1.getPosition(), Ship.WIDTH, Ship.HEIGHT, ship1.getRotation());
+        for (Bullet bullet: bullets2) {
+            Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
+            if (Collision.collided(shipShape, bulletShape)) {
+                killShip(ship1);
+            }
+        }
+        // test for ship2
+        shipShape = Triangle.toPath(ship2.getPosition(), Ship.WIDTH, Ship.HEIGHT, ship2.getRotation());
+        for (Bullet bullet: bullets1) {
+            Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
+            if (Collision.collided(shipShape, bulletShape)) {
+                killShip(ship2);
+            }
+        }
+    }
+
 
     public void keyReleased(KeyEvent e) {
         ship1.getController().keyReleased(e);
