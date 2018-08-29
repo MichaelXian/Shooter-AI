@@ -24,7 +24,6 @@ public class Game extends Observable {
     private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
     private final int MAX_TICKS = 100*60;
     private GameDrawer gameDrawer;
-    private List<Bullet> bullets;
     private List<Bullet> bullets1;
     private List<Bullet> bullets2;
     private List<Ship> ships;
@@ -47,7 +46,6 @@ public class Game extends Observable {
         this.ticks = 0;
         this.evolver = evolver;
         this.gameDrawer = gameDrawer;
-        bullets = new ArrayList<>();
         bullets1 = new ArrayList<>();
         bullets2 = new ArrayList<>();
         ships = new ArrayList<>();
@@ -160,7 +158,6 @@ public class Game extends Observable {
      */
     public void shoot(Vector position, Vector heading, Double speed, Ship owner) {
         Bullet bullet = new Bullet(position, heading, speed);
-        bullets.add(bullet);
         if (owner == ship1) {
             bullets1.add(bullet);
         } else {
@@ -180,10 +177,26 @@ public class Game extends Observable {
             drawGame();
         } else if (winner == null) {
             checkCollisions();
-            for (Bullet b : bullets) {
+            checkBoundary();
+            for (Bullet b : bullets1) {
                 b.update();
             }
+            for (Bullet b : bullets2) {
+                b.update();
+            }
+        }
+    }
 
+    /**
+     * Checks if the centre of a ship is within the boundary
+     */
+    private void checkBoundary() {
+        for (Ship ship: ships) {
+            Double x = ship.getPosition().x();
+            Double y = ship.getPosition().y() + Ship.HEIGHT/2;
+            if (x < 0 || x > WIDTH || y < 0 || y > HEIGHT) {
+                killShip(ship);
+            }
         }
     }
 

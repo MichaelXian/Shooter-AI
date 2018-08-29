@@ -23,6 +23,7 @@ public class GameDrawer extends JPanel implements ActionListener {
     private static final int DELAY = 10;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
+    private Boolean first = true;
     private Game game;
     private Timer timer;
     public GameDrawer() {
@@ -49,6 +50,11 @@ public class GameDrawer extends JPanel implements ActionListener {
         drawBullets(graphics);
         drawDivider(graphics);
         drawWinner(graphics);
+        // Load the font
+        if (first) {
+            first = false;
+            graphics.drawString("", 0, 0);
+        }
     }
 
 
@@ -58,6 +64,7 @@ public class GameDrawer extends JPanel implements ActionListener {
      */
     private void drawWinner(Graphics2D graphics) {
         String string = game.getWinner();
+
         if (string != null) {
             graphics.drawString(string, WIDTH/6, HEIGHT/2);
         }
