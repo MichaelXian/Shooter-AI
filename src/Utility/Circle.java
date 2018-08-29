@@ -19,4 +19,11 @@ public class Circle {
         return new Ellipse2D.Double(leftX, topY, diameter, diameter);
     }
 
+    public static Ellipse2D toCircle(Double x, Double y, Double radius) {
+        Double leftX = x - radius;
+        Double topY = y - radius;
+        Double diameter = 2 * radius;
+        return new Ellipse2D.Double(leftX, topY, diameter, diameter);
+    }
+
 }
