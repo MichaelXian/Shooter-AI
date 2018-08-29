@@ -1,11 +1,13 @@
 package Controllers.NeuralNetwork.Visualization;
 
 import Game.Game;
-import Game.Ship;
 import UI.ShooterAI;
+import org.neuroph.core.Connection;
 import org.neuroph.core.Layer;
 import org.neuroph.core.NeuralNetwork;
+import org.neuroph.core.Neuron;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NeuralNetworkVisual {
@@ -21,15 +23,31 @@ public class NeuralNetworkVisual {
     private boolean isTop;
     private NeuralNetwork neuralNetwork;
     private List<LayerVisual> layerVisuals;
-    private List<NeuronVisual> neuronVisuals;
+//    private List<NeuronVisual> neuronVisuals;
+    private int layerCount;
 
-    public NeuralNetworkVisual(Ship ship) {
-        isTop = ship.isFirst();
-        this.neuralNetwork = ship.getController().getNeuralNetwork();
+    public NeuralNetworkVisual(NeuralNetwork neuralNetwork, boolean isTop) {
+        this.isTop = isTop;
+        this.neuralNetwork = neuralNetwork;
+        layerVisuals = new ArrayList<>();
+//        neuronVisuals = new ArrayList<>();
+        layerCount = neuralNetwork.getLayersCount();
         initializePosition();
         if (neuralNetwork != null) {
             initializeNetwork();
         }
+    }
+
+    /**
+     * Gets all graphics of the neural net (graphics of all of the layers)
+     * @return
+     */
+    public List<Graphic> getGraphics() {
+        List<Graphic> ret = new ArrayList<>();
+        for (LayerVisual layer: layerVisuals) {
+            ret.addAll(layer.getGraphics());
+        }
+        return ret;
     }
 
     /**
@@ -44,16 +62,69 @@ public class NeuralNetworkVisual {
     }
 
     /**
-     * Creates all the layers for this network
+     * Creates all the layerVisuals and connectionVisuals for this networkVisual
      */
     private void initializeNetwork() {
-        int count = neuralNetwork.getLayersCount();
-        for (int i = 0; i < count; i++) {
+        initializeLayers();
+        initializeConnections();
+    }
+
+    /**
+     * Creates all the layerVisuals
+     */
+    private void initializeLayers() {
+        for (int i = 0; i < layerCount; i++) {
             Layer layer = neuralNetwork.getLayerAt(i);
             Double layerX = x + i * DISTANCE_BETWEEN_LAYERS;
             layerVisuals.add(new LayerVisual(layer, layerX, y, isTop));
         }
     }
 
+    /**
+     * Creates all outgoing connections. Iterates through all neurons, calling connectNeuron
+     */
+    private void initializeConnections() {
+        for (int i = 0; i < layerCount - 1; i ++) { // last layer can't have outgoing connections
+            Layer originLayer = neuralNetwork.getLayerAt(i);
+            for (Neuron neuron: originLayer.getNeurons()) {
+                List<Connection> outputs = neuron.getOutConnections();
+                if (outputs.size() > 0) {
+                    connectNeuron(neuron, outputs);
+                }
+            }
+        }
+    }
+
+    /**
+     * Uses the given neuron to connect the corresponding neuronVisual to all other neuronVisuals
+     * it should be connected to
+     * @param neuron
+     */
+    private void connectNeuron(Neuron neuron, List<Connection> outputs) {
+        NeuronVisual fromNeuron = getNeuronVisual(neuron);
+        for (Connection connection: outputs) {
+            NeuronVisual toNeuron = getNeuronVisual(connection.getToNeuron());
+            fromNeuron.addConnection(connection, toNeuron);
+        }
+    }
+
+
+    /**
+     * Gets the NeuronVisual corresponding to the given neuron. Throws NullPointerException if no neuron is found
+     * @param neuron
+     * @return the corresponding NeuronVisual
+     */
+    private NeuronVisual getNeuronVisual(Neuron neuron) {
+        List<NeuronVisual> ret = new ArrayList<>();
+        for (LayerVisual layer: layerVisuals) {
+            ret.add(layer.getNeuronVisual(neuron));
+        }
+        for (NeuronVisual neuronVisual: ret) {
+            if (neuronVisual != null) {
+                return neuronVisual;
+            }
+        }
+        throw new NullPointerException("No neuron found");
+    }
 
 }

@@ -1,27 +1,31 @@
 package Controllers.NeuralNetwork.Visualization;
 
 import Utility.Circle;
+import Utility.Vector;
+import org.neuroph.core.Connection;
 import org.neuroph.core.Neuron;
 
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.lang.Math.max;
+import static java.lang.Math.min;
+
 
 public class NeuronVisual {
     private static final Double RADIUS = 20d;
+    private List<ConnectionVisual> connectionVisuals;
+    private Shape shape;
+    private Neuron neuron;
+    private Double opacity;
     private Double x;
     private Double y;
-    private Shape shape;
-    private Double opacity;
-    private Neuron neuron;
     private boolean isTop;
-    private Graphic graphic;
-    private List<ConnectionVisual> connectionVisuals;
 
-    public NeuronVisual(Neuron neuron, Double x, Double y, boolean isBottom) {
+    public NeuronVisual(Neuron neuron, Double x, Double y, boolean isTop) {
         this.neuron = neuron;
-        this.isTop = isBottom;
+        this.isTop = isTop;
         this.x = x;
         this.y = y;
         this.shape = Circle.toCircle(x, y, RADIUS);
@@ -30,15 +34,18 @@ public class NeuronVisual {
     }
 
 
+    /**
+     * Updates this neuron's opacity, based on it's current input
+     */
     public void update() {
-        this.opacity = neuron.getNetInput();
+        opacity = neuron.getNetInput();
+        opacity = min(1, max(opacity, 0));
     }
 
-    public Graphic getGraphic() {
-        this.graphic = new Graphic(shape, getColor());
-        return graphic;
-    }
-
+    /**
+     * Updates and gets the color of the neuron
+     * @return
+     */
     private Color getColor() {
         update();
         if (isTop) {
@@ -47,5 +54,46 @@ public class NeuronVisual {
             return new Color (0f, 0f, 1f, new Float(opacity));
         }
     }
+
+
+    public void addConnection(Connection connection, NeuronVisual neuronVisual) {
+        connectionVisuals.add(new ConnectionVisual(connection, getPosition(), neuronVisual.getPosition(), isTop));
+    }
+
+    /**
+     * Returns the position as a vector
+     * @return
+     */
+    public Vector getPosition() {
+        return new Vector(x, y);
+    }
+
+    /**
+     * Gets graphics of all outgoing connections from this neuron
+     * @return
+     */
+    public List<Graphic> getConnectionGraphics() {
+        ArrayList<Graphic> ret = new ArrayList<>();
+        for (ConnectionVisual connection: connectionVisuals) {
+            ret.add(connection.getGraphic());
+        }
+        return ret;
+    }
+
+    /**
+     * Creates and returns the graphic for this neuronVisual
+     * @return
+     */
+    public Graphic getGraphic() {
+        return new Graphic(shape, getColor());
+    }
+
+
+    public Neuron getNeuron() {
+        return neuron;
+    }
+
+
+
 
 }

@@ -1,6 +1,6 @@
 package Controllers;
 
-import org.neuroph.core.NeuralNetwork;
+import Controllers.NeuralNetwork.Visualization.NeuralNetworkVisual;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -81,7 +81,7 @@ public class Player implements Controller{
 
 
     @Override
-    public NeuralNetwork getNeuralNetwork() {
+    public NeuralNetworkVisual getNeuralNetworkVisual() {
         return null;
     }
 }

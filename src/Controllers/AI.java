@@ -1,5 +1,6 @@
 package Controllers;
 
+import Controllers.NeuralNetwork.Visualization.NeuralNetworkVisual;
 import org.neuroph.core.NeuralNetwork;
 
 import java.awt.event.KeyEvent;
@@ -9,14 +10,21 @@ import java.util.List;
 public class AI implements Controller {
     String name;
     NeuralNetwork neuralNetwork;
+    NeuralNetworkVisual neuralNetworkVisual;
     private static final Double THRESHOLD = 0.5;
 
-    public AI(NeuralNetwork neuralNetwork) {
+    public AI(NeuralNetwork neuralNetwork, boolean isTop) {
         this.neuralNetwork = neuralNetwork;
+        this.neuralNetworkVisual = new NeuralNetworkVisual(neuralNetwork, isTop);
         this.name = "abcdef";
     }
 
 
+    /**
+     * Sets inputs of neural network and returns the results
+     * @param neuronInput
+     * @return
+     */
     @Override
     public ArrayList<Boolean> update(List<Double> neuronInput) {
         //Double[] input = neuronInput.toArray(new Double[neuronInput.size()]);
@@ -44,7 +52,6 @@ public class AI implements Controller {
     }
 
 
-
     @Override
     public void keyPressed(KeyEvent e) {
 
@@ -60,9 +67,8 @@ public class AI implements Controller {
         return name;
     }
 
-
-    public NeuralNetwork getNeuralNetwork() {
-        return neuralNetwork;
+    public NeuralNetworkVisual getNeuralNetworkVisual() {
+        return neuralNetworkVisual;
     }
 
 }

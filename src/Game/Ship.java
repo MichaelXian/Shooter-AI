@@ -26,6 +26,13 @@ public class Ship implements Observer, Entity {
 
     private boolean first;
 
+    /**
+     * Constructs a new ship with given parameters
+     * @param position
+     * @param controller what's controlling the ship's actions
+     * @param game the game this is in
+     * @param first whether this is the first ship or not
+     */
     Ship(Vector position, Controller controller, Game game, boolean first) {
         rotation = 0;
         this.position = position;
@@ -120,6 +127,7 @@ public class Ship implements Observer, Entity {
             game.shoot(position, heading, this.velocity.length(), this);
         }
     }
+
 
 
     // Getters

@@ -1,7 +1,7 @@
 package Controllers;
 
 
-import org.neuroph.core.NeuralNetwork;
+import Controllers.NeuralNetwork.Visualization.NeuralNetworkVisual;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -16,7 +16,9 @@ public interface Controller {
 
     void keyReleased(KeyEvent e);
 
-    NeuralNetwork getNeuralNetwork();
+    NeuralNetworkVisual getNeuralNetworkVisual();
+
+
 
     String getName();
 }

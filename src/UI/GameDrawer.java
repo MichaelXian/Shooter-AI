@@ -1,11 +1,12 @@
 
 package UI;
 
+import Controllers.NeuralNetwork.Visualization.Graphic;
+import Controllers.NeuralNetwork.Visualization.NeuralNetworkVisual;
 import Game.Bullet;
 import Game.Game;
 import Game.Ship;
 import Utility.Circle;
-import Utility.Line;
 import Utility.Triangle;
 
 import javax.swing.*;
@@ -17,6 +18,7 @@ import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 import java.awt.geom.Rectangle2D;
+import java.util.List;
 
 public class GameDrawer extends JPanel implements ActionListener {
     private static final int DELAY = 1000/200;
@@ -49,11 +51,11 @@ public class GameDrawer extends JPanel implements ActionListener {
         Graphics2D graphics = (Graphics2D) g;
         setupGraphics(graphics);
         drawShips(graphics);
+        drawNeuralNetworks(graphics);
         drawBullets(graphics);
         drawDivider(graphics);
         drawWinner(graphics);
         graphics.setPaint(Color.BLACK);
-        graphics.fill(Line.lineToRect(0d,0d,new Double(Game.WIDTH), new Double(Game.HEIGHT),10d));
         // Load the font
         if (first) {
             first = false;
@@ -61,18 +63,6 @@ public class GameDrawer extends JPanel implements ActionListener {
         }
     }
 
-
-    /**
-     * Draws which ship won
-     * @param graphics
-     */
-    private void drawWinner(Graphics2D graphics) {
-        String string = game.getWinner();
-
-        if (string != null) {
-            graphics.drawString(string, WIDTH/6, HEIGHT/2);
-        }
-    }
 
 
 
@@ -118,6 +108,45 @@ public class GameDrawer extends JPanel implements ActionListener {
     }
 
 
+    // Drawers
+
+    /**
+     * Draws the neural network graphics
+     * @param graphics
+     */
+    private void drawNeuralNetworks(Graphics2D graphics) {
+        for (Ship ship: game.getShips()) {
+            NeuralNetworkVisual neuralNetworkVisual = ship.getController().getNeuralNetworkVisual();
+            if (neuralNetworkVisual != null) {
+                List<Graphic> graphicsList = neuralNetworkVisual.getGraphics();
+                for (Graphic graphic: graphicsList) {
+                    drawGraphic(graphics, graphic);
+                }
+            }
+        }
+    }
+
+    /**
+     * Draws the given graphic
+     * @param graphic
+     */
+    private void drawGraphic(Graphics2D graphics, Graphic graphic) {
+        graphics.setPaint(graphic.getColor());
+        graphics.fill(graphic.getShape());
+    }
+
+
+    /**
+     * Draws which ship won
+     * @param graphics
+     */
+    private void drawWinner(Graphics2D graphics) {
+        String string = game.getWinner();
+
+        if (string != null) {
+            graphics.drawString(string, WIDTH/6, HEIGHT/2);
+        }
+    }
 
     /**
      * Draws divider between game and neural net visualization
