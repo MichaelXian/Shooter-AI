@@ -2,6 +2,7 @@ package UI;
 
 import Controllers.AI;
 import Game.Game;
+import org.neuroph.core.NeuralNetwork;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +20,8 @@ public class ShooterAI extends JFrame implements Observer{
     }
 
     private void initUI() {
-        game = new Game(true, new AI(), new AI(), this);
+        game = new Game(false, new AI(NeuralNetwork.createFromFile("NeuralNets/net1.nnet")),
+                new AI(NeuralNetwork.createFromFile("NeuralNets/net2.nnet")), this);
         gameDrawer = new GameDrawer(game);
         add(gameDrawer);
         setSize(WIDTH, HEIGHT);

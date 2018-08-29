@@ -8,10 +8,10 @@ public class NeuralNetPlayground {
 
 
     public static void main(String[] args) {
-        //double[] input = {1d, 1d, 1d, 1d, 1d, 1d, 1d, 1d, 1d, 1d, 1d, 1d};
-        NeuralNetwork neuralNetwork = NeuralNetworkFactory.randomNeuralNet();
-        //neuralNetwork.setInput(input);
-        neuralNetwork.save("NeuralNets/net1.nnet");
+        for (int i = 0; i < 10; i ++) {
+            NeuralNetwork neuralNetwork = NeuralNetworkFactory.randomNeuralNet();
+            neuralNetwork.save("NeuralNets/net" + i + ".nnet");
+        }
     }
 
 

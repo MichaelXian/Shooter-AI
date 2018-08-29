@@ -2,12 +2,12 @@ package Controllers;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Map;
+import java.util.List;
 
 public interface Controller {
 
 
-    ArrayList<Boolean> update (Map<String, Double> data);
+    ArrayList<Boolean> update (List<Double> neuronInput);
 
     void keyPressed(KeyEvent e);
 

@@ -57,11 +57,11 @@ public class Player implements Controller{
 
     /**
      * Returns commands for ship, based on pressed buttons
-     * @param data
+     * @param neuronInput
      * @return
      */
     @Override
-    public ArrayList<Boolean> update(Map<String, Double> data) {
+    public ArrayList<Boolean> update(List<Double> neuronInput) {
         ArrayList<Boolean> ret = new ArrayList<>();
         ret.add(keyStrokes.get(KeyEvent.VK_W));
         ret.add(keyStrokes.get(KeyEvent.VK_S));

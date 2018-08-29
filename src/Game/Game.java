@@ -12,13 +12,13 @@ import java.util.*;
 import java.util.List;
 
 public class Game extends Observable {
-    public final String DRAW = "No Winner";
-    public final String FIRST_WIN = "Ship 1 Won";
-    public final String SECOND_WIN = "Ship 2 Won";
+    public final static String DRAW = "No Winner";
+    public final static String FIRST_WIN = "Ship 1 Won";
+    public final static String SECOND_WIN = "Ship 2 Won";
+    public final static int WIDTH = 750;
+    public final static int HEIGHT = ShooterAI.HEIGHT;
     private final int DELAY = 10;
     private final int FRACTION = 8; // how far from edges the ships spawn
-    private final int WIDTH = 750;
-    private final int HEIGHT = ShooterAI.HEIGHT;
     private final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
     private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
     private final int MAX_TICKS = 100*60;
@@ -87,11 +87,11 @@ public class Game extends Observable {
     private void spawnShips(Boolean player, AI ai1, AI ai2) {
         // create first ship, and choose controller based on player or ai
         if (player) {
-            ships.add(new Ship(SHIP_SPAWN_1, new Player(), this));
+            ships.add(new Ship(SHIP_SPAWN_1, new Player(), this, true));
         } else {
-            ships.add(new Ship(SHIP_SPAWN_1, ai1, this));
+            ships.add(new Ship(SHIP_SPAWN_1, ai1, this, true));
         }
-        ships.add(new Ship(SHIP_SPAWN_2, ai2, this));
+        ships.add(new Ship(SHIP_SPAWN_2, ai2, this, false));
     }
 
     // End of initialization methods

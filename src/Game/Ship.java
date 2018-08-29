@@ -1,12 +1,10 @@
 package Game;
 
 import Controllers.Controller;
+import Utility.DataToDouble;
 import Utility.Vector;
 
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Observable;
-import java.util.Observer;
+import java.util.*;
 
 public class Ship implements Observer, Entity {
     public static final double HEIGHT = 50;
@@ -26,12 +24,15 @@ public class Ship implements Observer, Entity {
     private double lastFired;
     private String name;
 
-    Ship(Vector position, Controller controller, Game game) {
+    private boolean first;
+
+    Ship(Vector position, Controller controller, Game game, boolean first) {
         rotation = 0;
         this.position = position;
         this.controller = controller;
         this.game = game;
         this.name = controller.getName();
+        this.first = first;
         heading = new Vector(0,1);
         health = MAX_HEALTH;
         velocity = new Vector(0,0);
@@ -89,7 +90,8 @@ public class Ship implements Observer, Entity {
     public void update(Observable observable, Object object) {
         Map<String, Double> data = ((Game) observable).getData();
         if (((Game) observable).getWinner() == null) {
-            ArrayList<Boolean> result = controller.update(data);
+            List<Double> neuronInput = DataToDouble.toDouble(data, this);
+            ArrayList<Boolean> result = controller.update(neuronInput);
             if (result.get(0)) {
                 accelerate();
             }
@@ -149,6 +151,10 @@ public class Ship implements Observer, Entity {
 
     public String getName() {
         return name;
+    }
+
+    public boolean isFirst() {
+        return first;
     }
 
     // End of getters
