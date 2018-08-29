@@ -54,7 +54,7 @@ public class VectorTest {
 
     @Test
     public void testScale() {
-        v3 = v0.scale(100);
+        v3 = v0.scaleTo(100);
         double x = v0.normalize().x() * 100;
         double y = v0.normalize().y() * 100;
         v4 = new Vector(x,y);

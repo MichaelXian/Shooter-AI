@@ -5,7 +5,7 @@ import java.awt.geom.Ellipse2D;
 public class Circle {
 
     /**
-     * Creates a circle with given coordinates and radius
+     * Creates a circle with given vector and radius
      * @param position centre of circle
      * @param radius
      * @return
@@ -19,6 +19,13 @@ public class Circle {
         return new Ellipse2D.Double(leftX, topY, diameter, diameter);
     }
 
+    /**
+     * Creates a circle from given coordinates and radius
+     * @param x
+     * @param y
+     * @param radius
+     * @return
+     */
     public static Ellipse2D toCircle(Double x, Double y, Double radius) {
         Double leftX = x - radius;
         Double topY = y - radius;

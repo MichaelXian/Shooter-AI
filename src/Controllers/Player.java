@@ -1,5 +1,7 @@
 package Controllers;
 
+import org.neuroph.core.NeuralNetwork;
+
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -77,4 +79,9 @@ public class Player implements Controller{
         return name;
     }
 
+
+    @Override
+    public NeuralNetwork getNeuralNetwork() {
+        return null;
+    }
 }

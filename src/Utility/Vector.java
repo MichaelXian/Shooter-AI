@@ -72,7 +72,7 @@ public class Vector {
      * @param factor the length to get the vector to
      * @return a new vector with set length
      */
-    public Vector scale(double factor) {
+    public Vector scaleTo(double factor) {
         Vector normalized = this.normalize();
         double newX = normalized.x() * factor;
         double newY = normalized.y() * factor;

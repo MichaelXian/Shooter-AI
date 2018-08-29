@@ -10,11 +10,11 @@ public class AI implements Controller {
     String name;
     NeuralNetwork neuralNetwork;
     private static final Double THRESHOLD = 0.5;
+
     public AI(NeuralNetwork neuralNetwork) {
         this.neuralNetwork = neuralNetwork;
         this.name = "abcdef";
     }
-
 
 
     @Override
@@ -59,4 +59,10 @@ public class AI implements Controller {
     public String getName() {
         return name;
     }
+
+
+    public NeuralNetwork getNeuralNetwork() {
+        return neuralNetwork;
+    }
+
 }

@@ -17,7 +17,7 @@ public class Bullet implements Entity {
      */
     public Bullet(Vector position, Vector heading, Double speed) {
         this.position = position;
-        this.velocity = heading.scale(SPEED + speed);
+        this.velocity = heading.scaleTo(SPEED + speed);
     }
 
 

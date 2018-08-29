@@ -1,4 +1,8 @@
 package Controllers.NeuralNetwork.Visualization;
 
-public class Line {
+public class ConnectionVisual {
+
+
+
+
 }

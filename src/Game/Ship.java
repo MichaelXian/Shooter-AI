@@ -60,7 +60,7 @@ public class Ship implements Observer, Entity {
      * accelerates the ship towards it's heading
      */
     public void accelerate() {
-        Vector impulse = heading.scale(ACCELERATION);
+        Vector impulse = heading.scaleTo(ACCELERATION);
         velocity = velocity.add(impulse);
 
     }
@@ -69,7 +69,7 @@ public class Ship implements Observer, Entity {
      * accelerates the ship in reverse relative to it's heading
      */
     public void decelerate() {
-        Vector impulse = heading.scale(ACCELERATION);
+        Vector impulse = heading.scaleTo(ACCELERATION);
         velocity = velocity.sub(impulse);
     }
 

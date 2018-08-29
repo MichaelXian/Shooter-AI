@@ -5,6 +5,7 @@ import Game.Bullet;
 import Game.Game;
 import Game.Ship;
 import Utility.Circle;
+import Utility.Line;
 import Utility.Triangle;
 
 import javax.swing.*;
@@ -51,6 +52,8 @@ public class GameDrawer extends JPanel implements ActionListener {
         drawBullets(graphics);
         drawDivider(graphics);
         drawWinner(graphics);
+        graphics.setPaint(Color.BLACK);
+        graphics.fill(Line.lineToRect(0d,0d,new Double(Game.WIDTH), new Double(Game.HEIGHT),10d));
         // Load the font
         if (first) {
             first = false;
