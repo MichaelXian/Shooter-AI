@@ -24,12 +24,14 @@ public class Ship implements Observer, Entity {
     private Controller controller;
     private Game game;
     private double lastFired;
+    private String name;
 
     Ship(Vector position, Controller controller, Game game) {
         rotation = 0;
         this.position = position;
         this.controller = controller;
         this.game = game;
+        this.name = controller.getName();
         heading = new Vector(0,1);
         health = MAX_HEALTH;
         velocity = new Vector(0,0);
@@ -142,6 +144,10 @@ public class Ship implements Observer, Entity {
 
     public Controller getController() {
         return controller;
+    }
+
+    public String getName() {
+        return name;
     }
 
     // End of getters

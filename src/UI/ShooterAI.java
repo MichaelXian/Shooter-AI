@@ -8,15 +8,15 @@ public class ShooterAI extends JFrame{
     public static final int HEIGHT = 750;
     private static final int DELAY = 10;
     private Timer timer;
-    private GUI gui;
+    private GameDrawer gameDrawer;
     public ShooterAI() {
 
         initUI();
     }
 
     private void initUI() {
-        gui = new GUI();
-        add(new GUI());
+        gameDrawer = new GameDrawer();
+        add(new GameDrawer());
         setSize(WIDTH, HEIGHT);
         setTitle("Shooter AI");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

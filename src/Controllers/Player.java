@@ -9,11 +9,13 @@ import java.util.Map;
 public class Player implements Controller{
     Map<Integer, Boolean> keyStrokes;
     List<Integer> valid;
+    String name;
 
     /**
      * Initializes keystrokes map and valid keys
      */
     public Player() {
+        this.name = "Player";
         keyStrokes = new HashMap<>();
         keyStrokes.put(KeyEvent.VK_W, false);
         keyStrokes.put(KeyEvent.VK_A, false);
@@ -68,4 +70,11 @@ public class Player implements Controller{
         ret.add(keyStrokes.get(KeyEvent.VK_SPACE));
         return ret;
     }
+
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
 }

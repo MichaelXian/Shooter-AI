@@ -9,17 +9,15 @@ public class Bullet implements Entity {
     public static final double SPEED = 5;
     private Vector position;
     private Vector velocity;
-    private Ship owner;
 
     /**
      * Constructs a new Bullet with given position and velocity
      * @param position
      * @param heading
      */
-    public Bullet(Vector position, Vector heading, Double speed, Ship owner) {
+    public Bullet(Vector position, Vector heading, Double speed) {
         this.position = position;
         this.velocity = heading.scale(SPEED + speed);
-        this.owner = owner;
     }
 
 
@@ -42,10 +40,6 @@ public class Bullet implements Entity {
     @Override
     public Vector getVelocity() {
         return velocity;
-    }
-
-    public Ship getOwner() {
-        return owner;
     }
 
     public double getX() {

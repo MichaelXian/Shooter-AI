@@ -19,13 +19,13 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 import java.awt.geom.Rectangle2D;
 
-public class GUI extends JPanel implements ActionListener {
+public class GameDrawer extends JPanel implements ActionListener {
     private static final int DELAY = 10;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private Game game;
     private Timer timer;
-    public GUI() {
+    public GameDrawer() {
         game = new Game(true, new AI(), new AI(), this, new Evolver());
         setFocusable(true);
         addKeyListener(new TAdapter());
@@ -48,8 +48,25 @@ public class GUI extends JPanel implements ActionListener {
         drawShips(graphics);
         drawBullets(graphics);
         drawDivider(graphics);
+        drawWinner(graphics);
     }
 
+
+    /**
+     * Draws which ship won
+     * @param graphics
+     */
+    private void drawWinner(Graphics2D graphics) {
+        String string = game.getWinner();
+        if (string != null) {
+            graphics.drawString(string, WIDTH/6, HEIGHT/2);
+        }
+    }
+
+    /**
+     * Draws divider between game and neural net visualization
+     * @param graphics
+     */
     private void drawDivider(Graphics2D graphics) {
         Rectangle2D divider = new Rectangle2D.Double(WIDTH, 0, 1, HEIGHT);
         graphics.fill(divider);
@@ -92,7 +109,10 @@ public class GUI extends JPanel implements ActionListener {
                 RenderingHints.VALUE_RENDER_QUALITY);
 
         graphics.setRenderingHints(rh);
-        //set color
+        // Set the font
+        Font font = new Font("SansSerif", Font.PLAIN, 100);
+        graphics.setFont(font);
+        // Set color
         Paint paint = new Color(0,0,0);
         graphics.setPaint(paint);
     }

@@ -3,7 +3,7 @@ package Game;
 import Controllers.AI;
 import Controllers.Player;
 import Evolution.Evolver;
-import UI.GUI;
+import UI.GameDrawer;
 import UI.ShooterAI;
 import Utility.Geometry;
 import Utility.Vector;
@@ -17,15 +17,16 @@ public class Game extends Observable {
     public final int HEIGHT = ShooterAI.HEIGHT;
     public final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
     public final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
-    private GUI gui;
+    private GameDrawer gameDrawer;
     private List<Bullet> bullets;
-    private Bullet bullet1;
-    private Bullet bullet2;
+    private List<Bullet> bullets1;
+    private List<Bullet> bullets2;
     private List<Ship> ships;
     private Ship ship1;
     private Ship ship2;
     private Evolver evolver;
     private Map<String, Double> data;
+    private String winner;
 
 
     /**
@@ -33,21 +34,48 @@ public class Game extends Observable {
      * @param player whether the first ship is player controlled or not
      * @param ai1 the ai controlling the first ship
      * @param ai2 the ai controlling the second ship
-     * @param gui the gui
+     * @param gameDrawer the gameDrawer
      */
-    public Game(Boolean player, AI ai1, AI ai2, GUI gui, Evolver evolver) {
+    public Game(Boolean player, AI ai1, AI ai2, GameDrawer gameDrawer, Evolver evolver) {
+        this.winner = "No Winner";
         this.evolver = evolver;
-        this.gui = gui;
+        this.gameDrawer = gameDrawer;
         bullets = new ArrayList<>();
+        bullets1 = new ArrayList<>();
+        bullets2 = new ArrayList<>();
         ships = new ArrayList<>();
         spawnShips(player, ai1, ai2);
         ship1 = ships.get(0);
         ship2 = ships.get(1);
-        // for testing
-        bullets.add(new Bullet(new Vector(-10, -10), new Vector(0,0), 0d, ship1));
+        // so that nearest bullet is never null
+        initialBullets();
+        //bullets.add(new Bullet(new Vector(-10, -10), new Vector(0,0), 0d, ship1));
         data = new HashMap<>();
         updateData();
         addObservers();
+    }
+
+
+    /**
+     * Makes the surviving ship the winner
+     */
+    private void killShip(Ship ship) {
+        if (ship == ship1) {
+            this.winner = ship1.getName() + " won";
+        } else {
+            this.winner = ship2.getName() + " won";
+        }
+    }
+
+
+    /**
+     * Creates first bullets so that there is always a nearest bullet
+     */
+    private void initialBullets() {
+        Vector pos = new Vector(-10,-10);
+        Vector vel = new Vector(0,0);
+        shoot(pos, vel, 0d, ship1);
+        shoot(pos, vel, 0d, ship2);
     }
 
     /**
@@ -62,9 +90,10 @@ public class Game extends Observable {
      * Updates the data
      */
     private void updateData() {
-        List<Entity> bulletsList = (List<Entity>)(List<?>) bullets;
-        bullet1 = (Bullet) Geometry.closestTo(bulletsList, ship1.getPosition());
-        bullet2 = (Bullet) Geometry.closestTo(bulletsList, ship2.getPosition());
+        List<Entity> bulletsList1 = (List<Entity>)(List<?>) bullets1;
+        List<Entity> bulletsList2 = (List<Entity>)(List<?>) bullets2;
+        Bullet bullet1 = (Bullet) Geometry.closestTo(bulletsList2, ship1.getPosition());
+        Bullet bullet2 = (Bullet) Geometry.closestTo(bulletsList1, ship2.getPosition());
         data.put("ship1X", ship1.getPosition().x());
         data.put("ship1Y", ship1.getPosition().y());
         data.put("ship1VelX", ship1.getPosition().x());
@@ -105,7 +134,13 @@ public class Game extends Observable {
      * @param owner the ship that fired it
      */
     public void shoot(Vector position, Vector heading, Double speed, Ship owner) {
-        bullets.add(new Bullet(position, heading, speed, owner));
+        Bullet bullet = new Bullet(position, heading, speed);
+        bullets.add(bullet);
+        if (owner == ship1) {
+            bullets1.add(bullet);
+        } else {
+            bullets2.add(bullet);
+        }
     }
 
     /**
@@ -139,6 +174,9 @@ public class Game extends Observable {
         return bullets;
     }
 
+    public String getWinner() {
+        return winner;
+    }
 
     // End of Getters
 

@@ -5,7 +5,11 @@ import java.util.ArrayList;
 import java.util.Map;
 
 public class AI implements Controller {
+    String name;
 
+    public AI() {
+        this.name = "abcdef";
+    }
 
 
 
@@ -30,5 +34,10 @@ public class AI implements Controller {
     @Override
     public void keyReleased(KeyEvent e) {
 
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 }
