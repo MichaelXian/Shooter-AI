@@ -63,14 +63,7 @@ public class GameDrawer extends JPanel implements ActionListener {
         }
     }
 
-    /**
-     * Draws divider between game and neural net visualization
-     * @param graphics
-     */
-    private void drawDivider(Graphics2D graphics) {
-        Rectangle2D divider = new Rectangle2D.Double(WIDTH, 0, 1, HEIGHT);
-        graphics.fill(divider);
-    }
+
 
     /**
      * Called whenever timer finishes
@@ -91,7 +84,6 @@ public class GameDrawer extends JPanel implements ActionListener {
 
         @Override
         public void keyPressed(KeyEvent e) {
-            System.out.println("pressed");
             game.keyPressed(e);
         }
     }
@@ -112,27 +104,46 @@ public class GameDrawer extends JPanel implements ActionListener {
         // Set the font
         Font font = new Font("SansSerif", Font.PLAIN, 100);
         graphics.setFont(font);
-        // Set color
+    }
+
+
+
+    /**
+     * Draws divider between game and neural net visualization
+     * @param graphics
+     */
+    private void drawDivider(Graphics2D graphics) {
         Paint paint = new Color(0,0,0);
         graphics.setPaint(paint);
+        Rectangle2D divider = new Rectangle2D.Double(WIDTH, 0, 1, HEIGHT);
+        graphics.fill(divider);
     }
 
     /**
      * Draws all the ships in the game
+     * @param graphics
      */
-    private void drawShips(Graphics2D g) {
-        for (Ship s : game.getShips()) {
-            drawShip(g, s);
-        }
+    private void drawShips(Graphics2D graphics) {
+        graphics.setPaint(Color.RED);
+        Ship ship1 = game.getShips().get(0);
+        drawShip(graphics, ship1);
+        graphics.setPaint(Color.BLUE);
+        Ship ship2 = game.getShips().get(1);
+        drawShip(graphics, ship2);
     }
 
     /**
      * Draws all bullets in the game
-     * @param g
+     * @param graphics
      */
-    private  void drawBullets(Graphics2D g) {
-        for (Bullet b : game.getBullets()) {
-            drawBullet(g, b);
+    private  void drawBullets(Graphics2D graphics) {
+        graphics.setPaint(Color.RED);
+        for (Bullet b : game.getBullets1()) {
+            drawBullet(graphics, b);
+        }
+        graphics.setPaint(Color.BLUE);
+        for (Bullet b : game.getBullets2()) {
+            drawBullet(graphics, b);
         }
     }
 

@@ -101,9 +101,9 @@ public class Game extends Observable {
      */
     private void killShip(Ship ship) {
         if (ship == ship1) {
-            winner = FIRST_WIN;
-        } else {
             winner = SECOND_WIN;
+        } else {
+            winner = FIRST_WIN;
         }
     }
 
@@ -120,6 +120,12 @@ public class Game extends Observable {
      * Updates the data
      */
     private void updateData() {
+        Double winnerDouble;
+        if (winner != null) {
+            winnerDouble = 1d;
+        } else {
+            winnerDouble = 0d;
+        }
         List<Entity> bulletsList1 = (List<Entity>)(List<?>) bullets1;
         List<Entity> bulletsList2 = (List<Entity>)(List<?>) bullets2;
         Bullet bullet1 = (Bullet) Geometry.closestTo(bulletsList2, ship1.getPosition());
@@ -140,6 +146,7 @@ public class Game extends Observable {
         data.put("bul2Y", bullet2.getY());
         data.put("bul2VelX", bullet2.getVelX());
         data.put("bul2VelY", bullet2.getVelY());
+        data.put("gameOver", winnerDouble);
     }
 
 
@@ -166,13 +173,13 @@ public class Game extends Observable {
      */
     public void update() {
         ticks ++;
+        updateData();
+        setChanged();
+        notifyObservers(data); //updates ships, if game is not over
         if (ticks >= MAX_TICKS) {
             drawGame();
-        } else {
+        } else if (winner == null) {
             checkCollisions();
-            updateData();
-            setChanged();
-            notifyObservers(data); //updates ships
             for (Bullet b : bullets) {
                 b.update();
             }
@@ -184,7 +191,7 @@ public class Game extends Observable {
      * Checks for collisions of ships and enemy bullets
      */
     private void checkCollisions() {
-        // test for ship1
+        // check for ship1
         Shape shipShape = Triangle.toPath(ship1.getPosition(), Ship.WIDTH, Ship.HEIGHT, ship1.getRotation());
         for (Bullet bullet: bullets2) {
             Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
@@ -192,7 +199,7 @@ public class Game extends Observable {
                 killShip(ship1);
             }
         }
-        // test for ship2
+        // check for ship2
         shipShape = Triangle.toPath(ship2.getPosition(), Ship.WIDTH, Ship.HEIGHT, ship2.getRotation());
         for (Bullet bullet: bullets1) {
             Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
@@ -218,8 +225,12 @@ public class Game extends Observable {
         return ships;
     }
 
-    public List<Bullet> getBullets() {
-        return bullets;
+    public List<Bullet> getBullets1() {
+        return bullets1;
+    }
+
+    public List<Bullet> getBullets2() {
+        return bullets2;
     }
 
     public String getWinner() {

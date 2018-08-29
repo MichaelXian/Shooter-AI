@@ -88,24 +88,25 @@ public class Ship implements Observer, Entity {
     @Override
     public void update(Observable observable, Object object) {
         Map<String, Double> data = (Map<String, Double>) object;
-        ArrayList<Boolean>result = controller.update(data);
-        if (result.get(0)) {
-            accelerate();
+        if (data.get("gameOver") == 0) {
+            ArrayList<Boolean> result = controller.update(data);
+            if (result.get(0)) {
+                accelerate();
+            }
+            if (result.get(1)) {
+                decelerate();
+            }
+            if (result.get(2)) {
+                turnLeft();
+            }
+            if (result.get(3)) {
+                turnRight();
+            }
+            if (result.get(4)) {
+                shoot();
+            }
+            move();
         }
-        if (result.get(1)) {
-            decelerate();
-        }
-        if (result.get(2)) {
-            turnLeft();
-        }
-        if (result.get(3)) {
-            turnRight();
-        }
-        if (result.get(4)) {
-            shoot();
-
-        }
-        move();
     }
 
     /**
