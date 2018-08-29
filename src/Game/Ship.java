@@ -87,8 +87,8 @@ public class Ship implements Observer, Entity {
      */
     @Override
     public void update(Observable observable, Object object) {
-        Map<String, Double> data = (Map<String, Double>) object;
-        if (data.get("gameOver") == 0) {
+        Map<String, Double> data = ((Game) observable).getData();
+        if (((Game) observable).getWinner() == null) {
             ArrayList<Boolean> result = controller.update(data);
             if (result.get(0)) {
                 accelerate();
@@ -115,7 +115,7 @@ public class Ship implements Observer, Entity {
     private void shoot() {
         if (System.currentTimeMillis() - lastFired > DELAY) {
             lastFired = System.currentTimeMillis();
-            this.game.shoot(position, heading, this.velocity.length(), this);
+            game.shoot(position, heading, this.velocity.length(), this);
         }
     }
 

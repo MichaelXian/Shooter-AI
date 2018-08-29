@@ -2,8 +2,6 @@ package Game;
 
 import Controllers.AI;
 import Controllers.Player;
-import Evolution.Evolver;
-import UI.GameDrawer;
 import UI.ShooterAI;
 import Utility.*;
 import Utility.Vector;
@@ -24,17 +22,17 @@ public class Game extends Observable {
     private final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
     private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
     private final int MAX_TICKS = 100*60;
-    private GameDrawer gameDrawer;
+    private ShooterAI shooterAI;
     private List<Bullet> bullets1;
     private List<Bullet> bullets2;
     private List<Ship> ships;
     private Ship ship1;
     private Ship ship2;
-    private Evolver evolver;
     private Map<String, Double> data;
     private String winner;
     private Integer ticks;
-    private Double gameEnd;
+    private Double endTime;
+    private boolean gameEnd;
     private boolean firstEnd;
 
 
@@ -43,14 +41,13 @@ public class Game extends Observable {
      * @param player whether the first ship is player controlled or not
      * @param ai1 the ai controlling the first ship
      * @param ai2 the ai controlling the second ship
-     * @param gameDrawer the gameDrawer
+     * @param shooterAI the shooterAI
      */
-    public Game(Boolean player, AI ai1, AI ai2, GameDrawer gameDrawer, Evolver evolver) {
+    public Game(Boolean player, AI ai1, AI ai2, ShooterAI shooterAI) {
         firstEnd = false;
-        gameEnd = new Double(MAX_TICKS);
+        endTime = new Double(MAX_TICKS);
         this.ticks = 0;
-        this.evolver = evolver;
-        this.gameDrawer = gameDrawer;
+        this.shooterAI = shooterAI;
         bullets1 = new ArrayList<>();
         bullets2 = new ArrayList<>();
         ships = new ArrayList<>();
@@ -149,8 +146,6 @@ public class Game extends Observable {
         data.put("bul2Y", bullet2.getY());
         data.put("bul2VelX", bullet2.getVelX());
         data.put("bul2VelY", bullet2.getVelY());
-        data.put("gameOver", winnerDouble);
-        data.put("gameEnd", gameEnd);
     }
 
 
@@ -176,8 +171,8 @@ public class Game extends Observable {
      */
     public void update() {
         gameEndTimer();
-        if (new Double(ticks) - gameEnd > DELAY) {
-            gameEnd = -1d;
+        if (new Double(ticks) - endTime > DELAY) {
+            gameEnd = true;
         }
         ticks ++;
         updateData();
@@ -198,12 +193,12 @@ public class Game extends Observable {
     }
 
     /**
-     * Counts down from gameOver to gameEnd, so the winner text displays
+     * Counts down from gameOver to endTime, so the winner text displays
      */
     private void gameEndTimer() {
         if (firstEnd) {
             firstEnd = false;
-            gameEnd = new Double(ticks);
+            endTime = new Double(ticks);
         }
     }
 
@@ -253,6 +248,14 @@ public class Game extends Observable {
 
 
     // Getters
+
+    public Map<String, Double> getData() {
+        return data;
+    }
+
+    public boolean getGameEnd() {
+        return gameEnd;
+    }
 
     public List<Ship> getShips() {
         return ships;

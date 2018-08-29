@@ -1,8 +1,6 @@
 
 package UI;
 
-import Controllers.AI;
-import Evolution.Evolver;
 import Game.Bullet;
 import Game.Game;
 import Game.Ship;
@@ -24,10 +22,13 @@ public class GameDrawer extends JPanel implements ActionListener {
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private Boolean first = true;
+
+
+
     private Game game;
     private Timer timer;
-    public GameDrawer() {
-        game = new Game(true, new AI(), new AI(), this, new Evolver());
+    public GameDrawer(Game game) {
+        this.game = game;
         setFocusable(true);
         addKeyListener(new TAdapter());
         setTimer();
@@ -178,4 +179,10 @@ public class GameDrawer extends JPanel implements ActionListener {
     }
 
 
+    // End of drawers
+
+
+    public void setGame(Game game) {
+        this.game = game;
+    }
 }
