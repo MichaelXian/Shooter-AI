@@ -29,20 +29,6 @@ public class LayerVisual {
         initializeNeurons();
     }
 
-
-    /**
-     * Creates and adds neuronVisuals to list of neuronVisuals
-     */
-    private void initializeNeurons() {
-        List<Neuron> neurons = layer.getNeurons();
-        int count = layer.getNeuronsCount();
-        for (int i = 0; i < count; i ++) {
-            Neuron neuron = layer.getNeuronAt(i);
-            Double neuronY = y + i * NeuralNetworkVisual.HEIGHT/count;
-            neuronVisuals.add( new NeuronVisual(neuron, x, neuronY, isTop));
-        }
-    }
-
     /**
      * Returns graphics of all neurons and outgoing connections in this layer
      * @return graphics of all neurons and outgoing connections in this layer
@@ -69,4 +55,29 @@ public class LayerVisual {
         }
         return null;
     }
+
+    /**
+     * Returns neuronVisuals List
+     * @return graphics of all neurons and outgoing connections in this layer
+     */
+    public List<NeuronVisual> getNeuronVisuals() {
+        return neuronVisuals;
+    }
+
+    /**
+     * Creates and adds neuronVisuals to list of neuronVisuals
+     */
+    private void initializeNeurons() {
+        List<Neuron> neurons = layer.getNeurons();
+        int count = layer.getNeuronsCount();
+        for (int i = 0; i < count; i ++) {
+            Neuron neuron = layer.getNeuronAt(i);
+            Double neuronY = y + (i + 1) * NeuralNetworkVisual.HEIGHT/(count + 1);
+            neuronVisuals.add( new NeuronVisual(neuron, x, neuronY, isTop));
+        }
+    }
+
+
+
+
 }

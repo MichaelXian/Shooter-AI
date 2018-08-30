@@ -23,7 +23,7 @@ public class NeuronVisual {
     private Double y;
     private boolean isTop;
 
-    public NeuronVisual(Neuron neuron, Double x, Double y, boolean isTop) {
+    NeuronVisual(Neuron neuron, Double x, Double y, boolean isTop) {
         this.neuron = neuron;
         this.isTop = isTop;
         this.x = x;

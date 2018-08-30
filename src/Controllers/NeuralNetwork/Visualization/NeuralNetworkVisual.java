@@ -2,6 +2,7 @@ package Controllers.NeuralNetwork.Visualization;
 
 import Game.Game;
 import UI.ShooterAI;
+import Utility.Vector;
 import org.neuroph.core.Connection;
 import org.neuroph.core.Layer;
 import org.neuroph.core.NeuralNetwork;
@@ -51,10 +52,37 @@ public class NeuralNetworkVisual {
     }
 
     /**
+     * Gets positions of input neuronVisuals
+     * @return
+     */
+    public List<Vector> getInputPositions() {
+        ArrayList<Vector> ret = new ArrayList<>();
+        LayerVisual inputLayer = layerVisuals.get(0);
+        for (NeuronVisual neuron: inputLayer.getNeuronVisuals()) {
+            ret.add(neuron.getPosition());
+        }
+        return ret;
+    }
+
+    /**
+     * Gets positions of output neuronVisuals
+     * @return
+     */
+    public List<Vector> getOutputPositions() {
+        ArrayList<Vector> ret = new ArrayList<>();
+        LayerVisual inputLayer = layerVisuals.get(layerCount - 1);
+        for (NeuronVisual neuron: inputLayer.getNeuronVisuals()) {
+            ret.add(neuron.getPosition());
+        }
+        return ret;
+    }
+
+    /**
      * Initializes position, depending on whether this is the top or bottom network
      */
     private void initializePosition() {
         this.x = X;
+        x += BORDER_DISTANCE;
         this.y = BORDER_DISTANCE;
         if (!isTop) {
             y += DISTANCE_BETWEEN_NETWORKS;

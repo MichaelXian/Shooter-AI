@@ -8,6 +8,7 @@ import Game.Game;
 import Game.Ship;
 import Utility.Circle;
 import Utility.Triangle;
+import Utility.Vector;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,12 +19,16 @@ import java.awt.event.KeyEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Path2D;
 import java.awt.geom.Rectangle2D;
+import java.util.ArrayList;
 import java.util.List;
 
 public class GameDrawer extends JPanel implements ActionListener {
     private static final int DELAY = 1000/30;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
+    private final int LABEL_FONT = 10;
+    private final int GAME_OVER_FONT = 100;
+    private final Double LABEL_DISTANCE = 80/3d;
     private Boolean first = true;
 
 
@@ -102,9 +107,6 @@ public class GameDrawer extends JPanel implements ActionListener {
                 RenderingHints.VALUE_RENDER_QUALITY);
 
         graphics.setRenderingHints(rh);
-        // Set the font
-        Font font = new Font("SansSerif", Font.PLAIN, 100);
-        graphics.setFont(font);
     }
 
 
@@ -122,7 +124,56 @@ public class GameDrawer extends JPanel implements ActionListener {
                 for (Graphic graphic: graphicsList) {
                     drawGraphic(graphics, graphic);
                 }
+                Font font = new Font("SansSerif", Font.PLAIN, LABEL_FONT);
+                graphics.setFont(font);
+                graphics.setPaint(Color.BLACK);
+                labelInputs(graphics, neuralNetworkVisual);
+                labelOutputs(graphics, neuralNetworkVisual);
             }
+        }
+    }
+
+    /**
+     * Labels inputs of network
+     * @param graphics
+     * @param neuralNetworkVisual the network
+     */
+    private void labelInputs(Graphics2D graphics, NeuralNetworkVisual neuralNetworkVisual) {
+        List<Vector> inputPositions = neuralNetworkVisual.getInputPositions();
+        List<String> labels = new ArrayList<>();
+        labels.add("x position");
+        labels.add("y position");
+        labels.add("angle");
+        labels.add("x distance");
+        labels.add("y distance");
+        labels.add("x bullet");
+        labels.add("y bullet");
+        for (int i = 0; i < inputPositions.size(); i++) {
+            Vector position = inputPositions.get(i);
+            graphics.drawString(labels.get(i),
+                    new Float(position.x() - 3 * LABEL_DISTANCE),
+                    new Float(position.y() + LABEL_FONT/2));
+        }
+    }
+
+    /**
+     * Labels outputs of network
+     * @param graphics
+     * @param neuralNetworkVisual the network
+     */
+    private void labelOutputs(Graphics2D graphics, NeuralNetworkVisual neuralNetworkVisual) {
+        List<Vector> outputPositions = neuralNetworkVisual.getOutputPositions();
+        List<String> labels = new ArrayList<>();
+        labels.add("forward");
+        labels.add("back");
+        labels.add("left");
+        labels.add("right");
+        labels.add("shoot");
+        for (int i = 0; i < outputPositions.size(); i++) {
+            Vector position = outputPositions.get(i);
+            graphics.drawString(labels.get(i),
+                    new Float(position.x() + LABEL_DISTANCE),
+                    new Float(position.y() + LABEL_FONT/2));
         }
     }
 
@@ -144,8 +195,9 @@ public class GameDrawer extends JPanel implements ActionListener {
      */
     private void drawWinner(Graphics2D graphics) {
         String string = game.getWinner();
-
         if (string != null) {
+            Font font = new Font("SansSerif", Font.PLAIN, GAME_OVER_FONT);
+            graphics.setFont(font);
             graphics.drawString(string, WIDTH/6, HEIGHT/2);
         }
     }

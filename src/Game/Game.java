@@ -34,6 +34,7 @@ public class Game extends Observable {
     private Double endTime;
     private boolean gameEnd;
     private boolean firstEnd;
+    private boolean killed;
 
 
     /**
@@ -44,6 +45,7 @@ public class Game extends Observable {
      * @param shooterAI the shooterAI
      */
     public Game(Boolean player, AI ai1, AI ai2, ShooterAI shooterAI) {
+        killed = false;
         firstEnd = false;
         endTime = new Double(MAX_TICKS);
         this.ticks = 0;
@@ -226,6 +228,7 @@ public class Game extends Observable {
         for (Bullet bullet: bullets2) {
             Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
             if (Collision.collided(shipShape, bulletShape)) {
+                killed = true;
                 killShip(ship1);
             }
         }
@@ -234,6 +237,7 @@ public class Game extends Observable {
         for (Bullet bullet: bullets1) {
             Shape bulletShape = Circle.toCircle(bullet.getPosition(), Bullet.RADIUS);
             if (Collision.collided(shipShape, bulletShape)) {
+                killed = true;
                 killShip(ship2);
             }
         }
@@ -275,6 +279,9 @@ public class Game extends Observable {
         return winner;
     }
 
+    public boolean isKilled() {
+        return killed;
+    }
     // End of Getters
 
 
