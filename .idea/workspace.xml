@@ -33,10 +33,12 @@
       <file leaf-file-name="GameDrawer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="196" column="41" lean-forward="false" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
+            <state relative-caret-position="0">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2010#2011#0" expanded="true" />
+                <element signature="e#2038#2039#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,14 +114,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grader.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Grader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Grader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="12">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchMaker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1270#1271#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Evolver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +169,6 @@
       <find>sys</find>
       <find>syste</find>
       <find>update</find>
-      <find>winner</find>
       <find>gameDrawer</find>
       <find>bullets</find>
       <find>Font</find>
@@ -150,6 +177,7 @@
       <find>random(</find>
       <find>drawer</find>
       <find>colli</find>
+      <find>winner</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/Test/BulletTest.java" />
         <option value="$PROJECT_DIR$/src/Files/TextNeuralNetConversion.java" />
         <option value="$PROJECT_DIR$/src/Game/Bullet.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Mutator.java" />
         <option value="$PROJECT_DIR$/src/Evolution/NeuralNet.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/Network.java" />
@@ -199,14 +226,16 @@
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuralNetworkVisual.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/LayerVisual.java" />
-        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
         <option value="$PROJECT_DIR$/src/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Grader.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
+        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/MatchMaker.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
+    <option name="x" value="18" />
     <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
@@ -569,7 +598,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="23" width="1366" height="741" extended-state="0" />
+    <frame x="18" y="23" width="1366" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -608,7 +637,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UI/GameDrawer.java</url>
-          <line>92</line>
+          <line>100</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
@@ -708,14 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="1457" column="0" lean-forward="false" selection-start-line="1457" selection-start-column="0" selection-end-line="1457" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,14 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1117,16 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="196" column="41" lean-forward="false" selection-start-line="196" selection-start-column="41" selection-end-line="196" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -1159,10 +1162,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/Grader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state relative-caret-position="12">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2038#2039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
           </folding>
         </state>
       </provider>

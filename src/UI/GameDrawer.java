@@ -27,8 +27,10 @@ public class GameDrawer extends JPanel implements ActionListener {
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private final int LABEL_FONT = 10;
+    private final int GENERATION_FONT = 30;
     private final int GAME_OVER_FONT = 100;
     private final Double LABEL_DISTANCE = 80/3d;
+    private int generation = 1;
     private Boolean first = true;
 
 
@@ -60,6 +62,7 @@ public class GameDrawer extends JPanel implements ActionListener {
         drawBullets(graphics);
         drawDivider(graphics);
         drawWinner(graphics);
+        drawGeneration(graphics);
         graphics.setPaint(Color.BLACK);
         // Load the font
         if (first) {
@@ -68,7 +71,12 @@ public class GameDrawer extends JPanel implements ActionListener {
         }
     }
 
-
+    /**
+     * Adds 1 to the generation
+     */
+    public void incrementGeneration() {
+        generation++;
+    }
 
 
     /**
@@ -200,6 +208,18 @@ public class GameDrawer extends JPanel implements ActionListener {
             graphics.setFont(font);
             graphics.drawString(string, WIDTH/6, HEIGHT/2);
         }
+    }
+
+    /**
+     * Draws which generation it is
+     * @param graphics
+     */
+    private void drawGeneration(Graphics2D graphics) {
+        Font font = new Font("SansSerif", Font.PLAIN, GENERATION_FONT);
+        graphics.setFont(font);
+        graphics.drawString("GEN " + generation,
+                new Float(WIDTH/2 - GENERATION_FONT * (2 + Math.log(generation + 0.01))/2),
+                HEIGHT/10);
     }
 
     /**

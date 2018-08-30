@@ -8,7 +8,7 @@ import java.util.*;
 public class Grader {
     private Map<NeuralNetwork, Integer> grades;
     private List<NeuralNetwork> networks;
-    
+
     Grader(List<NeuralNetwork> networks) {
         grades = new HashMap<>();
         this.networks = networks;
