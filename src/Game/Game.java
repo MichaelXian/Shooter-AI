@@ -69,9 +69,9 @@ public class Game extends Observable {
      */
     private void initialBullets() {
         Vector pos = new Vector(-10,-10);
-        Vector vel = new Vector(0,0);
-        shoot(pos, vel, 0d, ship1);
-        shoot(pos, vel, 0d, ship2);
+        Vector vel = new Vector(0d,0d);
+        shoot(pos, vel, -0.1d, ship1);
+        shoot(pos, vel, -0.1d, ship2);
     }
 
     /**
@@ -135,7 +135,7 @@ public class Game extends Observable {
         //data.put("ship1VelY", ship1.getPosition().y());
         data.put("ship2X", ship2.getPosition().x());
         data.put("ship2Y", ship2.getPosition().y());
-        data.put("ship2Rot", ship1.getRotation());
+        data.put("ship2Rot", ship2.getRotation());
         //data.put("ship2VelX", ship2.getPosition().x());
         //data.put("ship2VelY", ship2.getPosition().y());
         data.put("bul1X", bullet1.getX());
@@ -171,8 +171,7 @@ public class Game extends Observable {
      */
     public void update() {
         gameEndTimer();
-        System.out.println(MAX_TICKS - ticks);
-        //System.out.println(new Double(ticks) - endTime);
+        //System.out.println(MAX_TICKS - ticks);
         if (new Double(ticks) - endTime > DELAY) {
             gameEnd = true;
         }

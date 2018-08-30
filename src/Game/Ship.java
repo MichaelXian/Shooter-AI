@@ -14,7 +14,8 @@ public class Ship implements Observer, Entity {
     private static final double ACCELERATION = 0.3;
     private static final double TURNSPEED = 0.45;
     private static final double SPEED = 15;
-    private static final int DELAY = 250;
+    private static final int DELAY = 5;
+    private static final double FULL_ROTATION = 2*Math.PI;
     private Vector position;
     private Vector velocity;
     private Vector heading;
@@ -22,7 +23,7 @@ public class Ship implements Observer, Entity {
     private double health;
     private Controller controller;
     private Game game;
-    private double lastFired;
+    private int ticksSinceLastFired;
     private String name;
 
     private boolean first;
@@ -44,7 +45,7 @@ public class Ship implements Observer, Entity {
         heading = new Vector(0,1);
         health = MAX_HEALTH;
         velocity = new Vector(0,0);
-        lastFired = 0;
+        ticksSinceLastFired = 0;
     }
 
 
@@ -53,6 +54,7 @@ public class Ship implements Observer, Entity {
      */
     public void turnRight() {
         rotation -= TURNSPEED;
+        rotation = (rotation + FULL_ROTATION) % FULL_ROTATION;
         heading = heading.rotate(-TURNSPEED);
     }
 
@@ -61,6 +63,7 @@ public class Ship implements Observer, Entity {
      */
     public void turnLeft() {
         rotation += TURNSPEED;
+        rotation = (rotation + FULL_ROTATION) % FULL_ROTATION;
         heading = heading.rotate(TURNSPEED);
     }
 
@@ -113,6 +116,7 @@ public class Ship implements Observer, Entity {
      */
     @Override
     public void update(Observable observable, Object object) {
+        ticksSinceLastFired ++;
         Map<String, Double> data = ((Game) observable).getData();
         if (((Game) observable).getWinner() == null) {
             List<Double> neuronInput = DataToDouble.toDouble(data, this);
@@ -142,8 +146,8 @@ public class Ship implements Observer, Entity {
      * Fires a bullet, if enough time has passed
      */
     private void shoot() {
-        if (System.currentTimeMillis() - lastFired > DELAY) {
-            lastFired = System.currentTimeMillis();
+        if (ticksSinceLastFired > DELAY) {
+            ticksSinceLastFired = 0;
             game.shoot(position, heading, this.velocity.length(), this);
         }
     }

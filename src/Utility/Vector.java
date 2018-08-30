@@ -22,7 +22,7 @@ public class Vector {
     }
 
     /**
-     * Add a vector to this one
+     * Add a vector to this one, and return the resultant
      * @param vector the vector to add
      * @return a new vector which is this vector plus the given vector
      */
@@ -31,7 +31,7 @@ public class Vector {
     }
 
     /**
-     * Subtract a vector from this one
+     * Subtract a vector from this one, and return the resultant
      * @param vector vector to subract
      * @return a new vector which is this vector minus the given vector
      */
@@ -57,18 +57,22 @@ public class Vector {
     }
 
     /**
-     * Sets the length to 1
+     * Returns a normalized vector. If the length was 0, returns original vector
      *
      * @return a new normalized vector
      */
     public Vector normalize() {
-        double newX = x / length();
-        double newY = y / length();
+        double newX = 0d;
+        double newY = 0d;
+        if (length() != 0) {
+            newX = x / length();
+            newY = y / length();
+        }
         return new Vector(newX, newY);
     }
 
     /**
-     * Set the length of the vector
+     * Returns a new vector with given length
      * @param factor the length to get the vector to
      * @return a new vector with set length
      */
@@ -80,7 +84,7 @@ public class Vector {
     }
 
     /**
-     * Multiply the length of the vector
+     * Return a new vector scaled by the factor
      * @param factor the factor to multiply the length by
      * @return a new vector with it's length multiplied by the factor
      */
@@ -91,7 +95,7 @@ public class Vector {
     }
 
     /**
-     * Rotate the vector
+     * Returns a rotated vector
      * @param rotation amount to rotate by
      * @return a new vector that's been rotated
      */
