@@ -36,9 +36,11 @@ public class Mutator {
      */
     private static void mutateLayer(Layer layer, NeuralNetwork network, int i) {
         List<Neuron> neurons = layer.getNeurons();
-        if (removeNeuronChance(neurons.size())) {
-            neurons.remove(randomList(neurons));
-        } else if (addNeuronChance(neurons.size())) {
+        if (removeNeuronChance(neurons.size()) && i != 0) { // Don't delete input neurons
+            if (neurons.size() > 0) {
+                layer.removeNeuron(randomList(neurons));
+            }
+        } else if (addNeuronChance(neurons.size()) && i != 0) { // Don't add input neurons
             neurons.add(NeuronFactory.randomNeuron());
         }
         for (Neuron neuron: neurons) {
@@ -55,7 +57,9 @@ public class Mutator {
     private static void mutateNeuron(Neuron neuron, NeuralNetwork network, int i) {
         List<Connection> connections = neuron.getOutConnections();
         if (removeConnectionChance(connections.size())) {
-            connections.remove(randomList(connections));
+            if (connections.size() > 0) {
+                neuron.removeOutputConnectionTo(randomList(connections).getToNeuron());
+            }
         } else {
             addConnection(neuron, network, i);
         }

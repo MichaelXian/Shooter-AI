@@ -23,9 +23,11 @@ public class ConnectionVisual {
     public ConnectionVisual(Connection connection, Vector position1, Vector position2, boolean isTop) {
         this.connection = connection;
         this.isTop = isTop;
+        Double width = connection.getWeight().value;
+        width = Math.min(Math.max(width, -20), 20); // constrain width between -20 and 20
         this.shape = Line.lineToRect(position1.x(), position1.y(),
                 position2.x(), position2.y(),
-                connection.getWeight().value * 10);
+                width);
         update();
     }
 

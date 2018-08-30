@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 public class DataToDouble {
-    private final static double X = 1/Game.WIDTH;
-    private final static double Y = 1/Game.HEIGHT;
+    private final static double X = 1d/Game.WIDTH;
+    private final static double Y = 1d/Game.HEIGHT;
     private final static double VEL = 1/300;
     private final static double ANGLE = 1/(2 * Math.PI);
 

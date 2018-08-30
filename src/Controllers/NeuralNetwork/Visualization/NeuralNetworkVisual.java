@@ -130,15 +130,19 @@ public class NeuralNetworkVisual {
      */
     private void connectNeuron(Neuron neuron, List<Connection> outputs) {
         NeuronVisual fromNeuron = getNeuronVisual(neuron);
-        for (Connection connection: outputs) {
-            NeuronVisual toNeuron = getNeuronVisual(connection.getToNeuron());
-            fromNeuron.addConnection(connection, toNeuron);
+        if (fromNeuron != null) {
+            for (Connection connection : outputs) {
+                NeuronVisual toNeuron = getNeuronVisual(connection.getToNeuron());
+                if (toNeuron != null) {
+                    fromNeuron.addConnection(connection, toNeuron);
+                }
+            }
         }
     }
 
 
     /**
-     * Gets the NeuronVisual corresponding to the given neuron. Throws NullPointerException if no neuron is found
+     * Gets the NeuronVisual corresponding to the given neuron. Returns null if not found
      * @param neuron
      * @return the corresponding NeuronVisual
      */
@@ -152,7 +156,8 @@ public class NeuralNetworkVisual {
                 return neuronVisual;
             }
         }
-        throw new NullPointerException("No neuron found");
+        return null;
+        //throw new NullPointerException("No neuron found");
     }
 
 }

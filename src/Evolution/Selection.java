@@ -13,7 +13,7 @@ public class Selection {
         grades = new ArrayList<>();
         this.networks = networks;
         for (NeuralNetwork neuralnetwork: networks) {
-            grades.add(0d);
+            grades.add(0.1);
         }
     }
 
@@ -47,7 +47,10 @@ public class Selection {
     public List<NeuralNetwork> select(int number) {
         List<NeuralNetwork> ret = new ArrayList<>();
         for (int i = 0; i < number; i ++) {
-            ret.add(selectOne());
+            NeuralNetwork networkToAdd = selectOne();
+            grades.remove(networks.indexOf(networkToAdd));
+            networks.remove(networkToAdd);
+            ret.add(networkToAdd);
         }
         return ret;
     }
@@ -58,7 +61,7 @@ public class Selection {
         Double sum = 0d;
         for (int i = 0; i < grades.size(); i++) {
             sum += grades.get(i);
-            if (random > sum) {
+            if (random < sum) {
                 return networks.get(i);
             }
         }
@@ -74,8 +77,8 @@ public class Selection {
         for (Double d: grades) {
             sum += d;
         }
-        for (Double d: grades) {
-            d /= sum;
+        for (int i = 0; i < grades.size(); i++) {
+            grades.set(i, grades.get(i)/sum);
         }
     }
 
