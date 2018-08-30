@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class Crossover {
     public static final String CLONE_PATH = "NeuralNets/temp/clone.nnet";
-    static Random random = new Random();
+    private static Random random = new Random();
     /**
      * Creates a new child from two random networks from the given list of networks
      * @param networks

@@ -13,7 +13,7 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
     List<NeuralNetwork> networks;
     List<NeuralNetwork> networks2;
     MatchMaker(List<NeuralNetwork> networks) {
-        networks = networks;
+        this.networks = networks;
         // Create a clone of networks, but without the last element
         networks2 = new ArrayList<>();
         networks2.addAll(networks);

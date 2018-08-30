@@ -80,6 +80,7 @@ public class Game extends Observable {
     private void addObservers() {
         addObserver(ship1);
         addObserver(ship2);
+        addObserver(shooterAI);
     }
 
     /**
@@ -122,12 +123,6 @@ public class Game extends Observable {
      * Updates the data
      */
     private void updateData() {
-        Double winnerDouble;
-        if (winner != null) {
-            winnerDouble = 1d;
-        } else {
-            winnerDouble = 0d;
-        }
         List<Entity> bulletsList1 = (List<Entity>)(List<?>) bullets1;
         List<Entity> bulletsList2 = (List<Entity>)(List<?>) bullets2;
         Bullet bullet1 = (Bullet) Geometry.closestTo(bulletsList2, ship1.getPosition());
@@ -259,7 +254,7 @@ public class Game extends Observable {
         return data;
     }
 
-    public boolean getGameEnd() {
+    public boolean isGameEnd() {
         return gameEnd;
     }
 

@@ -1,7 +1,8 @@
 package Evolution;
 
-import org.neuroph.core.NeuralNetwork;
 import Game.Game;
+import UI.GameDrawer;
+import org.neuroph.core.NeuralNetwork;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,20 +12,50 @@ public class Evolver {
     private final int POPULATION_SIZE = 10;
     private final String FILEPATH = "NeuralNets/net";
     private final String EXTENSION = ".nnet";
-    List<NeuralNetwork> networks;
-    List<NeuralNetwork> children;
-    MatchMaker matchMaker;
-    Iterator<List<NeuralNetwork>> iterator;
-    Selection selection;
+    private GameDrawer gameDrawer;
+    private List<NeuralNetwork> networks;
+    private List<NeuralNetwork> children;
+    private MatchMaker matchMaker;
+    private Iterator<List<NeuralNetwork>> iterator;
+    private Selection selection;
+    private boolean isEvolved;
 
     public Evolver() {
+        networks = new ArrayList<>();
         loadNets();
+        isEvolved = false;
         matchMaker = new MatchMaker(networks);
         iterator = matchMaker.iterator();
         selection = new Selection(networks);
         children = new ArrayList<>();
     }
 
+
+    /**
+     * Does evolution and increments the generation if there are no more matches for this generation, then returns the
+     * next matchup
+     */
+    public List<NeuralNetwork> next(Game game, List<NeuralNetwork> currentMatchup) {
+        if(currentMatchup != null) {
+            selection.grade(currentMatchup, game);
+        }
+        if (!iterator.hasNext()) {
+            evolution();
+            resetEvolver();
+            isEvolved = true;
+        }
+        return iterator.next(); // after resetting iterator, it will have a next
+    }
+
+
+    public boolean isEvolved() {
+        if (isEvolved) {
+            isEvolved = false;
+            return true;
+        } else {
+            return false;
+        }
+    }
     /**
      * Loads the neural networks from the NeuralNets folder
      */
@@ -34,18 +65,6 @@ public class Evolver {
         }
     }
 
-    /**
-     * Does evolution and increments the generation if there are no more matches for this generation, then returns the
-     * next matchup
-     */
-    private List<NeuralNetwork> next(Game game, List<NeuralNetwork> currentMatchup) {
-        selection.grade(currentMatchup, game);
-        if (!iterator.hasNext()) {
-            evolution();
-            resetEvolver();
-        }
-        return iterator.next(); // after resetting iterator, it will have a next
-    }
 
     /**
      * Creates a new selection, matchmaker, and iterator (for the new neural networks after evolution())
