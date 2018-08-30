@@ -25,7 +25,7 @@ public class ShooterAI extends JFrame implements Observer{
         matchup = evolver.next(game, null);
         game = new Game(false,
                 new AI(matchup.get(0), true),
-                new AI(matchup.get(1), true),
+                new AI(matchup.get(1), false),
                 this);
         initUI();
 
@@ -57,14 +57,15 @@ public class ShooterAI extends JFrame implements Observer{
     public void update(Observable o, Object arg) {
         if (game.isGameEnd()) {
             matchup = evolver.next(game, matchup);
+            game = new Game(false,
+                    new AI(matchup.get(0), true),
+                    new AI(matchup.get(1), false),
+                    this);
+            gameDrawer.setGame(game);
+            if (evolver.isEvolved()) {
+                gameDrawer.incrementGeneration();
+            }
         }
-        game = new Game(false,
-                new AI(matchup.get(0), true),
-                new AI(matchup.get(1), true),
-                this);
-        gameDrawer.setGame(game);
-        if (evolver.isEvolved()) {
-            gameDrawer.incrementGeneration();
-        }
+
     }
 }

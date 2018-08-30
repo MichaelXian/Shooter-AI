@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameDrawer extends JPanel implements ActionListener {
-    private static final int DELAY = 1000/30;
+    private static final int DELAY = 1000/200;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private final int LABEL_FONT = 10;

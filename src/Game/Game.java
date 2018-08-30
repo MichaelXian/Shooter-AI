@@ -21,7 +21,7 @@ public class Game extends Observable {
     private final int FRACTION = 8; // how far from edges the ships spawn
     private final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
     private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
-    private final int MAX_TICKS = 100*60;
+    private final int MAX_TICKS = 1000;
     private ShooterAI shooterAI;
     private List<Bullet> bullets1;
     private List<Bullet> bullets2;
@@ -103,6 +103,7 @@ public class Game extends Observable {
      * Makes the surviving ship the winner
      */
     private void killShip(Ship ship) {
+        firstEnd = true;
         if (ship == ship1) {
             winner = SECOND_WIN;
         } else {
@@ -170,6 +171,8 @@ public class Game extends Observable {
      */
     public void update() {
         gameEndTimer();
+        System.out.println(MAX_TICKS - ticks);
+        //System.out.println(new Double(ticks) - endTime);
         if (new Double(ticks) - endTime > DELAY) {
             gameEnd = true;
         }
