@@ -35,12 +35,14 @@ public class AI implements Controller {
                 neuronInput.get(3),
                 neuronInput.get(4),
                 neuronInput.get(5),
-                neuronInput.get(6),
+                neuronInput.get(6)
+                /*
                 neuronInput.get(7),
                 neuronInput.get(8),
                 neuronInput.get(9),
                 neuronInput.get(10),
                 neuronInput.get(11)
+                */
         );
         neuralNetwork.calculate();
         double[] output = neuralNetwork.getOutput();

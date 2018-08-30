@@ -38,7 +38,7 @@ public class LayerVisual {
         int count = layer.getNeuronsCount();
         for (int i = 0; i < count; i ++) {
             Neuron neuron = layer.getNeuronAt(i);
-            Double neuronY = (i + 1) * NeuralNetworkVisual.HEIGHT/count;
+            Double neuronY = y + i * NeuralNetworkVisual.HEIGHT/count;
             neuronVisuals.add( new NeuronVisual(neuron, x, neuronY, isTop));
         }
     }

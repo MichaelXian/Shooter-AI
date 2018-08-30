@@ -14,7 +14,7 @@ import static java.lang.Math.min;
 
 
 public class NeuronVisual {
-    private static final Double RADIUS = 20d;
+    private static final Double RADIUS = 15d;
     private List<ConnectionVisual> connectionVisuals;
     private Shape shape;
     private Neuron neuron;
@@ -38,7 +38,8 @@ public class NeuronVisual {
      * Updates this neuron's opacity, based on it's current input
      */
     public void update() {
-        opacity = neuron.getNetInput();
+        opacity = neuron.getOutput();
+
         opacity = min(1, max(opacity, 0));
     }
 

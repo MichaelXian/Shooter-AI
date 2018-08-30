@@ -4,6 +4,7 @@ import org.neuroph.core.Layer;
 import org.neuroph.core.NeuralNetwork;
 import org.neuroph.core.Neuron;
 import org.neuroph.nnet.MultiLayerPerceptron;
+import org.neuroph.nnet.comp.neuron.BiasNeuron;
 
 import static java.lang.Math.random;
 
@@ -12,8 +13,24 @@ public class NeuralNetworkFactory {
     private static final Double NEW_NEURON_CHANCE = 0.3;
     private static final Double NEW_CONNECTION_CHANCE = 0.1;
 
+
+
+    public static NeuralNetwork emptyNeuralNet() {
+        NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7, 5);
+        pruneAllConnections(neuralNetwork);
+        return neuralNetwork;
+    }
+
     public static NeuralNetwork randomNeuralNet() {
-        NeuralNetwork neuralNetwork = new MultiLayerPerceptron(12,5);
+        NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7,5);
+        //Remove Bias neuron
+        Neuron biasNeuron = new Neuron();
+        for (Neuron neuron: neuralNetwork.getLayerAt(0).getNeurons()) {
+            if (neuron instanceof BiasNeuron) {
+                biasNeuron = neuron;
+            }
+        }
+        neuralNetwork.getLayerAt(0).removeNeuron(biasNeuron);
         //Create 3 layers in-between
         for (int i = 0; i < 3; i ++) {
             Layer layer = new Layer();

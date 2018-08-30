@@ -21,7 +21,7 @@ import java.awt.geom.Rectangle2D;
 import java.util.List;
 
 public class GameDrawer extends JPanel implements ActionListener {
-    private static final int DELAY = 1000/200;
+    private static final int DELAY = 1000/30;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
     private Boolean first = true;
@@ -131,6 +131,8 @@ public class GameDrawer extends JPanel implements ActionListener {
      * @param graphic
      */
     private void drawGraphic(Graphics2D graphics, Graphic graphic) {
+        graphics.setPaint(Color.BLACK);
+        graphics.draw(graphic.getShape());
         graphics.setPaint(graphic.getColor());
         graphics.fill(graphic.getShape());
     }

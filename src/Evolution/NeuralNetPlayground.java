@@ -4,14 +4,16 @@ import Controllers.NeuralNetwork.NeuralNetworkFactory;
 import org.neuroph.core.NeuralNetwork;
 
 public class NeuralNetPlayground {
-    NeuralNetwork neuralNetwork;
+    static NeuralNetwork neuralNetwork;
 
 
     public static void main(String[] args) {
         for (int i = 0; i < 10; i ++) {
-            NeuralNetwork neuralNetwork = NeuralNetworkFactory.randomNeuralNet();
+            neuralNetwork = NeuralNetworkFactory.randomNeuralNet();
             neuralNetwork.save("NeuralNets/net" + i + ".nnet");
         }
+        neuralNetwork = NeuralNetworkFactory.emptyNeuralNet();
+        //neuralNetwork.save("NeuralNets/net2.nnet");
     }
 
 

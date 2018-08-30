@@ -12,7 +12,8 @@ public class Ship implements Observer, Entity {
     public static final double MAX_HEALTH = 100;
     // public static final double MASS = 1;
     private static final double ACCELERATION = 0.3;
-    private static final double TURNSPEED = 0.15;
+    private static final double TURNSPEED = 0.45;
+    private static final double SPEED = 15;
     private static final int DELAY = 250;
     private Vector position;
     private Vector velocity;
@@ -64,12 +65,28 @@ public class Ship implements Observer, Entity {
     }
 
     /**
+     * Moves forward by SPEED
+     */
+    private void moveBackward() {
+        velocity = heading.scaleTo(SPEED);
+        move();
+    }
+
+    /**
+     * Moves backward by SPEED
+     */
+    private void moveForward() {
+        velocity = heading.scaleTo(SPEED);
+        move();
+    }
+
+
+    /**
      * accelerates the ship towards it's heading
      */
     public void accelerate() {
         Vector impulse = heading.scaleTo(ACCELERATION);
         velocity = velocity.add(impulse);
-
     }
 
     /**
@@ -85,6 +102,7 @@ public class Ship implements Observer, Entity {
      */
     private void move() {
         position = position.add(velocity);
+        velocity = new Vector(0,0);
     }
 
 
@@ -100,10 +118,11 @@ public class Ship implements Observer, Entity {
             List<Double> neuronInput = DataToDouble.toDouble(data, this);
             ArrayList<Boolean> result = controller.update(neuronInput);
             if (result.get(0)) {
-                accelerate();
+                //accelerate();
+                moveForward();
             }
             if (result.get(1)) {
-                decelerate();
+                moveBackward();
             }
             if (result.get(2)) {
                 turnLeft();
@@ -117,6 +136,7 @@ public class Ship implements Observer, Entity {
             move();
         }
     }
+
 
     /**
      * Fires a bullet, if enough time has passed

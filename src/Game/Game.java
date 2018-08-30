@@ -132,20 +132,22 @@ public class Game extends Observable {
         Bullet bullet2 = (Bullet) Geometry.closestTo(bulletsList1, ship2.getPosition());
         data.put("ship1X", ship1.getPosition().x());
         data.put("ship1Y", ship1.getPosition().y());
-        data.put("ship1VelX", ship1.getPosition().x());
-        data.put("ship1VelY", ship1.getPosition().y());
+        data.put("ship1Rot", ship1.getRotation());
+        //data.put("ship1VelX", ship1.getPosition().x());
+        //data.put("ship1VelY", ship1.getPosition().y());
         data.put("ship2X", ship2.getPosition().x());
         data.put("ship2Y", ship2.getPosition().y());
-        data.put("ship2VelX", ship2.getPosition().x());
-        data.put("ship2VelY", ship2.getPosition().y());
+        data.put("ship2Rot", ship1.getRotation());
+        //data.put("ship2VelX", ship2.getPosition().x());
+        //data.put("ship2VelY", ship2.getPosition().y());
         data.put("bul1X", bullet1.getX());
         data.put("bul1Y", bullet1.getY());
-        data.put("bul1VelX", bullet1.getVelX());
-        data.put("bul1VelY", bullet1.getVelY());
+        //data.put("bul1VelX", bullet1.getVelX());
+        //data.put("bul1VelY", bullet1.getVelY());
         data.put("bul2X", bullet2.getX());
         data.put("bul2Y", bullet2.getY());
-        data.put("bul2VelX", bullet2.getVelX());
-        data.put("bul2VelY", bullet2.getVelY());
+        //data.put("bul2VelX", bullet2.getVelX());
+        //data.put("bul2VelY", bullet2.getVelY());
     }
 
 

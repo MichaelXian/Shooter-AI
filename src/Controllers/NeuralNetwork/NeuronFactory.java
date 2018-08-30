@@ -1,11 +1,14 @@
 package Controllers.NeuralNetwork;
 
 import org.neuroph.core.Neuron;
+import org.neuroph.core.transfer.Sigmoid;
 
 public class NeuronFactory {
 
     public static Neuron randomNeuron() {
-        return new Neuron();
+        Neuron ret = new Neuron();
+        ret.setTransferFunction(new Sigmoid());
+        return ret;
     }
 
 
