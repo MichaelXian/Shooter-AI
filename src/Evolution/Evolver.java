@@ -36,11 +36,17 @@ public class Evolver {
      * next matchup
      */
     public List<NeuralNetwork> next(Game game, List<NeuralNetwork> currentMatchup) {
+        /*for (int i = 0; i < 1000; i++) {
+            evolution();
+            saveNets();
+            resetEvolver();
+        }*/
         if(currentMatchup != null) {
             selection.grade(currentMatchup, game);
         }
         if (!iterator.hasNext()) {
             evolution();
+            saveNets();
             resetEvolver();
             isEvolved = true;
         }
@@ -56,6 +62,16 @@ public class Evolver {
             return false;
         }
     }
+
+    /**
+     * Loads the neural networks from the NeuralNets folder
+     */
+    private void saveNets() {
+        for (int i = 0; i < networks.size(); i ++) {
+            networks.get(i).save(FILEPATH + i + EXTENSION);
+        }
+    }
+
     /**
      * Loads the neural networks from the NeuralNets folder
      */

@@ -50,9 +50,21 @@ public class NeuronVisual {
     private Color getColor() {
         update();
         if (isTop) {
-            return new Color(1f, 0f, 0f, new Float(opacity));
+            if (opacity > 0.5) {
+                opacity = 2 * (opacity - 0.5); // make opacity go from 0.5-1 to 0-1
+                return new Color(1f, 0f, 0f, new Float(opacity));
+            } else {
+                opacity = (1 - opacity); // make opacity go from 0.5-0 to 0-1
+                return new Color(0f, 1f, 0f, new Float(opacity));
+            }
         } else {
-            return new Color (0f, 0f, 1f, new Float(opacity));
+            if (opacity > 0.5) {
+                opacity = 2 * (opacity - 0.5); // make opacity go from 0.5-1 to 0-1
+                return new Color(0f, 0f, 1f, new Float(opacity));
+            } else {
+                opacity = (1 - opacity); // make opacity go from 0.5-0 to 0-1
+                return new Color(1f, 0.31f, 0f, new Float(opacity));
+            }
         }
     }
 

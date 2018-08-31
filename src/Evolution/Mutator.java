@@ -5,6 +5,7 @@ import org.neuroph.core.Connection;
 import org.neuroph.core.Layer;
 import org.neuroph.core.NeuralNetwork;
 import org.neuroph.core.Neuron;
+import org.neuroph.nnet.comp.neuron.BiasNeuron;
 
 import java.util.List;
 import java.util.Random;
@@ -60,11 +61,28 @@ public class Mutator {
             if (connections.size() > 0) {
                 neuron.removeOutputConnectionTo(randomList(connections).getToNeuron());
             }
-        } else {
+        } else if (addConnectionChance(connections.size())) {
             addConnection(neuron, network, i);
         }
         for (Connection connection: connections) {
             mutateConnection(connection);
+        }
+        removeAllBiasNeurons(network);
+    }
+
+    /**
+     * Removes all bias neurons
+     * @param network
+     */
+    private static void removeAllBiasNeurons(NeuralNetwork network) {
+        for (Object object: network.getLayers()) {
+            Layer layer = (Layer) object;
+            for (Neuron neuron: layer.getNeurons()) {
+                if (neuron instanceof BiasNeuron) {
+                    layer.removeNeuron(neuron);
+                    System.out.println("Bias neuron removed");
+                }
+            }
         }
     }
 
@@ -128,7 +146,7 @@ public class Mutator {
      * @return
      */
     private static boolean removeConnectionChance(int size) {
-        return Math.random() < ADD_CONNECTION_CHANCE/(size+0.2);
+        return Math.random() < ADD_CONNECTION_CHANCE/(4.00001 - size);
     }
 
     /**
@@ -137,7 +155,7 @@ public class Mutator {
      * @return
      */
     private static boolean addConnectionChance(int size) {
-        return Math.random() < REMOVE_CONNECTION_CHANCE/(4-size);
+        return Math.random() < REMOVE_CONNECTION_CHANCE/(size + 0.2);
     }
 
 

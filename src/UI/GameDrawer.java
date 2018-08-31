@@ -76,6 +76,7 @@ public class GameDrawer extends JPanel implements ActionListener {
      */
     public void incrementGeneration() {
         generation++;
+        System.out.println("Generation " + generation);
     }
 
 
@@ -233,6 +234,7 @@ public class GameDrawer extends JPanel implements ActionListener {
         graphics.fill(divider);
     }
 
+
     /**
      * Draws all the ships in the game
      * @param graphics
@@ -291,4 +293,9 @@ public class GameDrawer extends JPanel implements ActionListener {
     public void setGame(Game game) {
         this.game = game;
     }
+
+    public int getGeneration() {
+        return generation;
+    }
+
 }

@@ -20,20 +20,26 @@ public class ShooterAI extends JFrame implements Observer{
     private GameDrawer gameDrawer;
     private Game game;
     public ShooterAI() {
+        //AI ai1 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), true);
+        //AI ai2 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), false);
         this.evolver = new Evolver();
         matchup = new ArrayList<>();
         matchup = evolver.next(game, null);
+        /*game = new Game(false,
+                ai1,
+                ai2,
+                this);
+        */
         game = new Game(false,
                 new AI(matchup.get(0), true),
                 new AI(matchup.get(1), false),
                 this);
+
         initUI();
 
     }
 
     private void initUI() {
-        //game = new Game(false, new AI(NeuralNetwork.createFromFile("NeuralNets/net1.nnet"), true),
-        //        new AI(NeuralNetwork.createFromFile("NeuralNets/net2.nnet"), false), this);
         gameDrawer = new GameDrawer(game);
         add(gameDrawer);
         setSize(WIDTH, HEIGHT);
@@ -64,8 +70,13 @@ public class ShooterAI extends JFrame implements Observer{
             gameDrawer.setGame(game);
             if (evolver.isEvolved()) {
                 gameDrawer.incrementGeneration();
+                saveGeneration(gameDrawer.getGeneration());
             }
         }
+
+    }
+
+    private void saveGeneration(int generation) {
 
     }
 }

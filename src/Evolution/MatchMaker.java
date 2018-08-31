@@ -17,7 +17,9 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
         // Create a clone of networks, but without the last element
         networks2 = new ArrayList<>();
         networks2.addAll(networks);
-        networks2.remove(networks.get(networks.size()-1));
+        while (networks.get(networks.size()-1) == networks2.get(networks2.size() -1)) {
+            networks2.remove(networks.get(networks.size() - 1));
+        }
     }
 
     @Override

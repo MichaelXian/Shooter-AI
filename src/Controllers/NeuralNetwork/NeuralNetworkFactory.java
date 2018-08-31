@@ -31,13 +31,7 @@ public class NeuralNetworkFactory {
     public static NeuralNetwork randomNeuralNet() {
         NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7,5);
         //Remove Bias neuron
-        Neuron biasNeuron = new Neuron();
-        for (Neuron neuron: neuralNetwork.getLayerAt(0).getNeurons()) {
-            if (neuron instanceof BiasNeuron) {
-                biasNeuron = neuron;
-            }
-        }
-        neuralNetwork.getLayerAt(0).removeNeuron(biasNeuron);
+        removeBiasNeuron(neuralNetwork);
         //Create 3 layers in-between
         for (int i = 0; i < 3; i ++) {
             Layer layer = new Layer();
@@ -63,6 +57,20 @@ public class NeuralNetworkFactory {
             }
         }
         return neuralNetwork;
+    }
+
+    /**
+     * Removes the bias neuron from the given network
+     * @param neuralNetwork
+     */
+    private static void removeBiasNeuron(NeuralNetwork neuralNetwork) {
+        Neuron biasNeuron = new Neuron();
+        for (Neuron neuron: neuralNetwork.getLayerAt(0).getNeurons()) {
+            if (neuron instanceof BiasNeuron) {
+                biasNeuron = neuron;
+            }
+        }
+        neuralNetwork.getLayerAt(0).removeNeuron(biasNeuron);
     }
 
 
