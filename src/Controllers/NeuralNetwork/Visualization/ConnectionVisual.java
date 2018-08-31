@@ -23,7 +23,7 @@ public class ConnectionVisual {
     public ConnectionVisual(Connection connection, Vector position1, Vector position2, boolean isTop) {
         this.connection = connection;
         this.isTop = isTop;
-        Double width = connection.getWeight().value * 10;
+        Double width = 5 * Math.pow(connection.getWeight().value, 1/3);
         width = Math.min(Math.max(width, -20), 20); // constrain width between -20 and 20
         this.shape = Line.lineToRect(position1.x(), position1.y(),
                 position2.x(), position2.y(),
@@ -35,8 +35,8 @@ public class ConnectionVisual {
      * Updates opacity of line
      */
     private void update() {
-        opacity = connection.getWeightedInput();
-        opacity = min(1, max(0, opacity));
+        opacity = connection.getInput();
+        opacity = min(1, max(-1, opacity));
     }
 
     /**
@@ -45,9 +45,15 @@ public class ConnectionVisual {
     private Color getColor() {
         update();
         if (isTop) {
-            return new Color(1f, 0f, 0f, new Float(opacity));
+            if (opacity > 0) {
+                return new Color(1f, 0f, 0f, new Float(opacity));
+            }
+                return new Color(0f, 1f, 0f, new Float(-opacity));
         } else {
-            return new Color (0f, 0f, 1f, new Float(opacity));
+            if (opacity > 0) {
+                return new Color(0f, 0f, 1f, new Float(opacity));
+            }
+            return new Color(1f, 0.31f, 0f, new Float(-opacity));
         }
     }
 
