@@ -34,8 +34,8 @@ public class Crossover {
      * @param network2
      */
     private static NeuralNetwork createChild(NeuralNetwork network, NeuralNetwork network2) {
-        NeuralNetwork child = null;
-        NeuralNetwork other = null;
+        NeuralNetwork child;
+        NeuralNetwork other;
         if (random.nextBoolean()) {
             child = clone(network);
             other = network2;

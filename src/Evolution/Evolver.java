@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class Evolver {
-    private final int POPULATION_SIZE = 10;
+    private final int POPULATION_SIZE = 100;
     private final String FILEPATH = "NeuralNets/net";
     private final String EXTENSION = ".nnet";
     private GameDrawer gameDrawer;

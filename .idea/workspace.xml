@@ -33,8 +33,22 @@
       <file leaf-file-name="GameDrawer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state relative-caret-position="104">
+              <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#8523#8524#0" expanded="true" />
+                <element signature="e#8567#8568#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShooterAI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,32 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuronVisual.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
+      <file leaf-file-name="PrintWriter.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-              <folding>
-                <element signature="e#2299#2300#0" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
-                <element signature="e#2811#2812#0" expanded="true" />
-                <element signature="e#2864#2865#0" expanded="true" />
-                <element signature="e#2898#2899#0" expanded="true" />
-                <element signature="e#2927#2928#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionVisual.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/ConnectionVisual.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding>
-                <element signature="e#1699#1700#0" expanded="true" />
-                <element signature="e#1752#1753#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="4005">
+              <caret line="299" column="11" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,60 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuronFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NeuralNetworkFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-              <folding>
-                <element signature="e#3819#3820#0" expanded="true" />
-                <element signature="e#3891#3892#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShooterAI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mutator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NeuralNetPlayground.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,11 +79,65 @@
       <file leaf-file-name="Evolver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+            <state relative-caret-position="-169">
+              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchMaker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <folding>
+                <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" expanded="false" />
+                <element signature="e#2082#2083#0" expanded="true" />
+                <element signature="e#2124#2125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Random.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Random.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NeuralNetPlayground.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mutator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -159,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gui</find>
       <find>system</find>
       <find>sys</find>
       <find>syste</find>
@@ -184,9 +178,12 @@
       <find>shoot</find>
       <find>System.out.pr</find>
       <find>shoot(</find>
-      <find>increm</find>
       <find>rep</find>
       <find>remove</find>
+      <find>createMatc</find>
+      <find>increm</find>
+      <find>nullp</find>
+      <find>isEvolved</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,30 +221,30 @@
         <option value="$PROJECT_DIR$/src/Controllers/Player.java" />
         <option value="$PROJECT_DIR$/src/Controllers/AI.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuronFactory.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/LayerVisual.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Grader.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/Crossover.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Selection.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuralNetworkVisual.java" />
         <option value="$PROJECT_DIR$/src/Game/Ship.java" />
         <option value="$PROJECT_DIR$/src/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/Utility/Vector.java" />
         <option value="$PROJECT_DIR$/src/Utility/DataToDouble.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/MatchMaker.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Mutator.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
-        <option value="$PROJECT_DIR$/src/UI/ShooterAI.java" />
-        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java" />
-        <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/ConnectionVisual.java" />
+        <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/Crossover.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java" />
+        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
+        <option value="$PROJECT_DIR$/src/UI/ShooterAI.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/MatchMaker.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="346" />
-    <option name="y" value="214" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="23" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
   </component>
@@ -267,6 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,14 +295,6 @@
               <item name="Shooter-AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shooter-AI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="NeuralNetwork" type="462c0819:PsiDirectoryNode" />
-              <item name="Visualization" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Shooter-AI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Shooter-AI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Evolution" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -316,10 +307,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,7 +346,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NeuralNetPlayground">
+  <component name="RunManager" selected="Application.ShooterAI">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -537,8 +526,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.NeuralNetPlayground" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ShooterAI" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ShooterAI" />
+        <item index="1" class="java.lang.String" itemvalue="Application.NeuralNetPlayground" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.VectorTest.testLength" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.VectorTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.VectorTest.testRotate" />
@@ -591,7 +580,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="346" y="214" width="1366" height="741" extended-state="0" />
+    <frame x="2" y="23" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -600,8 +589,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5026022" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.49739778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.49739778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -610,8 +599,8 @@
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -641,18 +630,50 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UI/GameDrawer.java</url>
-          <line>139</line>
+          <url>file://$PROJECT_DIR$/src/Evolution/Selection.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="76" />
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Evolution/Evolver.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Evolution/Evolver.java</url>
+          <line>46</line>
+          <properties />
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="77" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>iterator().hasNext()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iterator().hasNext()ext()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iterator().next()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>iterator()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>tracker</expression-string>
         <language-id>JAVA</language-id>
@@ -678,43 +699,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>1/750d</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>1/750</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>656*1/750</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>1/Game.WIDTH</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4620">
-          <caret line="353" column="23" lean-forward="false" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/awt/event/KeyListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-94">
@@ -863,11 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
           <caret line="74" column="81" lean-forward="false" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1780#1781#0" expanded="false" />
-            <element signature="e#1816#1817#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -914,12 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
-          <folding>
-            <element signature="e#3350#3351#0" expanded="false" />
-            <element signature="e#3374#3375#0" expanded="false" />
-            <element signature="e#3399#3400#0" expanded="false" />
-            <element signature="e#3423#3424#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,9 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
           <caret line="78" column="27" lean-forward="false" selection-start-line="78" selection-start-column="27" selection-end-line="78" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,16 +911,6 @@
         <state relative-caret-position="285">
           <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="55" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,25 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Crossover.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#847#848#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/AI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1003,99 +947,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
+        <state relative-caret-position="1770">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuronFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        <state relative-caret-position="945">
+          <caret line="69" column="36" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
           <folding>
-            <element signature="e#3819#3820#0" expanded="true" />
-            <element signature="e#3891#3892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-          <folding>
-            <element signature="e#2299#2300#0" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
-            <element signature="e#2811#2812#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
-            <element signature="e#2927#2928#0" expanded="true" />
+            <element signature="e#3819#3820#0" expanded="false" />
+            <element signature="e#3891#3892#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/ConnectionVisual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
+        <state relative-caret-position="630">
           <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="72" column="41" lean-forward="false" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Crossover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="37" lean-forward="false" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4005">
+          <caret line="299" column="11" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuronFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/NeuralNetPlayground.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="83" column="17" lean-forward="false" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="76" column="29" lean-forward="true" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
           <folding>
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#8523#8524#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="87" column="30" lean-forward="false" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="true" />
+            <element signature="e#2124#2125#0" expanded="true" />
           </folding>
         </state>
       </provider>

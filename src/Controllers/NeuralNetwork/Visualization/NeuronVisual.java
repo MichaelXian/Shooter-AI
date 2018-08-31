@@ -4,6 +4,7 @@ import Utility.Circle;
 import Utility.Vector;
 import org.neuroph.core.Connection;
 import org.neuroph.core.Neuron;
+import org.neuroph.nnet.comp.neuron.InputNeuron;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -50,6 +51,9 @@ public class NeuronVisual {
     private Color getColor() {
         update();
         if (isTop) {
+            if (this.neuron instanceof InputNeuron) {
+                return new Color(1f, 0f, 0f, new Float(opacity));
+            }
             if (opacity > 0.5) {
                 opacity = 2 * (opacity - 0.5); // make opacity go from 0.5-1 to 0-1
                 return new Color(1f, 0f, 0f, new Float(opacity));
@@ -58,6 +62,9 @@ public class NeuronVisual {
                 return new Color(0f, 1f, 0f, new Float(opacity));
             }
         } else {
+            if (this.neuron instanceof InputNeuron) {
+                return new Color(0f, 0f, 1f, new Float(opacity));
+            }
             if (opacity > 0.5) {
                 opacity = 2 * (opacity - 0.5); // make opacity go from 0.5-1 to 0-1
                 return new Color(0f, 0f, 1f, new Float(opacity));

@@ -2,31 +2,70 @@ package Evolution;
 
 import org.neuroph.core.NeuralNetwork;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
- * Matches every neural net against every other one by keeping track of 2 lists, and iterating over them
+ * Creates 5 match-ups for each network.
  */
 public class MatchMaker implements Iterable<List<NeuralNetwork>>{
+
+    private final Integer MAX_MATCHUPS = 5;
     List<NeuralNetwork> networks;
-    List<NeuralNetwork> networks2;
+    List<List<NeuralNetwork>> matchups;
+    Map<NeuralNetwork, Integer> matchupCount;
+    Random random;
     MatchMaker(List<NeuralNetwork> networks) {
-        this.networks = networks;
-        // Create a clone of networks, but without the last element
-        networks2 = new ArrayList<>();
-        networks2.addAll(networks);
-        while (networks.get(networks.size()-1) == networks2.get(networks2.size() -1)) {
-            networks2.remove(networks.get(networks.size() - 1));
+        random = new Random();
+        this.networks = new ArrayList<>();
+        this.networks.addAll(networks);
+        matchups = new ArrayList<>();
+        matchupCount = new HashMap<>();
+        for (NeuralNetwork network: networks) {
+            matchupCount.put(network, 0);
+        }
+        while (this.networks.size() > 1) {
+            createMatchup();
+        }
+    }
+
+    /**
+     * Creates one random matchup, increments the matchupCount for the chosen networks, removes them from networks if
+     * they have reached MAX_MATCHUPS, and adds them to matchups
+     */
+    private void createMatchup() {
+        ArrayList<NeuralNetwork> matchup = new ArrayList<>();
+        NeuralNetwork network1 = networks.get(random.nextInt(networks.size()));
+        networks.remove(network1); // Make sure we dont choose the same network twice
+        NeuralNetwork network2 = networks.get(random.nextInt(networks.size()));
+        networks.add(network1);
+        matchup.add(network1);
+        matchup.add(network2);
+        matchups.add(matchup);
+        manageMatchupCount(matchup);
+    }
+
+    /**
+     * Removes the networks from the list of networks if they already have enough matchups
+     * @param matchup
+     */
+    private void manageMatchupCount(ArrayList<NeuralNetwork> matchup) {
+        for (NeuralNetwork network: matchup) {
+            Integer currentMatchups = matchupCount.get(network) + 1;
+            matchupCount.put(network, currentMatchups);
+            if (currentMatchups >= MAX_MATCHUPS) {
+                networks.remove(network);
+            }
         }
     }
 
     @Override
     public Iterator<List<NeuralNetwork>> iterator() {
-        return new MatchIterator();
+        return matchups.iterator();
     }
 
+
+
+    /*
     private class MatchIterator implements Iterator<List<NeuralNetwork>> {
         Iterator<NeuralNetwork> iterator1;
         Iterator<NeuralNetwork> iterator2;
@@ -66,4 +105,5 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
             return ret;
         }
     }
+    */
 }

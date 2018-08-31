@@ -7,23 +7,28 @@ import org.neuroph.core.NeuralNetwork;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
+import java.util.Scanner;
 
 public class ShooterAI extends JFrame implements Observer{
     public static final int WIDTH = 1365;
     public static final int HEIGHT = 750;
+    public static String GENERATION_FILE_PATH = "Generation/generation.txt";
     private Evolver evolver;
     private List<NeuralNetwork> matchup;
     private GameDrawer gameDrawer;
     private Game game;
+    private File generationFile;
     public ShooterAI() {
+        generationFile = new File(GENERATION_FILE_PATH);
         //AI ai1 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), true);
         //AI ai2 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), false);
         this.evolver = new Evolver();
-        matchup = new ArrayList<>();
         matchup = evolver.next(game, null);
         /*game = new Game(false,
                 ai1,
@@ -34,13 +39,14 @@ public class ShooterAI extends JFrame implements Observer{
                 new AI(matchup.get(0), true),
                 new AI(matchup.get(1), false),
                 this);
-
         initUI();
 
     }
 
     private void initUI() {
         gameDrawer = new GameDrawer(game);
+
+        setGeneration();
         add(gameDrawer);
         setSize(WIDTH, HEIGHT);
         setTitle("Shooter AI");
@@ -48,7 +54,18 @@ public class ShooterAI extends JFrame implements Observer{
         setLocationRelativeTo(null);
     }
 
-
+    /**
+     * Sets the generation of GameDrawer to the one found in the file storing the generation
+     */
+    private void setGeneration() {
+        try {
+            File file = new File(GENERATION_FILE_PATH);
+            Scanner scanner = new Scanner(file);
+            gameDrawer.setGeneration(scanner.nextInt());
+        } catch (FileNotFoundException e) {
+            throw new NullPointerException("File not found");
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -77,6 +94,12 @@ public class ShooterAI extends JFrame implements Observer{
     }
 
     private void saveGeneration(int generation) {
-
+        try {
+            PrintWriter writer = new PrintWriter(generationFile);
+            writer.print(generation);
+            writer.close();
+        } catch (FileNotFoundException e) {
+            throw new NullPointerException("File not found");
+        }
     }
 }

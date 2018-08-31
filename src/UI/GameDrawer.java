@@ -298,4 +298,8 @@ public class GameDrawer extends JPanel implements ActionListener {
         return generation;
     }
 
+    public void setGeneration(Integer generation) {
+        this.generation = generation;
+    }
+
 }
