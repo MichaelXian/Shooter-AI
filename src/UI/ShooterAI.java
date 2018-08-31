@@ -59,8 +59,7 @@ public class ShooterAI extends JFrame implements Observer{
      */
     private void setGeneration() {
         try {
-            File file = new File(GENERATION_FILE_PATH);
-            Scanner scanner = new Scanner(file);
+            Scanner scanner = new Scanner(generationFile);
             gameDrawer.setGeneration(scanner.nextInt());
         } catch (FileNotFoundException e) {
             throw new NullPointerException("File not found");

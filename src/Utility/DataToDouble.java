@@ -47,8 +47,8 @@ public class DataToDouble {
             //velY = data.get("ship1VelY") * VEL;
             //enemyVelX = data.get("ship2VelX") * VEL;
             //enemyVelY = data.get("ship2VelY") * VEL;
-            bulX = (data.get("bul2X") - posX) * X;
-            bulY = (data.get("bul2Y") - posY) * Y;
+            bulX = (data.get("bul1X") - posX) * X;
+            bulY = (data.get("bul1Y") - posY) * Y;
             //bulVelX = data.get("bul2VelX") * VEL;
             //bulVelY = data.get("bul2VelY") * VEL;
         } else {
@@ -59,8 +59,8 @@ public class DataToDouble {
             //velY = data.get("ship2VelY") * VEL;
             //enemyVelX = data.get("ship1VelX") * VEL;
             //enemyVelY = data.get("ship1VelY") * VEL;
-            bulX = (data.get("bul1X") - posX) * X;
-            bulY = (data.get("bul1Y") - posY) * Y;
+            bulX = (data.get("bul2X") - posX) * X;
+            bulY = (data.get("bul2Y") - posY) * Y;
             //bulVelX = data.get("bul1VelX") * VEL;
             //bulVelY = data.get("bul1VelY") * VEL;
         }
