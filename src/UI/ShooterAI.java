@@ -100,7 +100,10 @@ public class ShooterAI extends JFrame implements Observer{
                 saveGeneration(gameDrawer.getGeneration());
             }
         }
+    }
 
+    public void setHighlight(boolean highlight) {
+        gameDrawer.setHighlight(highlight);
     }
 
     private void saveGeneration(int generation) {

@@ -83,6 +83,8 @@ public class GameDrawer extends JPanel implements ActionListener {
     }
 
 
+
+
     /**
      * Called whenever timer finishes
      * @param e
@@ -305,6 +307,10 @@ public class GameDrawer extends JPanel implements ActionListener {
 
     public void setGeneration(Integer generation) {
         this.generation = generation;
+    }
+
+    public void setHighlight(boolean highlight) {
+        this.highlight = highlight;
     }
 
 }

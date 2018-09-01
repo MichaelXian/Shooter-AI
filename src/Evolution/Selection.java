@@ -54,6 +54,23 @@ public class Selection {
         }
         return ret;
     }
+    
+    /**
+     * Returns the network with the best grade
+     * @return
+     */
+    public NeuralNetwork getBestNetwork() {
+        Double maxGrade = 0d;
+        NeuralNetwork network = null; // might not have been initialized
+        for (int i = 0; i < networks.size(); i ++){
+            if (grades.get(i) > maxGrade) {
+                maxGrade = grades.get(i);
+                network = networks.get(i);
+            }
+        }
+        return network;
+    }
+
 
     private NeuralNetwork selectOne() {
         normalize();
@@ -81,7 +98,6 @@ public class Selection {
             grades.set(i, grades.get(i)/sum);
         }
     }
-
 
 
 }

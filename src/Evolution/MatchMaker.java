@@ -63,6 +63,34 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
         return matchups.iterator();
     }
 
+    /**
+     * Returns a matchup with the given network, ignoring any matchups in watched
+     * @param network
+     * @param watched
+     * @return
+     */
+    public List<NeuralNetwork> getMatchupWith(NeuralNetwork network, List<List<NeuralNetwork>> watched) {
+        removeIrrelevant(network);
+        for (List<NeuralNetwork> highlight: matchups) {
+            if (!watched.contains(highlight)) {
+                return highlight;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Removes all matchups that dont contain given network
+     * @param network
+     */
+    private void removeIrrelevant(NeuralNetwork network) {
+        for (List<NeuralNetwork> matchup: matchups) {
+            if (!matchup.contains(network)) {
+                matchups.remove(matchup);
+            }
+        }
+    }
+
 
 
     /*

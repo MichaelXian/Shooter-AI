@@ -17,8 +17,9 @@ public class Evolver {
     private GameDrawer gameDrawer;
     private List<NeuralNetwork> networks;
     private List<NeuralNetwork> children;
-    private MatchMaker matchMaker;
     private Iterator<List<NeuralNetwork>> iterator;
+    private List<List<NeuralNetwork>> watchedHighlights;
+    private MatchMaker matchMaker;
     private Selection selection;
     private ShooterAI shooterAI;
     private boolean isEvolved;
@@ -27,6 +28,7 @@ public class Evolver {
         this.shooterAI = shooterAI;
         networks = new ArrayList<>();
         loadNets();
+        watchedHighlights = new ArrayList<>();
         isEvolved = false;
         matchMaker = new MatchMaker(networks);
         iterator = matchMaker.iterator();
@@ -49,7 +51,14 @@ public class Evolver {
             selection.grade(currentMatchup, game);
         }
         if (!iterator.hasNext()) {
-            doHighlights();
+            if (shooterAI.isWatching()) {
+                shooterAI.setHighlight(true);
+                List<NeuralNetwork> nextHighlight = nextHighlight();
+                if (nextHighlight != null) {
+                    return nextHighlight;
+                }
+            }
+            shooterAI.setHighlight(false);
             evolution();
             saveNets();
             resetEvolver();
@@ -59,10 +68,16 @@ public class Evolver {
     }
 
     /**
-     *
+     * Retrieves the next highlight;  returns null if no highlight
+     * @return
      */
-    private void doHighlights() {
+    private List<NeuralNetwork> nextHighlight() {
+        NeuralNetwork bestNetwork = selection.getBestNetwork();
+        List<NeuralNetwork> matchup = matchMaker.getMatchupWith(bestNetwork, watchedHighlights);
+        watchedHighlights.add(matchup);
+        return matchup;
     }
+
 
 
     public boolean isEvolved() {
@@ -100,9 +115,11 @@ public class Evolver {
      * Creates a new selection, matchmaker, and iterator (for the new neural networks after evolution())
      */
     private void resetEvolver() {
+        watchedHighlights = new ArrayList<>();
         selection = new Selection(networks);
         matchMaker = new MatchMaker(networks); // resets iterator
         iterator = matchMaker.iterator();
+        children = new ArrayList<>();
     }
 
     /**
