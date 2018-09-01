@@ -65,7 +65,11 @@ public class GameDrawer extends JPanel implements ActionListener {
         drawBullets(graphics);
         drawDivider(graphics);
         drawWinner(graphics);
-        drawGeneration(graphics);
+        if (highlight) {
+            drawHighlight(graphics);
+        } else {
+            drawGeneration(graphics);
+        }
         graphics.setPaint(Color.BLACK);
         // Load the font
         if (first) {
@@ -73,6 +77,7 @@ public class GameDrawer extends JPanel implements ActionListener {
             graphics.drawString("", 0, 0);
         }
     }
+
 
     /**
      * Adds 1 to the generation
@@ -92,8 +97,12 @@ public class GameDrawer extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         game.update();
-        if (shooterAI.isWatching() && highlight) {
+        if (shooterAI.isWatchAll()) {
             repaint();
+        } else {
+            if (shooterAI.isWatching() && highlight) {
+                repaint();
+            }
         }
     }
 
@@ -226,7 +235,15 @@ public class GameDrawer extends JPanel implements ActionListener {
         Font font = new Font("SansSerif", Font.PLAIN, GENERATION_FONT);
         graphics.setFont(font);
         graphics.drawString("GEN " + generation,
-                new Float(WIDTH/2 - GENERATION_FONT * (2 + Math.log(generation + 0.01))/2),
+                new Float(WIDTH/2 - GENERATION_FONT * (4/2 + Math.log(generation + 0.01))/2),
+                HEIGHT/10);
+    }
+
+    private void drawHighlight(Graphics2D graphics) {
+        Font font = new Font("SansSerif", Font.PLAIN, GENERATION_FONT);
+        graphics.setFont(font);
+        graphics.drawString("HIGHLIGHT: GEN " + generation,
+                new Float(WIDTH/2 - GENERATION_FONT * (15/2 + Math.log(generation + 0.01))/2),
                 HEIGHT/10);
     }
 

@@ -12,9 +12,12 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
     private final Integer MAX_MATCHUPS = 5;
     List<NeuralNetwork> networks;
     List<List<NeuralNetwork>> matchups;
+    List<List<NeuralNetwork>> highlights;
     Map<NeuralNetwork, Integer> matchupCount;
+
     Random random;
     MatchMaker(List<NeuralNetwork> networks) {
+        this.highlights = new ArrayList<>();
         random = new Random();
         this.networks = new ArrayList<>();
         this.networks.addAll(networks);
@@ -70,7 +73,9 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
      * @return
      */
     public List<NeuralNetwork> getMatchupWith(NeuralNetwork network, List<List<NeuralNetwork>> watched) {
-        removeIrrelevant(network);
+        if (highlights.size() == 0) {
+            initHighlights(network);
+        }
         for (List<NeuralNetwork> highlight: matchups) {
             if (!watched.contains(highlight)) {
                 return highlight;
@@ -80,15 +85,28 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
     }
 
     /**
+     * Initializes highlights with all matchups containing the network
+     */
+    private void initHighlights(NeuralNetwork network) {
+        for (List<NeuralNetwork> matchup: matchups) {
+            if (matchup.contains(network)) {
+                highlights.add(matchup);
+            }
+        }
+    }
+
+    /**
      * Removes all matchups that dont contain given network
      * @param network
      */
     private void removeIrrelevant(NeuralNetwork network) {
+        List<List<NeuralNetwork>> networksToRemove = new ArrayList<>();
         for (List<NeuralNetwork> matchup: matchups) {
             if (!matchup.contains(network)) {
-                matchups.remove(matchup);
+                networksToRemove.add(matchup);
             }
         }
+        matchups.removeAll(networksToRemove);
     }
 
 

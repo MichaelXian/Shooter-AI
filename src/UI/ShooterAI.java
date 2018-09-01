@@ -20,6 +20,7 @@ public class ShooterAI extends JFrame implements Observer{
     public static final int HEIGHT = 750;
     public static String GENERATION_FILE_PATH = "Generation/generation.txt";
     private boolean watching;
+    private boolean watchAll;
     private Evolver evolver;
     private List<NeuralNetwork> matchup;
     private GameDrawer gameDrawer;
@@ -27,11 +28,16 @@ public class ShooterAI extends JFrame implements Observer{
     private File generationFile;
 
 
-    public ShooterAI(String watching) {
-        this.watching = false;
-        if (watching == "true") {
-            this.watching = true;
+    public ShooterAI(String watching, String watchAll) {
+        this.watching = true;
+        if (watching == "false") {
+            this.watching = false;
         }
+        this.watchAll = true;
+        if (watchAll == "false") {
+            this.watchAll = false;
+        }
+
         generationFile = new File(GENERATION_FILE_PATH);
         //AI ai1 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), true);
         //AI ai2 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), false);
@@ -52,6 +58,10 @@ public class ShooterAI extends JFrame implements Observer{
 
     public boolean isWatching() {
         return watching;
+    }
+
+    public boolean isWatchAll() {
+        return watchAll;
     }
 
     private void initUI() {
@@ -80,7 +90,13 @@ public class ShooterAI extends JFrame implements Observer{
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            ShooterAI ex = new ShooterAI(args[0]);
+            String arg1 = null;
+            String arg2 = null;
+            if (args.length == 2) {
+                arg1 = args[0];
+                arg2 = args[1];
+            }
+            ShooterAI ex = new ShooterAI(arg1, arg2);
             ex.setVisible(true);
         });
     }
@@ -115,4 +131,6 @@ public class ShooterAI extends JFrame implements Observer{
             throw new NullPointerException("File not found");
         }
     }
+
+
 }

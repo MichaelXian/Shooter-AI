@@ -117,7 +117,7 @@ public class Evolver {
     private void resetEvolver() {
         watchedHighlights = new ArrayList<>();
         selection = new Selection(networks);
-        matchMaker = new MatchMaker(networks); // resets iterator
+        matchMaker = new MatchMaker(networks);
         iterator = matchMaker.iterator();
         children = new ArrayList<>();
     }
