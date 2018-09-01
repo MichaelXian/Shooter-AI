@@ -12,6 +12,7 @@ public class NeuralNetworkFactory {
 
     private static final Double NEW_NEURON_CHANCE = 0.3;
     private static final Double NEW_CONNECTION_CHANCE = 0.1;
+    private static final int NUM_LAYERS = 8;
 
 
     /**
@@ -32,8 +33,8 @@ public class NeuralNetworkFactory {
         NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7,5);
         //Remove Bias neuron
         removeBiasNeuron(neuralNetwork);
-        //Create 3 layers in-between
-        for (int i = 0; i < 3; i ++) {
+        //Create layers in-between
+        for (int i = 0; i < (NUM_LAYERS - 2); i ++) {
             Layer layer = new Layer();
             while (random() < neuronChance(layer)) {
                 layer.addNeuron(NeuronFactory.randomNeuron());
@@ -42,10 +43,10 @@ public class NeuralNetworkFactory {
         }
         pruneAllConnections(neuralNetwork);
         //make random connections
-        for (int i = 0; i < 4; i++) { // for each layer
+        for (int i = 0; i < NUM_LAYERS - 1; i++) { // for each layer, excluding output layer
             Layer layer = neuralNetwork.getLayerAt(i);
             for (Neuron neuron: layer.getNeurons()) { // for each neuron
-                for (int j = i + 1; j < 5; j++) { // iterate through layers in front of that neuron
+                for (int j = i + 1; j < NUM_LAYERS; j++) { // iterate through layers in front of that neuron
                     Layer connectLayer = neuralNetwork.getLayerAt(j);
                     for (Neuron connectNeuron: connectLayer.getNeurons()) { // for each neuron, connect if (random)
                         while (random() < connectChance(neuron, connectNeuron)) {

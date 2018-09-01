@@ -19,16 +19,23 @@ public class ShooterAI extends JFrame implements Observer{
     public static final int WIDTH = 1365;
     public static final int HEIGHT = 750;
     public static String GENERATION_FILE_PATH = "Generation/generation.txt";
+    private boolean watching;
     private Evolver evolver;
     private List<NeuralNetwork> matchup;
     private GameDrawer gameDrawer;
     private Game game;
     private File generationFile;
-    public ShooterAI() {
+
+
+    public ShooterAI(String watching) {
+        this.watching = false;
+        if (watching == "true") {
+            this.watching = true;
+        }
         generationFile = new File(GENERATION_FILE_PATH);
         //AI ai1 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), true);
         //AI ai2 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), false);
-        this.evolver = new Evolver();
+        this.evolver = new Evolver(this);
         matchup = evolver.next(game, null);
         /*game = new Game(false,
                 ai1,
@@ -43,8 +50,12 @@ public class ShooterAI extends JFrame implements Observer{
 
     }
 
+    public boolean isWatching() {
+        return watching;
+    }
+
     private void initUI() {
-        gameDrawer = new GameDrawer(game);
+        gameDrawer = new GameDrawer(game, this);
 
         setGeneration();
         add(gameDrawer);
@@ -69,7 +80,7 @@ public class ShooterAI extends JFrame implements Observer{
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            ShooterAI ex = new ShooterAI();
+            ShooterAI ex = new ShooterAI(args[0]);
             ex.setVisible(true);
         });
     }

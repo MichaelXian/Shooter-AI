@@ -2,6 +2,7 @@ package Evolution;
 
 import Game.Game;
 import UI.GameDrawer;
+import UI.ShooterAI;
 import org.neuroph.core.NeuralNetwork;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.List;
 public class Evolver {
     private final int POPULATION_SIZE = 100;
     private final String FILEPATH = "NeuralNets/net";
+    private final String BACKUP_FILEPATH = "NeuralNets/backup/net";
     private final String EXTENSION = ".nnet";
     private GameDrawer gameDrawer;
     private List<NeuralNetwork> networks;
@@ -18,9 +20,11 @@ public class Evolver {
     private MatchMaker matchMaker;
     private Iterator<List<NeuralNetwork>> iterator;
     private Selection selection;
+    private ShooterAI shooterAI;
     private boolean isEvolved;
 
-    public Evolver() {
+    public Evolver(ShooterAI shooterAI) {
+        this.shooterAI = shooterAI;
         networks = new ArrayList<>();
         loadNets();
         isEvolved = false;
@@ -36,7 +40,7 @@ public class Evolver {
      * next matchup
      */
     public List<NeuralNetwork> next(Game game, List<NeuralNetwork> currentMatchup) {
-        /*for (int i = 0; i < 1000; i++) {
+        /*for (int i = 0; i < 100; i++) { // for testing
             evolution();
             saveNets();
             resetEvolver();
@@ -45,12 +49,19 @@ public class Evolver {
             selection.grade(currentMatchup, game);
         }
         if (!iterator.hasNext()) {
+            doHighlights();
             evolution();
             saveNets();
             resetEvolver();
             isEvolved = true;
         }
         return iterator.next(); // after resetting iterator, it will have a next
+    }
+
+    /**
+     *
+     */
+    private void doHighlights() {
     }
 
 
@@ -69,6 +80,9 @@ public class Evolver {
     private void saveNets() {
         for (int i = 0; i < networks.size(); i ++) {
             networks.get(i).save(FILEPATH + i + EXTENSION);
+        }
+        for (int i = 0; i < networks.size(); i ++) {
+            networks.get(i).save(BACKUP_FILEPATH + i + EXTENSION);
         }
     }
 

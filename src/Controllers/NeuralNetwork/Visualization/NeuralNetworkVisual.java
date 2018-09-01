@@ -15,23 +15,20 @@ public class NeuralNetworkVisual {
     public static final Double BORDER_DISTANCE = 50d;
     public static final Double X = Game.WIDTH + BORDER_DISTANCE;
     public static final Double WIDTH = (ShooterAI.WIDTH - Game.WIDTH - 2 * BORDER_DISTANCE);
-    public static final Double DISTANCE_BETWEEN_NETWORKS = new Double(ShooterAI.HEIGHT)/2;
+    public static final Double DISTANCE_BETWEEN_NETWORKS = new Double(ShooterAI.HEIGHT)/2;//necessary unnecessary boxing
     public static final Double HEIGHT = ((ShooterAI.HEIGHT/2) - 2*BORDER_DISTANCE);
-    public static final Double DISTANCE_BETWEEN_LAYERS = WIDTH/5;
 
     private Double x;
     private Double y;
     private boolean isTop;
     private NeuralNetwork neuralNetwork;
     private List<LayerVisual> layerVisuals;
-//    private List<NeuronVisual> neuronVisuals;
     private int layerCount;
 
     public NeuralNetworkVisual(NeuralNetwork neuralNetwork, boolean isTop) {
         this.isTop = isTop;
         this.neuralNetwork = neuralNetwork;
         layerVisuals = new ArrayList<>();
-//        neuronVisuals = new ArrayList<>();
         layerCount = neuralNetwork.getLayersCount();
         initializePosition();
         if (neuralNetwork != null) {
@@ -103,7 +100,7 @@ public class NeuralNetworkVisual {
     private void initializeLayers() {
         for (int i = 0; i < layerCount; i++) {
             Layer layer = neuralNetwork.getLayerAt(i);
-            Double layerX = x + i * DISTANCE_BETWEEN_LAYERS;
+            Double layerX = x + i * WIDTH/layerCount;
             layerVisuals.add(new LayerVisual(layer, layerX, y, isTop));
         }
     }

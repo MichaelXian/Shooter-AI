@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static java.lang.Math.min;
+
 public class Crossover {
     public static final String CLONE_PATH = "NeuralNets/temp/clone.nnet";
     private static Random random = new Random();
@@ -36,6 +38,7 @@ public class Crossover {
     private static NeuralNetwork createChild(NeuralNetwork network, NeuralNetwork network2) {
         NeuralNetwork child;
         NeuralNetwork other;
+        int numLayers = min(network.getLayersCount(), network2.getLayersCount());
         if (random.nextBoolean()) {
             child = clone(network);
             other = network2;
@@ -43,7 +46,7 @@ public class Crossover {
             child = clone(network2);
             other = network;
         }
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < numLayers - 1; i++) { // don't cross the last layer
             crossLayers(child.getLayerAt(i), other.getLayerAt(i));
         }
         return child;

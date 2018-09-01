@@ -13,7 +13,7 @@ public class Selection {
         grades = new ArrayList<>();
         this.networks = networks;
         for (NeuralNetwork neuralnetwork: networks) {
-            grades.add(0.1);
+            grades.add(0.001);
         }
     }
 

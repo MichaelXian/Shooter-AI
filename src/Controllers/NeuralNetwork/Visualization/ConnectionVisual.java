@@ -6,6 +6,7 @@ import org.neuroph.core.Connection;
 
 import java.awt.*;
 
+import static java.lang.Math.abs;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 
@@ -35,7 +36,7 @@ public class ConnectionVisual {
      * Updates opacity of line
      */
     private void update() {
-        opacity = connection.getInput();
+        opacity = connection.getInput() *  connection.getWeight().value / abs(connection.getWeight().value);
         opacity = min(1, max(-1, opacity));
     }
 

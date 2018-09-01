@@ -5,17 +5,18 @@ import org.neuroph.core.Connection;
 import org.neuroph.core.Layer;
 import org.neuroph.core.NeuralNetwork;
 import org.neuroph.core.Neuron;
-import org.neuroph.nnet.comp.neuron.BiasNeuron;
 
 import java.util.List;
 import java.util.Random;
 
 public class Mutator {
-    private static final Double MULTIPLIER = 1.0;
+    private static final Double MULTIPLIER = 10.0;
     private static final Double REMOVE_NEURON_CHANCE = 0.05 * MULTIPLIER;
     private static final Double ADD_NEURON_CHANCE = 0.05 * MULTIPLIER;
     private static final Double REMOVE_CONNECTION_CHANCE = 0.01 * MULTIPLIER;
     private static final Double ADD_CONNECTION_CHANCE = 0.01 * MULTIPLIER;
+    private static final Double REMOVE_LAYER_CHANCE = 0.005 * MULTIPLIER;
+    private static final Double ADD_LAYER_CHANCE = 0.005 * MULTIPLIER;
     private static final Double WEIGHT_DELTA = 0.01 * MULTIPLIER;
     private static Random random = new Random();
     /**
@@ -24,7 +25,20 @@ public class Mutator {
      */
     public static void mutate(NeuralNetwork network) {
         List<Layer> layers = network.getLayers();
-        for (int i = 0; i < 4; i++) {
+        int layerCount = layers.size();
+        if (addLayerChance()) {
+            int index = 1;
+            if (layerCount > 2) {
+                index = random.nextInt(layerCount - 2) + 1; // ranges from 1 - (layerCount - 1)
+            }
+            layers.add(index, new Layer());
+            layerCount ++;
+        } else if (removeLayerChance() && layerCount > 2) {
+            int index = random.nextInt(layerCount - 2) + 1; // ranges from 1 - (layerCount - 1)
+            layers.remove(index);
+            layerCount --;
+        }
+        for (int i = 0; i < layerCount - 1; i++) { // don't mutate output layer
             mutateLayer(layers.get(i), network, i);
         }
     }
@@ -67,13 +81,15 @@ public class Mutator {
         for (Connection connection: connections) {
             mutateConnection(connection);
         }
-        removeAllBiasNeurons(network);
+        //removeAllBiasNeurons(network);
     }
+
 
     /**
      * Removes all bias neurons
      * @param network
      */
+    /*
     private static void removeAllBiasNeurons(NeuralNetwork network) {
         for (Object object: network.getLayers()) {
             Layer layer = (Layer) object;
@@ -85,6 +101,7 @@ public class Mutator {
             }
         }
     }
+    */
 
     /**
      * Adds a random outgoing connection from the neuron
@@ -128,7 +145,7 @@ public class Mutator {
      * @return
      */
     private static boolean removeNeuronChance(int size) {
-        return Math.random() < REMOVE_NEURON_CHANCE/(7-size);
+        return Math.random() < REMOVE_NEURON_CHANCE;// /(7-size);
     }
 
     /**
@@ -137,7 +154,7 @@ public class Mutator {
      * @return
      */
     private static boolean addNeuronChance(int size) {
-        return Math.random() < ADD_NEURON_CHANCE/(size + 0.2);
+        return Math.random() < ADD_NEURON_CHANCE;// /(size + 0.2);
     }
 
     /**
@@ -146,7 +163,7 @@ public class Mutator {
      * @return
      */
     private static boolean removeConnectionChance(int size) {
-        return Math.random() < ADD_CONNECTION_CHANCE/(4.00001 - size);
+        return Math.random() < ADD_CONNECTION_CHANCE;// /(4.00001 - size);
     }
 
     /**
@@ -155,8 +172,25 @@ public class Mutator {
      * @return
      */
     private static boolean addConnectionChance(int size) {
-        return Math.random() < REMOVE_CONNECTION_CHANCE/(size + 0.2);
+        return Math.random() < REMOVE_CONNECTION_CHANCE;// /(size + 0.2);
     }
+
+    /**
+     * Randomly chooses whether a layer should be removed or not
+     * @return
+     */
+    private static boolean addLayerChance() {
+        return Math.random() < ADD_LAYER_CHANCE;
+    }
+
+    /**
+     * Randomly chooses whether a layer should be added or not
+     * @return
+     */
+    private static boolean removeLayerChance() {
+        return Math.random() < REMOVE_LAYER_CHANCE;
+    }
+
 
 
 

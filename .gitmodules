@@ -1,0 +1,3 @@
+[submodule "neuroph"]
+	path = neuroph
+	url = https://github.com/neuroph/neuroph

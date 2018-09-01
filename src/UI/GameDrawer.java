@@ -26,18 +26,21 @@ public class GameDrawer extends JPanel implements ActionListener {
     private static final int DELAY = 1000/200;
     public static final int HEIGHT = ShooterAI.HEIGHT;
     public static final int WIDTH = 750;
+    private ShooterAI shooterAI;
     private final int LABEL_FONT = 10;
     private final int GENERATION_FONT = 30;
     private final int GAME_OVER_FONT = 100;
     private final Double LABEL_DISTANCE = 80/3d;
     private int generation = 1;
-    private Boolean first = true;
+    private boolean first = true;
+    private boolean highlight = false;
 
 
 
     private Game game;
     private Timer timer;
-    public GameDrawer(Game game) {
+    public GameDrawer(Game game, ShooterAI shooterAI) {
+        this.shooterAI = shooterAI;
         this.game = game;
         setFocusable(true);
         addKeyListener(new TAdapter());
@@ -87,7 +90,9 @@ public class GameDrawer extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         game.update();
-        repaint();
+        if (shooterAI.isWatching() && highlight) {
+            repaint();
+        }
     }
 
     private class TAdapter extends KeyAdapter {
