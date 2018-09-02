@@ -30,31 +30,28 @@ public class ShooterAI extends JFrame implements Observer{
 
     public ShooterAI(String watching, String watchAll) {
         this.watching = true;
-        if (watching == "false") {
+        if (watching.equals("false")) {
             this.watching = false;
         }
         this.watchAll = true;
-        if (watchAll == "false") {
+        if (watchAll.equals("false")) {
             this.watchAll = false;
         }
 
         generationFile = new File(GENERATION_FILE_PATH);
-        //AI ai1 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), true);
-        //AI ai2 = new AI(NeuralNetwork.createFromFile("NeuralNets/net0.nnet"), false);
         this.evolver = new Evolver(this);
         matchup = evolver.next(game, null);
-        /*game = new Game(false,
-                ai1,
-                ai2,
-                this);
-        */
         game = new Game(false,
                 new AI(matchup.get(0), true),
                 new AI(matchup.get(1), false),
                 this);
-        initUI();
-
     }
+
+
+    public void start() {
+        initUI();
+    }
+
 
     public boolean isWatching() {
         return watching;
@@ -98,9 +95,9 @@ public class ShooterAI extends JFrame implements Observer{
             }
             ShooterAI ex = new ShooterAI(arg1, arg2);
             ex.setVisible(true);
+            ex.start();
         });
     }
-
 
     @Override
     public void update(Observable o, Object arg) {

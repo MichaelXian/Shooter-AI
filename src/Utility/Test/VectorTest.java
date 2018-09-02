@@ -1,4 +1,4 @@
-package Test;
+package Utility.Test;
 
 import Utility.Vector;
 import org.junit.jupiter.api.Test;
@@ -15,9 +15,6 @@ public class VectorTest {
     Vector v2 = new Vector(5,6);
     Vector v3;
     Vector v4;
-    public VectorTest() {
-
-    }
 
 
     @Test
