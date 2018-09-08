@@ -7,6 +7,8 @@ import org.neuroph.core.NeuralNetwork;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -15,29 +17,28 @@ import java.util.Observable;
 import java.util.Observer;
 import java.util.Scanner;
 
-public class ShooterAI extends JFrame implements Observer{
+public class ShooterAI implements Observer, ActionListener {
     public static final int WIDTH = 1365;
     public static final int HEIGHT = 750;
-    public static String GENERATION_FILE_PATH = "Generation/generation.txt";
-    private boolean watching;
-    private boolean watchAll;
+    private static final int DELAY = 1000/200;
+    public static final String GENERATION_FILE_PATH = "Generation/generation.txt";
     private Evolver evolver;
     private List<NeuralNetwork> matchup;
-    private GameDrawer gameDrawer;
     private Game game;
     private File generationFile;
+    private Timer timer;
+    private int generation;
 
 
-    public ShooterAI(String watching, String watchAll) {
-        this.watching = true;
-        if (watching.equals("false")) {
-            this.watching = false;
-        }
-        this.watchAll = true;
-        if (watchAll.equals("false")) {
-            this.watchAll = false;
-        }
+    /**
+     * Starts timer
+     */
+    private void setTimer() {
+        timer = new Timer(DELAY, this);
+        timer.start();
+    }
 
+    public ShooterAI() {
         generationFile = new File(GENERATION_FILE_PATH);
         this.evolver = new Evolver(this);
         matchup = evolver.next(game, null);
@@ -49,36 +50,19 @@ public class ShooterAI extends JFrame implements Observer{
 
 
     public void start() {
-        initUI();
-    }
-
-
-    public boolean isWatching() {
-        return watching;
-    }
-
-    public boolean isWatchAll() {
-        return watchAll;
-    }
-
-    private void initUI() {
-        gameDrawer = new GameDrawer(game, this);
-
         setGeneration();
-        add(gameDrawer);
-        setSize(WIDTH, HEIGHT);
-        setTitle("Shooter AI");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+        setTimer();
     }
+
+
 
     /**
-     * Sets the generation of GameDrawer to the one found in the file storing the generation
+     * Sets the generation to the one found in the file storing the generation
      */
     private void setGeneration() {
         try {
             Scanner scanner = new Scanner(generationFile);
-            gameDrawer.setGeneration(scanner.nextInt());
+            generation = scanner.nextInt();
         } catch (FileNotFoundException e) {
             throw new NullPointerException("File not found");
         }
@@ -87,14 +71,7 @@ public class ShooterAI extends JFrame implements Observer{
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            String arg1 = null;
-            String arg2 = null;
-            if (args.length == 2) {
-                arg1 = args[0];
-                arg2 = args[1];
-            }
-            ShooterAI ex = new ShooterAI(arg1, arg2);
-            ex.setVisible(true);
+            ShooterAI ex = new ShooterAI();
             ex.start();
         });
     }
@@ -107,17 +84,13 @@ public class ShooterAI extends JFrame implements Observer{
                     new AI(matchup.get(0), true),
                     new AI(matchup.get(1), false),
                     this);
-            gameDrawer.setGame(game);
             if (evolver.isEvolved()) {
-                gameDrawer.incrementGeneration();
-                saveGeneration(gameDrawer.getGeneration());
+                generation ++;
+                saveGeneration(generation);
             }
         }
     }
 
-    public void setHighlight(boolean highlight) {
-        gameDrawer.setHighlight(highlight);
-    }
 
     private void saveGeneration(int generation) {
         try {
@@ -129,5 +102,8 @@ public class ShooterAI extends JFrame implements Observer{
         }
     }
 
-
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        game.update();
+    }
 }

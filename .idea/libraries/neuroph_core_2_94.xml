@@ -1,9 +1,12 @@
 <component name="libraryTable">
   <library name="neuroph-core-2.94">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/" />
+      <root url="file://$PROJECT_DIR$/neuroph" />
+      <root url="file://$PROJECT_DIR$/neuroph/libs" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/neuroph" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/neuroph/libs" recursive="false" />
   </library>
 </component>

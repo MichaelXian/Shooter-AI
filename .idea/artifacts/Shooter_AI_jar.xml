@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Shooter AI:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Shooter_AI_jar</output-path>
+    <root id="archive" name="Shooter AI.jar">
+      <element id="module-output" name="Shooter AI" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/neuroph-core-2.94.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/weka.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/ajt-2.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/javaml-0.1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/android-1.5_r4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/slf4j-api-1.7.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/slf4j-nop-1.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/neuroph/libs/logback-core-1.1.2.jar" path-in-jar="/" />
+      <element id="library" level="module" name="JUnit5.0" module-name="Shooter AI" />
+      <element id="library" level="project" name="libs" />
+      <element id="library" level="project" name="com.bluecatcode.junit:junit-4.12-extended:1.0.4" />
+      <element id="library" level="project" name="neuroph-core-2.94" />
+    </root>
+  </artifact>
+</component>

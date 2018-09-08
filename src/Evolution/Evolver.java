@@ -1,7 +1,6 @@
 package Evolution;
 
 import Game.Game;
-import UI.GameDrawer;
 import UI.ShooterAI;
 import org.neuroph.core.NeuralNetwork;
 
@@ -14,7 +13,6 @@ public class Evolver {
     private final String FILEPATH = "NeuralNets/net";
     private final String BACKUP_FILEPATH = "NeuralNets/backup/net";
     private final String EXTENSION = ".nnet";
-    private GameDrawer gameDrawer;
     private List<NeuralNetwork> networks;
     private List<NeuralNetwork> children;
     private Iterator<List<NeuralNetwork>> iterator;
@@ -51,14 +49,6 @@ public class Evolver {
             selection.grade(currentMatchup, game);
         }
         if (!iterator.hasNext()) {
-            if (shooterAI.isWatching()) {
-                shooterAI.setHighlight(true);
-                List<NeuralNetwork> nextHighlight = nextHighlight();
-                if (nextHighlight != null) {
-                    return nextHighlight;
-                }
-            }
-            shooterAI.setHighlight(false);
             evolution();
             saveNets();
             resetEvolver();

@@ -1,0 +1,35 @@
+ /**
+     * Randomly chooses whether a neuron should be removed or not
+     * @param size current number of neurons
+     * @return
+     */
+    private static boolean removeNeuronChance(int size) {
+        return Math.random() < REMOVE_NEURON_CHANCE;// /(7-size);
+    }
+
+    /**
+     * Randomly chooses whether a neuron should be added or not
+     * @param size current number of neurons
+     * @return
+     */
+    private static boolean addNeuronChance(int size) {
+        return Math.random() < ADD_NEURON_CHANCE;// /(size + 0.2);
+    }
+
+    /**
+     * Randomly chooses whether a connection should be removed or not
+     * @param size current number of connections
+     * @return
+     */
+    private static boolean removeConnectionChance(int size) {
+        return Math.random() < ADD_CONNECTION_CHANCE;// /(4.00001 - size);
+    }
+
+    /**
+     * Randomly chooses whether a connection should be added or not
+     * @param size current number of connections
+     * @return
+     */
+    private static boolean addConnectionChance(int size) {
+        return Math.random() < REMOVE_CONNECTION_CHANCE;// /(size + 0.2);
+    }

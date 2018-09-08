@@ -1,10 +1,234 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Shooter AI:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aca7e546-8db9-4075-9b3f-890cea3e967f" name="Default" comment="" />
+    <list default="true" id="aca7e546-8db9-4075-9b3f-890cea3e967f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/neuroph_core_2_94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/neuroph_core_2_94.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generation/generation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generation/generation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net11.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net11.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net12.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net12.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net13.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net13.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net14.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net14.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net15.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net15.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net16.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net16.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net17.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net17.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net18.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net18.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net19.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net19.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net2.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net2.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net20.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net20.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net21.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net21.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net22.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net22.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net23.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net23.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net24.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net24.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net25.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net25.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net26.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net26.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net27.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net27.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net28.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net28.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net29.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net29.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net3.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net3.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net30.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net30.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net31.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net31.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net32.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net32.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net33.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net33.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net34.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net34.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net35.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net35.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net36.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net36.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net37.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net37.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net38.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net38.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net39.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net39.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net4.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net4.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net40.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net40.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net41.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net41.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net42.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net42.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net43.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net43.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net44.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net44.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net45.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net45.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net46.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net46.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net47.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net47.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net48.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net48.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net49.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net49.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net5.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net5.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net50.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net50.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net51.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net51.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net52.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net52.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net53.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net53.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net54.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net54.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net55.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net55.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net56.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net56.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net57.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net57.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net58.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net58.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net59.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net59.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net6.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net6.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net60.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net60.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net61.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net61.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net62.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net62.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net63.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net63.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net64.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net64.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net65.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net65.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net66.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net66.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net67.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net67.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net68.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net68.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net69.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net69.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net7.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net7.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net70.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net70.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net71.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net71.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net72.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net72.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net73.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net73.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net74.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net74.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net75.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net75.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net76.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net76.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net77.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net77.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net78.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net78.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net79.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net79.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net8.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net8.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net80.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net80.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net81.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net81.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net82.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net82.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net83.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net83.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net84.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net84.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net85.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net85.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net86.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net86.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net87.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net87.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net88.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net88.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net89.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net89.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net9.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net9.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net90.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net90.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net91.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net91.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net92.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net92.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net93.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net93.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net94.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net94.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net95.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net95.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net96.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net96.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net97.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net97.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net98.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net98.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net99.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net99.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net0.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net0.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net1.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net1.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net10.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net10.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net11.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net11.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net12.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net12.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net13.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net13.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net14.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net14.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net15.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net15.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net16.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net16.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net17.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net17.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net18.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net18.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net19.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net19.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net2.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net2.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net20.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net20.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net21.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net21.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net22.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net22.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net23.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net23.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net24.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net24.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net25.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net25.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net26.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net26.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net27.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net27.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net28.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net28.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net29.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net29.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net3.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net3.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net30.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net30.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net31.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net31.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net32.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net32.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net33.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net33.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net34.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net34.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net35.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net35.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net36.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net36.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net37.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net37.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net38.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net38.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net39.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net39.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net4.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net4.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net40.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net40.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net41.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net41.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net42.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net42.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net43.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net43.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net44.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net44.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net45.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net45.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net46.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net46.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net47.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net47.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net48.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net48.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net49.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net49.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net5.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net5.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net50.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net50.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net51.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net51.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net52.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net52.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net53.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net53.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net54.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net54.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net55.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net55.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net56.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net56.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net57.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net57.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net58.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net58.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net59.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net59.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net6.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net6.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net60.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net60.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net61.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net61.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net62.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net62.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net63.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net63.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net64.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net64.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net65.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net65.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net66.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net66.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net67.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net67.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net68.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net68.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net69.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net69.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net7.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net7.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net70.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net70.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net71.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net71.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net72.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net72.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net73.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net73.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net74.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net74.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net75.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net75.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net76.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net76.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net77.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net77.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net78.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net78.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net79.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net79.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net8.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net8.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net80.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net80.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net81.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net81.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net82.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net82.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net83.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net83.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net84.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net84.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net85.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net85.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net86.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net86.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net87.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net87.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net88.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net88.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net89.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net89.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net9.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net9.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net90.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net90.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net91.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net91.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net92.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net92.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net93.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net93.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net94.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net94.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net95.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net95.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net96.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net96.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net97.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net97.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net98.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net98.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/net99.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net99.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Evolution/Evolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/Evolution/Evolver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Game/Test/BulletTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer$TAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/NewGenOneNetworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/NewGenOneNetworks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/ShooterAI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/ShooterAI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Utility/Test/VectorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Evolution/Evolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evolution/Evolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game/Test/BulletTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/GameDrawer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/ShooterAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/ShooterAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/Test/VectorTest.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,74 +252,75 @@
       <FILTER>Test.*</FILTER>
     </SUITE>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1371478658">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="143" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="143" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameDrawer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="172">
+              <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
               <folding>
-                <element signature="e#2889#2890#0" expanded="true" />
-                <element signature="e#2931#2932#0" expanded="true" />
-                <element signature="e#9111#9112#0" expanded="true" />
-                <element signature="e#9143#9144#0" expanded="true" />
-                <element signature="e#9177#9178#0" expanded="true" />
-                <element signature="e#9210#9211#0" expanded="true" />
-                <element signature="e#9263#9264#0" expanded="true" />
-                <element signature="e#9307#9308#0" expanded="true" />
-                <element signature="e#9358#9359#0" expanded="true" />
-                <element signature="e#9400#9401#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3532#3533#0" expanded="true" />
+                <element signature="e#3561#3562#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NeuronVisual.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UI/NewGenOneNetworks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="345">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/awt/Container.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="811">
-              <caret line="124" column="7" lean-forward="false" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="208">
+              <caret line="417" column="21" selection-start-line="417" selection-start-column="21" selection-end-line="417" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utility/Test/VectorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Bullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Evolver.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+            <state relative-caret-position="820">
+              <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,52 +328,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crossover.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Evolution/Crossover.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="-282">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShooterAI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="102" column="7" lean-forward="false" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-              <folding>
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1431#1432#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
-                <element signature="e#3226#3227#0" expanded="true" />
-                <element signature="e#3276#3277#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mutator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1523">
-              <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatchMaker.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-769">
-              <caret line="87" column="70" lean-forward="false" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
+            <state relative-caret-position="663">
+              <caret line="87" column="70" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
               <folding>
-                <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" expanded="false" />
+                <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" />
               </folding>
             </state>
           </provider>
@@ -166,9 +361,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getName</find>
-      <find>LoggerFac</find>
-      <find>random(</find>
       <find>drawer</find>
       <find>colli</find>
       <find>winner</find>
@@ -196,15 +388,13 @@
       <find>drawGen</find>
       <find>Shooter</find>
       <find>clone</find>
+      <find>gameDraw</find>
+      <find>N</find>
+      <find>gamedraw</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Shooter-AI" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -247,40 +437,29 @@
         <option value="$PROJECT_DIR$/src/Evolution/Mutator.java" />
         <option value="$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/ConnectionVisual.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Selection.java" />
-        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
         <option value="$PROJECT_DIR$/src/Evolution/MatchMaker.java" />
-        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
         <option value="$PROJECT_DIR$/src/Test/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/Game/Test/BulletTest.java" />
         <option value="$PROJECT_DIR$/src/Utility/Test/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/Game/Test/ShipTest.java" />
+        <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
+        <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
         <option value="$PROJECT_DIR$/src/UI/ShooterAI.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
-    <option name="y" value="27" />
+    <option name="x" value="302" />
+    <option name="y" value="167" />
     <option name="width" value="1366" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -331,37 +510,37 @@
               <item name="Shooter-AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shooter-AI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="UI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Shooter-AI" type="b2602c69:ProjectViewProjectNode" />
               <item name="Shooter-AI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="UI" type="462c0819:PsiDirectoryNode" />
+              <item name="Utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
-    <property name="settings.editor.splitter.proportion" value="0.46243903" />
-    <property name="android.sdk.path" value="$PROJECT_DIR$/../UBC/-Labs-/android-sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="android.sdk.path" value="$PROJECT_DIR$/../UBC/-Labs-/android-sdk" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536386612353" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.46243903" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -385,194 +564,137 @@
   </component>
   <component name="RunManager" selected="Application.ShooterAI">
     <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="NewGenOneNetworks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="UI.NewGenOneNetworks" />
+      <module name="Shooter AI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="UI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="UI.NewGenOneNetworks" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Shooter AI" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ShooterAI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <option name="MAIN_CLASS_NAME" value="UI.ShooterAI" />
+      <module name="Shooter AI" />
+      <option name="PROGRAM_PARAMETERS" value="true true" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="UI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="UI.ShooterAI" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="true true" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Shooter AI" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="VectorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="Shooter AI" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Game.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Shooter AI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Utility.Test" />
       <option name="MAIN_CLASS_NAME" value="Utility.Test.VectorTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="VectorTest.testLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="Shooter AI" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Game.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Shooter AI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Utility.Test" />
       <option name="MAIN_CLASS_NAME" value="Utility.Test.VectorTest" />
       <option name="METHOD_NAME" value="testLength" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="VectorTest.testRotate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="Shooter AI" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Game.Test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="Shooter AI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Utility.Test" />
       <option name="MAIN_CLASS_NAME" value="Utility.Test.VectorTest" />
       <option name="METHOD_NAME" value="testRotate" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ShooterAI" />
-      <item index="1" class="java.lang.String" itemvalue="Application.NewGenOneNetworks" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.VectorTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.VectorTest.testRotate" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.VectorTest.testLength" />
+    <list>
+      <item itemvalue="Application.ShooterAI" />
+      <item itemvalue="Application.NewGenOneNetworks" />
+      <item itemvalue="JUnit.VectorTest" />
+      <item itemvalue="JUnit.VectorTest.testRotate" />
+      <item itemvalue="JUnit.VectorTest.testLength" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ShooterAI" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NewGenOneNetworks" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.VectorTest.testLength" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.VectorTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VectorTest.testRotate" />
+      <list>
+        <item itemvalue="Application.ShooterAI" />
+        <item itemvalue="Application.NewGenOneNetworks" />
+        <item itemvalue="JUnit.VectorTest.testLength" />
+        <item itemvalue="JUnit.VectorTest" />
+        <item itemvalue="JUnit.VectorTest.testRotate" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -617,36 +739,70 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="296" y="27" width="1366" height="741" extended-state="0" />
+    <frame x="302" y="167" width="1366" height="741" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5026022" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.49739778" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20669144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293687" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20996979" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32819724" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739778" visible="true" weight="0.32819724" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026022" side_tool="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32972136" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32972136" />
+      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3293687" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info id="UI Designer" order="0" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20996979" />
+      <window_info id="Structure" order="2" weight="0.25" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739778" weight="0.32972136" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5026022" side_tool="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="CheckStyle" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32972136" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32972136" />
+      <window_info anchor="bottom" id="Problems" order="12" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Commander" order="2" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" weight="0.3293687" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -661,9 +817,7 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="113" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -723,93 +877,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/nnet/Perceptron.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/nnet/MultiLayerPerceptron.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="1457" column="0" lean-forward="false" selection-start-line="1457" selection-start-column="0" selection-end-line="1457" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="771" column="32" lean-forward="false" selection-start-line="771" selection-start-column="25" selection-end-line="771" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/nnet/Perceptron.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Launcher.class" />
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/nnet/MultiLayerPerceptron.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Runnable.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/Math.java" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuralNetwork.java" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/Line.java" />
     <entry file="file://$PROJECT_DIR$/src/Utility/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utility/Collision.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utility/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
-          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Game/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Neuron.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Neuron.class" />
     <entry file="file://$PROJECT_DIR$/src/Utility/Line.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -820,92 +924,56 @@
     <entry file="file://$PROJECT_DIR$/src/Utility/Geometry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Weight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/NeuralNetwork.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Weight.class" />
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/NeuralNetwork.class" />
     <entry file="file://$PROJECT_DIR$/src/Utility/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
+          <caret line="33" column="64" selection-start-line="33" selection-start-column="64" selection-end-line="33" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Layer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="96" column="22" lean-forward="false" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4005">
-          <caret line="299" column="11" lean-forward="false" selection-start-line="299" selection-start-column="11" selection-end-line="299" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/org/neuroph/core/Layer.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/io/PrintWriter.java" />
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuronFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="387" column="0" lean-forward="false" selection-start-line="387" selection-start-column="0" selection-end-line="387" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/Random.java" />
     <entry file="file://$PROJECT_DIR$/src/Utility/DataToDouble.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
-          <caret line="66" column="22" lean-forward="false" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding />
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-          <folding />
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/Graphic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuralNetworkVisual.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1043">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" />
           </folding>
         </state>
       </provider>
@@ -913,229 +981,101 @@
     <entry file="file://$PROJECT_DIR$/src/Controllers/AI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="37" column="1" lean-forward="false" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding />
+          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
-          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
-          <folding />
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/LayerVisual.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="74" column="81" lean-forward="false" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
-          <folding />
+          <caret line="74" column="81" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/ConnectionVisual.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-          <folding />
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/NewGenOneNetworks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4620">
-          <caret line="353" column="23" lean-forward="false" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
-          <folding>
-            <marker date="1504666619000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1504666619000" expanded="false" signature="132:297" ph="..." />
-            <marker date="1504666619000" expanded="true" signature="1492:1499" ph="{}" />
-            <marker date="1504666619000" expanded="true" signature="1559:1787" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="2950:2968" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3029:3040" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3077:3083" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3089:3107" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3179:3190" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3226:3232" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3238:3256" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3323:3334" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3374:3380" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3386:3404" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3482:3493" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3532:3538" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3544:3562" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3631:3642" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3683:3689" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3695:3713" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3793:3804" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3844:3850" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3856:3874" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="3937:3948" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="3986:3992" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="3998:4016" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4090:4101" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4138:4144" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4150:4168" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4233:4244" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4283:4289" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4295:4313" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4389:4400" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4438:4444" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4450:4468" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4531:4542" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4580:4586" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4592:4610" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4684:4695" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4732:4738" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4744:4762" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4825:4836" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="4874:4880" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="4886:4904" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="4978:4989" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="5026:5032" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="5038:5056" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="5121:5132" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="5171:5177" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="5183:5201" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="5277:5288" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="5326:5332" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="5338:5356" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="5423:5434" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="5474:5480" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="5486:5504" ph="/**...*/" />
-            <marker date="1504666619000" expanded="false" signature="5582:5593" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="5632:5638" ph=" }" />
-            <marker date="1504666619000" expanded="false" signature="6704:6715" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="6762:6768" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="6925:7003" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="7056:7074" ph="/**...*/" />
-            <marker date="1504666619000" expanded="true" signature="7130:7264" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="7270:7288" ph="/**...*/" />
-            <marker date="1504666619000" expanded="true" signature="7354:7634" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="8424:8442" ph="/**...*/" />
-            <marker date="1504666619000" expanded="true" signature="8514:8532" ph="/**...*/" />
-            <marker date="1504666619000" expanded="true" signature="8603:8621" ph="/**...*/" />
-            <marker date="1504666619000" expanded="true" signature="10811:10996" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="11069:11257" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="11327:11505" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="11578:11759" ph="{...}" />
-            <marker date="1504666619000" expanded="true" signature="11838:12025" ph="{...}" />
-            <marker date="1504666619000" expanded="false" signature="12188:12199" ph=" { " />
-            <marker date="1504666619000" expanded="false" signature="12230:12236" ph=" }" />
-            <marker date="1504666619000" expanded="true" signature="12249:13814" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12150">
-          <caret line="856" column="0" lean-forward="false" selection-start-line="856" selection-start-column="0" selection-end-line="856" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/Game/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-501">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Test/BulletTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Test/ShipTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="900">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Bullet.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="1695">
+          <caret line="124" column="7" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utility/Test/VectorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Test/ShipTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="45" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Crossover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="811">
-          <caret line="124" column="7" lean-forward="false" selection-start-line="124" selection-start-column="7" selection-end-line="124" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="1320">
+          <caret line="97" column="22" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="102" column="7" lean-forward="false" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-          <folding>
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1431#1432#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
-            <element signature="e#3226#3227#0" expanded="true" />
-            <element signature="e#3276#3277#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="31" column="95" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/Visualization/NeuronVisual.java">
+    <entry file="file://$PROJECT_DIR$/src/Game/Test/BulletTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="71" column="34" lean-forward="false" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/GameDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="-2848">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="e#2889#2890#0" expanded="true" />
             <element signature="e#2931#2932#0" expanded="true" />
@@ -1151,39 +1091,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/awt/Container.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-769">
-          <caret line="87" column="70" lean-forward="false" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
-          <folding>
-            <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="417" column="21" selection-start-line="417" selection-start-column="21" selection-end-line="417" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
+    <entry file="file://$PROJECT_DIR$/src/UI/NewGenOneNetworks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1523">
-          <caret line="31" column="95" lean-forward="false" selection-start-line="31" selection-start-column="95" selection-end-line="31" selection-end-column="95" />
-          <folding />
+        <state relative-caret-position="345">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="820">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Crossover.java">
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="97" column="22" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="-282">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="87" column="70" selection-start-line="87" selection-start-column="70" selection-end-line="87" selection-end-column="70" />
+          <folding>
+            <element signature="docComment;method#createMatchup#0;class#MatchMaker#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="87" column="30" selection-start-line="87" selection-start-column="30" selection-end-line="87" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3532#3533#0" expanded="true" />
+            <element signature="e#3561#3562#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1193,10 +1150,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Shooter AI:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1252,7 +1211,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>libs</last-edited>
+          <last-edited>neuroph-core-2.94</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
