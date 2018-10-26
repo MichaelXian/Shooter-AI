@@ -1,6 +1,7 @@
 package Game;
 
 import Controllers.AI;
+import Controllers.Controller;
 import Controllers.Player;
 import UI.ShooterAI;
 import Utility.*;
@@ -44,7 +45,7 @@ public class Game extends Observable {
      * @param ai2 the ai controlling the second ship
      * @param shooterAI the shooterAI
      */
-    public Game(Boolean player, AI ai1, AI ai2, ShooterAI shooterAI) {
+    public Game(Boolean player, Controller controller1, AI ai2, ShooterAI shooterAI) {
         killed = false;
         firstEnd = false;
         endTime = new Double(MAX_TICKS);
@@ -53,7 +54,7 @@ public class Game extends Observable {
         bullets1 = new ArrayList<>();
         bullets2 = new ArrayList<>();
         ships = new ArrayList<>();
-        spawnShips(player, ai1, ai2);
+        spawnShips(player, controller1, ai2);
         ship1 = ships.get(0);
         ship2 = ships.get(1);
         initialBullets();
@@ -87,7 +88,7 @@ public class Game extends Observable {
      * Spawns the ships
      * @param player whether the first ship is player controlled or not
      */
-    private void spawnShips(Boolean player, AI ai1, AI ai2) {
+    private void spawnShips(Boolean player, Controller ai1, AI ai2) {
         // create first ship, and choose controller based on player or ai
         if (player) {
             ships.add(new Ship(SHIP_SPAWN_1, new Player(), this, true));

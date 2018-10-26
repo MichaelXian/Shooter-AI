@@ -1,6 +1,7 @@
 package UI;
 
 import Controllers.AI;
+import Controllers.Player;
 import Evolution.Evolver;
 import Game.Game;
 import org.neuroph.core.NeuralNetwork;
@@ -31,18 +32,18 @@ public class ShooterAI extends JFrame implements Observer{
     public ShooterAI(String watching, String watchAll) {
         this.watching = true;
         if (watching.equals("false")) {
-            this.watching = false;
+            //this.watching = false;
         }
         this.watchAll = true;
         if (watchAll.equals("false")) {
-            this.watchAll = false;
+            //this.watchAll = false;
         }
 
         generationFile = new File(GENERATION_FILE_PATH);
         this.evolver = new Evolver(this);
         matchup = evolver.next(game, null);
         game = new Game(false,
-                new AI(matchup.get(0), true),
+                new Player(),
                 new AI(matchup.get(1), false),
                 this);
     }
@@ -104,7 +105,7 @@ public class ShooterAI extends JFrame implements Observer{
         if (game.isGameEnd()) {
             matchup = evolver.next(game, matchup);
             game = new Game(false,
-                    new AI(matchup.get(0), true),
+                    new Player(),
                     new AI(matchup.get(1), false),
                     this);
             gameDrawer.setGame(game);
