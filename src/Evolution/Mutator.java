@@ -11,12 +11,12 @@ import java.util.Random;
 
 public class Mutator {
     private static final Double MULTIPLIER = 10.0;
-    private static final Double REMOVE_NEURON_CHANCE = 0.05 * MULTIPLIER;
-    private static final Double ADD_NEURON_CHANCE = 0.05 * MULTIPLIER;
-    private static final Double REMOVE_CONNECTION_CHANCE = 0.01 * MULTIPLIER;
-    private static final Double ADD_CONNECTION_CHANCE = 0.01 * MULTIPLIER;
-    private static final Double REMOVE_LAYER_CHANCE = 0.005 * MULTIPLIER;
-    private static final Double ADD_LAYER_CHANCE = 0.005 * MULTIPLIER;
+    private static final Double REMOVE_NEURON_CHANCE = 0.0 * MULTIPLIER;
+    private static final Double ADD_NEURON_CHANCE = 0.0 * MULTIPLIER;
+    private static final Double REMOVE_CONNECTION_CHANCE = 0.0 * MULTIPLIER;
+    private static final Double ADD_CONNECTION_CHANCE = 0.0 * MULTIPLIER;
+    private static final Double REMOVE_LAYER_CHANCE = 0.00 * MULTIPLIER;
+    private static final Double ADD_LAYER_CHANCE = 0.00 * MULTIPLIER;
     private static final Double WEIGHT_DELTA = 0.01 * MULTIPLIER;
     private static Random random = new Random();
     /**
