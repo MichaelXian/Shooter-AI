@@ -2,10 +2,11 @@ package Evolution;
 
 import Game.Game;
 
-public class MatchPlayer {
-    public static void playMatch(Game game) {
+public class GamePlayer {
+    public static void playGame(Game game) {
         while (!game.isGameEnd()) {
             game.update();
         }
+        game.update();
     }
 }

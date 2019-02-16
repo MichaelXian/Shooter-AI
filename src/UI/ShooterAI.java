@@ -2,7 +2,7 @@ package UI;
 
 import Controllers.AI;
 import Evolution.Evolver;
-import Evolution.MatchPlayer;
+import Evolution.GamePlayer;
 import Game.Game;
 import Utility.Generation;
 import org.neuroph.core.NeuralNetwork;
@@ -27,7 +27,7 @@ public class ShooterAI implements Observer{
         this.evolver = new Evolver(this);
         // Get initial matchup
         matchup = evolver.next(game, null);
-        // Get initial gmae
+        // Get initial game
         game = new Game(false,
                 new AI(matchup.get(0), true),
                 new AI(matchup.get(1), false),
@@ -36,7 +36,21 @@ public class ShooterAI implements Observer{
 
 
     public void start() {
-        MatchPlayer.playMatch(game);
+        while (true) {
+            gameNum++;
+            //int totalMatchups = evolver.getNumMatchups();
+            //System.out.print("Matchup " + gameNum + "/" + totalMatchups + ": ");
+            matchup = evolver.next(game, matchup);
+            game = new Game(false,
+                    new AI(matchup.get(0), true),
+                    new AI(matchup.get(1), false),
+                    this);
+            if (evolver.isEvolved()) {
+                gameNum = 0;
+                Generation.incrementGeneration();
+            }
+            GamePlayer.playGame(game);
+        }
     }
 
 
@@ -51,21 +65,6 @@ public class ShooterAI implements Observer{
 
     @Override
     public void update(Observable o, Object arg) {
-        if (game.isGameEnd()) {
-            gameNum ++;
-            int totalMatchups = evolver.getNumMatchups();
-            System.out.print("Matchup " + gameNum + "/" + totalMatchups + ": ");
-            matchup = evolver.next(game, matchup);
-            game = new Game(false,
-                    new AI(matchup.get(0), true),
-                    new AI(matchup.get(1), false),
-                    this);
-            if (evolver.isEvolved()) {
-                gameNum = 0;
-                Generation.incrementGeneration();
-            }
-            MatchPlayer.playMatch(game);
-        }
     }
 
 

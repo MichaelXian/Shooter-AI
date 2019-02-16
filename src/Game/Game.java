@@ -122,12 +122,14 @@ public class Game extends Observable {
     }
 
     private void endGame() {
-        System.out.print(winner);
-        String winMethod = killed ? KILL_WIN : DEFAULT_WIN;
-        System.out.println(" " + winMethod);
+        //System.out.print(winner);
+        //String winMethod = killed ? KILL_WIN : DEFAULT_WIN;
+        //System.out.println(" " + winMethod);
+        // End the game
         gameEnd = true;
-        setChanged();
-        notifyObservers(data);
+        // Notify observers that game has ended
+        //setChanged();
+        //notifyObservers(data);
     }
 
 
@@ -178,7 +180,7 @@ public class Game extends Observable {
     }
 
     /**
-     * Updates the state of the game
+     * Updates the state of the game, and returns whether the game has ended or not
      */
     public void update() {
         ticks ++;
