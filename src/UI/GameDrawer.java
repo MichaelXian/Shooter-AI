@@ -96,14 +96,7 @@ public class GameDrawer extends JPanel implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent e) {
-        game.update();
-        if (shooterAI.isWatchAll()) {
-            repaint();
-        } else {
-            if (shooterAI.isWatching() && highlight) {
-                repaint();
-            }
-        }
+
     }
 
     private class TAdapter extends KeyAdapter {

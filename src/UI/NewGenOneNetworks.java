@@ -1,6 +1,7 @@
 package UI;
 
 import Controllers.NeuralNetwork.NeuralNetworkFactory;
+import Utility.Generation;
 import org.neuroph.core.NeuralNetwork;
 
 import java.io.File;
@@ -21,7 +22,7 @@ public class NewGenOneNetworks {
         }
 
         try {
-            File generationFile = new File(ShooterAI.GENERATION_FILE_PATH);
+            File generationFile = new File(Generation.GENERATION_FILE_PATH);
             PrintWriter writer = new PrintWriter(generationFile);
             writer.print(1);
             writer.close();

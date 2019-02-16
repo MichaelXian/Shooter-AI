@@ -84,6 +84,14 @@ public class MatchMaker implements Iterable<List<NeuralNetwork>>{
         return null;
     }
 
+
+    /**
+     * Gets the total number of matchups
+     * @return
+     */
+    public int getNumMatchups() {
+        return matchups.size();
+    }
     /**
      * Initializes highlights with all matchups containing the network
      */

@@ -51,20 +51,12 @@ public class Evolver {
             selection.grade(currentMatchup, game);
         }
         if (!iterator.hasNext()) {
-            if (shooterAI.isWatching()) {
-                shooterAI.setHighlight(true);
-                List<NeuralNetwork> nextHighlight = nextHighlight();
-                if (nextHighlight != null) {
-                    return nextHighlight;
-                }
-            }
-            shooterAI.setHighlight(false);
             evolution();
             saveNets();
             resetEvolver();
             isEvolved = true;
         }
-        return iterator.next(); // after resetting iterator, it will have a next
+        return iterator.next(); // after resetting evolver, it will have a next
     }
 
     /**
@@ -151,5 +143,13 @@ public class Evolver {
         }
     }
 
+
+    /**
+     * Gets the number of matchups made by the matchmaker
+     * @return
+     */
+    public int getNumMatchups() {
+        return matchMaker.getNumMatchups();
+    }
 
 }

@@ -2,8 +2,10 @@
   <library name="neuroph-core-2.94">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../neuroph-2.94/neuroph-core-2.94.jar!/" />
+      <root url="file://$PROJECT_DIR$/../neuroph" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../neuroph" recursive="false" />
   </library>
 </component>

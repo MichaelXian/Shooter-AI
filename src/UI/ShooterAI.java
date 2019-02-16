@@ -2,45 +2,32 @@ package UI;
 
 import Controllers.AI;
 import Evolution.Evolver;
+import Evolution.MatchPlayer;
 import Game.Game;
+import Utility.Generation;
 import org.neuroph.core.NeuralNetwork;
 
-import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.Scanner;
 
-public class ShooterAI extends JFrame implements Observer{
+public class ShooterAI implements Observer{
     public static final int WIDTH = 1365;
     public static final int HEIGHT = 750;
-    public static String GENERATION_FILE_PATH = "Generation/generation.txt";
-    private boolean watching;
-    private boolean watchAll;
     private Evolver evolver;
     private List<NeuralNetwork> matchup;
     private GameDrawer gameDrawer;
     private Game game;
-    private File generationFile;
+    private int gameNum = 0;
 
 
-    public ShooterAI(String watching, String watchAll) {
-        this.watching = true;
-        if (watching.equals("false")) {
-            this.watching = false;
-        }
-        this.watchAll = true;
-        if (watchAll.equals("false")) {
-            this.watchAll = false;
-        }
-
-        generationFile = new File(GENERATION_FILE_PATH);
+    public ShooterAI() {
+        // Create a new evolver
         this.evolver = new Evolver(this);
+        // Get initial matchup
         matchup = evolver.next(game, null);
+        // Get initial gmae
         game = new Game(false,
                 new AI(matchup.get(0), true),
                 new AI(matchup.get(1), false),
@@ -49,52 +36,15 @@ public class ShooterAI extends JFrame implements Observer{
 
 
     public void start() {
-        initUI();
+        MatchPlayer.playMatch(game);
     }
 
 
-    public boolean isWatching() {
-        return watching;
-    }
-
-    public boolean isWatchAll() {
-        return watchAll;
-    }
-
-    private void initUI() {
-        gameDrawer = new GameDrawer(game, this);
-
-        setGeneration();
-        add(gameDrawer);
-        setSize(WIDTH, HEIGHT);
-        setTitle("Shooter AI");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-    }
-
-    /**
-     * Sets the generation of GameDrawer to the one found in the file storing the generation
-     */
-    private void setGeneration() {
-        try {
-            Scanner scanner = new Scanner(generationFile);
-            gameDrawer.setGeneration(scanner.nextInt());
-        } catch (FileNotFoundException e) {
-            throw new NullPointerException("File not found");
-        }
-    }
 
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            String arg1 = null;
-            String arg2 = null;
-            if (args.length == 2) {
-                arg1 = args[0];
-                arg2 = args[1];
-            }
-            ShooterAI ex = new ShooterAI(arg1, arg2);
-            ex.setVisible(true);
+            ShooterAI ex = new ShooterAI();
             ex.start();
         });
     }
@@ -102,32 +52,22 @@ public class ShooterAI extends JFrame implements Observer{
     @Override
     public void update(Observable o, Object arg) {
         if (game.isGameEnd()) {
+            gameNum ++;
+            int totalMatchups = evolver.getNumMatchups();
+            System.out.print("Matchup " + gameNum + "/" + totalMatchups + ": ");
             matchup = evolver.next(game, matchup);
             game = new Game(false,
                     new AI(matchup.get(0), true),
                     new AI(matchup.get(1), false),
                     this);
-            gameDrawer.setGame(game);
+            MatchPlayer.playMatch(game);
             if (evolver.isEvolved()) {
-                gameDrawer.incrementGeneration();
-                saveGeneration(gameDrawer.getGeneration());
+                gameNum = 0;
+                Generation.incrementGeneration();
             }
         }
     }
 
-    public void setHighlight(boolean highlight) {
-        gameDrawer.setHighlight(highlight);
-    }
-
-    private void saveGeneration(int generation) {
-        try {
-            PrintWriter writer = new PrintWriter(generationFile);
-            writer.print(generation);
-            writer.close();
-        } catch (FileNotFoundException e) {
-            throw new NullPointerException("File not found");
-        }
-    }
 
 
 }

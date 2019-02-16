@@ -15,6 +15,8 @@ public class Game extends Observable {
     public final static String DRAW = "No Winner";
     public final static String FIRST_WIN = "Ship 1 Won";
     public final static String SECOND_WIN = "Ship 2 Won";
+    public final static String KILL_WIN = "by killing";
+    public final static String DEFAULT_WIN = "by default";
     public final static int WIDTH = 750;
     public final static int HEIGHT = ShooterAI.HEIGHT;
     private final int DELAY = 10;
@@ -103,12 +105,12 @@ public class Game extends Observable {
      * Makes the surviving ship the winner
      */
     private void killShip(Ship ship) {
-        firstEnd = true;
         if (ship == ship1) {
             winner = SECOND_WIN;
         } else {
             winner = FIRST_WIN;
         }
+        endGame();
     }
 
     /**
@@ -116,8 +118,17 @@ public class Game extends Observable {
      */
     private void drawGame() {
         winner = DRAW;
+        endGame();
     }
 
+    private void endGame() {
+        System.out.print(winner);
+        String winMethod = killed ? KILL_WIN : DEFAULT_WIN;
+        System.out.println(" " + winMethod);
+        gameEnd = true;
+        setChanged();
+        notifyObservers(data);
+    }
 
 
     /**
@@ -170,11 +181,6 @@ public class Game extends Observable {
      * Updates the state of the game
      */
     public void update() {
-        gameEndTimer();
-        //System.out.println(MAX_TICKS - ticks);
-        if (new Double(ticks) - endTime > DELAY) {
-            gameEnd = true;
-        }
         ticks ++;
         updateData();
         setChanged();
@@ -193,15 +199,6 @@ public class Game extends Observable {
         }
     }
 
-    /**
-     * Counts down from gameOver to endTime, so the winner text displays
-     */
-    private void gameEndTimer() {
-        if (firstEnd) {
-            firstEnd = false;
-            endTime = new Double(ticks);
-        }
-    }
 
     /**
      * Checks if the centre of a ship is within the boundary
