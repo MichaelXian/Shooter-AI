@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca7e546-8db9-4075-9b3f-890cea3e967f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Evolution/MatchPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utility/Generation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/neuroph_core_2_94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/neuroph_core_2_94.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" afterDir="false" />
@@ -208,23 +203,9 @@
       <change beforePath="$PROJECT_DIR$/NeuralNets/net98.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net98.nnet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNets/net99.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net99.nnet" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shooter AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Shooter AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Evolution/Evolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/Evolution/Evolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/Game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Game/Test/BulletTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer$TAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer$TAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/GameDrawer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/NewGenOneNetworks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/NewGenOneNetworks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/UI/ShooterAI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/UI/ShooterAI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Utility/Test/VectorTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Evolution/Evolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evolution/Evolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evolution/MatchMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evolution/MatchMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game/Test/BulletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/BulletTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/GameDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/GameDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/NewGenOneNetworks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/NewGenOneNetworks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/ShooterAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/ShooterAI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/Test/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/VectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utility/Generation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/Generation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -263,32 +244,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="26" />
+          <entry key="java" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1450" />
+          <entry key="java" value="1473" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1450" />
+          <entry key="JAVA" value="1473" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-180">
               <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
             </state>
           </provider>
@@ -297,8 +278,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+            <state relative-caret-position="367">
+              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
               <folding>
                 <element signature="e#952#953#0" expanded="true" />
                 <element signature="e#995#996#0" expanded="true" />
@@ -310,8 +291,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="147" column="57" selection-start-line="147" selection-start-column="57" selection-end-line="147" selection-end-column="57" />
+            <state relative-caret-position="199">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4174#4175#0" expanded="true" />
@@ -329,6 +310,18 @@
               <folding>
                 <element signature="e#2790#2791#0" expanded="true" />
                 <element signature="e#2820#2821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Utility/Generation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -424,14 +417,14 @@
         <option value="$PROJECT_DIR$/src/Game/Test/BulletTest.java" />
         <option value="$PROJECT_DIR$/src/Utility/Test/VectorTest.java" />
         <option value="$PROJECT_DIR$/src/Game/Test/ShipTest.java" />
-        <option value="$PROJECT_DIR$/src/Utility/Generation.java" />
         <option value="$PROJECT_DIR$/src/Evolution/MatchPlayer.java" />
         <option value="$PROJECT_DIR$/src/UI/NewGenOneNetworks.java" />
         <option value="$PROJECT_DIR$/src/UI/GameDrawer.java" />
         <option value="$PROJECT_DIR$/src/Evolution/MatchMaker.java" />
+        <option value="$PROJECT_DIR$/src/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/Evolution/Evolver.java" />
         <option value="$PROJECT_DIR$/src/UI/ShooterAI.java" />
-        <option value="$PROJECT_DIR$/src/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/Utility/Generation.java" />
       </list>
     </option>
   </component>
@@ -502,6 +495,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="UI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Shooter-AI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shooter-AI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Utility" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -516,7 +515,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../UBC/-Labs-/android-sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550357210733" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550358079397" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -693,7 +692,7 @@
       <option name="presentableId" value="Default" />
       <updated>1531797650116</updated>
       <workItem from="1542315564833" duration="7691000" />
-      <workItem from="1550352957798" duration="4249000" />
+      <workItem from="1550352957798" duration="5110000" />
     </task>
     <servers />
   </component>
@@ -730,13 +729,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11940000" />
+    <option name="totallyTimeSpent" value="12801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21291356" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21291356" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -745,7 +744,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32972136" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49739778" visible="true" weight="0.3286638" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739778" visible="true" weight="0.3286638" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39870688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -818,15 +817,44 @@
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/UI/ShooterAI.java</url>
-          <line>53</line>
+          <url>file://$PROJECT_DIR$/src/Evolution/Evolver.java</url>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="71" />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Evolution/Evolver.java</url>
+          <line>77</line>
+          <properties />
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Evolution/Evolver.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="evolver.isEvolved" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>evolver.isEvolved</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>evolver.isEvolved()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
     <expressions id="evaluateExpression">
       <expression>
         <expression-string>watching</expression-string>
@@ -1063,16 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utility/Generation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/MatchPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1118,6 +1136,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4174#4175#0" expanded="true" />
+            <element signature="e#4195#4196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+          <folding>
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1129,33 +1177,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
+    <entry file="file://$PROJECT_DIR$/src/Utility/Generation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="56" column="38" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
-          <folding>
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="147" column="57" selection-start-line="147" selection-start-column="57" selection-end-line="147" selection-end-column="57" />
+        <state relative-caret-position="165">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4174#4175#0" expanded="true" />
-            <element signature="e#4195#4196#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="126" column="42" selection-start-line="126" selection-start-column="42" selection-end-line="126" selection-end-column="42" />
         </state>
       </provider>
     </entry>

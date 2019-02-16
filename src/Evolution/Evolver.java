@@ -56,7 +56,7 @@ public class Evolver {
             resetEvolver();
             isEvolved = true;
         }
-        return iterator.next(); // after resetting evolver, it will have a next
+        return iterator.next(); // after resetting evolver, iterator will have a next
     }
 
     /**

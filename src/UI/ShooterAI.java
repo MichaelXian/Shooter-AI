@@ -60,11 +60,11 @@ public class ShooterAI implements Observer{
                     new AI(matchup.get(0), true),
                     new AI(matchup.get(1), false),
                     this);
-            MatchPlayer.playMatch(game);
             if (evolver.isEvolved()) {
                 gameNum = 0;
                 Generation.incrementGeneration();
             }
+            MatchPlayer.playMatch(game);
         }
     }
 
