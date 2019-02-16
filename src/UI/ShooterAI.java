@@ -9,10 +9,8 @@ import org.neuroph.core.NeuralNetwork;
 
 import java.awt.*;
 import java.util.List;
-import java.util.Observable;
-import java.util.Observer;
 
-public class ShooterAI implements Observer{
+public class ShooterAI {
     public static final int WIDTH = 1365;
     public static final int HEIGHT = 750;
     private Evolver evolver;
@@ -30,8 +28,8 @@ public class ShooterAI implements Observer{
         // Get initial game
         game = new Game(false,
                 new AI(matchup.get(0), true),
-                new AI(matchup.get(1), false),
-                this);
+                new AI(matchup.get(1), false)
+        );
     }
 
 
@@ -43,8 +41,8 @@ public class ShooterAI implements Observer{
             matchup = evolver.next(game, matchup);
             game = new Game(false,
                     new AI(matchup.get(0), true),
-                    new AI(matchup.get(1), false),
-                    this);
+                    new AI(matchup.get(1), false)
+            );
             if (evolver.isEvolved()) {
                 gameNum = 0;
                 Generation.incrementGeneration();
@@ -61,10 +59,6 @@ public class ShooterAI implements Observer{
             ShooterAI ex = new ShooterAI();
             ex.start();
         });
-    }
-
-    @Override
-    public void update(Observable o, Object arg) {
     }
 
 

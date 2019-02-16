@@ -24,7 +24,6 @@ public class Game extends Observable {
     private final Vector SHIP_SPAWN_1 = new Vector(WIDTH/FRACTION, HEIGHT/2);
     private final Vector SHIP_SPAWN_2 = new Vector(WIDTH*(FRACTION - 1)/FRACTION, HEIGHT/2);
     private final int MAX_TICKS = 1000;
-    private ShooterAI shooterAI;
     private List<Bullet> bullets1;
     private List<Bullet> bullets2;
     private List<Ship> ships;
@@ -44,14 +43,12 @@ public class Game extends Observable {
      * @param player whether the first ship is player controlled or not
      * @param ai1 the ai controlling the first ship
      * @param ai2 the ai controlling the second ship
-     * @param shooterAI the shooterAI
      */
-    public Game(Boolean player, AI ai1, AI ai2, ShooterAI shooterAI) {
+    public Game(Boolean player, AI ai1, AI ai2) {
         killed = false;
         firstEnd = false;
         endTime = new Double(MAX_TICKS);
         this.ticks = 0;
-        this.shooterAI = shooterAI;
         bullets1 = new ArrayList<>();
         bullets2 = new ArrayList<>();
         ships = new ArrayList<>();
@@ -82,7 +79,6 @@ public class Game extends Observable {
     private void addObservers() {
         addObserver(ship1);
         addObserver(ship2);
-        addObserver(shooterAI);
     }
 
     /**
