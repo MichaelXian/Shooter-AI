@@ -16,12 +16,22 @@ public class NeuralNetworkFactory {
 
 
     /**
-     * Creates a neural net with no hidden layers
+     * Creates a neural net with no connections
      * @return
      */
     public static NeuralNetwork emptyNeuralNet() {
         NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7, 5);
         pruneAllConnections(neuralNetwork);
+        return neuralNetwork;
+    }
+
+
+    /**
+     * Creates a neural net with full connections
+     * @return
+     */
+    public static NeuralNetwork fullNeuralNet() {
+        NeuralNetwork neuralNetwork = new MultiLayerPerceptron(7, 5);
         return neuralNetwork;
     }
 

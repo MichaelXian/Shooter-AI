@@ -1,7 +1,7 @@
 package UI;
 
 import Controllers.NeuralNetwork.NeuralNetworkFactory;
-import Utility.Generation;
+import Utility.FileManager;
 import org.neuroph.core.NeuralNetwork;
 
 import java.io.File;
@@ -17,12 +17,12 @@ public class NewGenOneNetworks {
      */
     public static void main(String[] args) {
         for (int i = 0; i < 100; i ++) {
-            neuralNetwork = NeuralNetworkFactory.randomNeuralNet();
+            neuralNetwork = NeuralNetworkFactory.fullNeuralNet();
             neuralNetwork.save("NeuralNets/net" + i + ".nnet");
         }
 
         try {
-            File generationFile = new File(Generation.GENERATION_FILE_PATH);
+            File generationFile = new File(FileManager.GENERATION_FILE_PATH);
             PrintWriter writer = new PrintWriter(generationFile);
             writer.print(1);
             writer.close();

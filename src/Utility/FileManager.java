@@ -5,9 +5,11 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Generation {
+public class FileManager {
     public static String GENERATION_FILE_PATH = "Generation/generation.txt";
+    public static String SAFE_QUIT_FILE_PATH = "quit.txt";
     public static File generationFile = new File(GENERATION_FILE_PATH);
+    public static File safeQuitFile = new File(SAFE_QUIT_FILE_PATH);
 
     /**
      * Increments the generation stored in the generation file
@@ -34,9 +36,24 @@ public class Generation {
      * @return
      */
     public static int getGeneration() {
+        int generation = getInteger(generationFile);
+        return generation;
+    }
+
+
+    /**
+     * Gets the value in the safeQuit file, and returns it
+     * @return
+     */
+    public static int getSafeQuit() {
+        Integer safeQuit = getInteger(safeQuitFile);
+        return safeQuit;
+    }
+
+    private static Integer getInteger(File safeQuitFile) {
         try {
             // Get generation
-            Scanner scanner = new Scanner(generationFile);
+            Scanner scanner = new Scanner(safeQuitFile);
             int generation = scanner.nextInt();
             // Return it
             return generation;

@@ -4,7 +4,7 @@ import Controllers.AI;
 import Evolution.Evolver;
 import Evolution.GamePlayer;
 import Game.Game;
-import Utility.Generation;
+import Utility.FileManager;
 import org.neuroph.core.NeuralNetwork;
 
 import java.awt.*;
@@ -34,7 +34,12 @@ public class ShooterAI {
 
 
     public void start() {
+        FileManager.getGeneration();
         while (true) {
+            // Check safe quit (so we don't quit during reading/writing files)
+            if (FileManager.getSafeQuit() != 0) {
+                break;
+            }
             gameNum++;
             //int totalMatchups = evolver.getNumMatchups();
             //System.out.print("Matchup " + gameNum + "/" + totalMatchups + ": ");
@@ -45,7 +50,7 @@ public class ShooterAI {
             );
             if (evolver.isEvolved()) {
                 gameNum = 0;
-                Generation.incrementGeneration();
+                FileManager.incrementGeneration();
             }
             GamePlayer.playGame(game);
         }
