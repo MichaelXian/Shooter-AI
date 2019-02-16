@@ -138,7 +138,7 @@ public class Evolver {
      * Mutates all networks
      */
     private void mutate() {
-        for (NeuralNetwork network: networks) {
+        for (NeuralNetwork network: children) {
             Mutator.mutate(network);
         }
     }
