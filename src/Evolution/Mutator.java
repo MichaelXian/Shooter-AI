@@ -126,7 +126,7 @@ public class Mutator {
      * @param connection
      */
     private static void mutateConnection(Connection connection) {
-        connection.getWeight().inc(WEIGHT_DELTA * 2 * (Math.random() - 1/2));
+        connection.getWeight().inc(WEIGHT_DELTA * 2 * (Math.random() - 0.5d));
     }
 
     /**

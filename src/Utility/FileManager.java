@@ -20,7 +20,7 @@ public class FileManager {
             Scanner scanner = new Scanner(generationFile);
             // Increment generation
             int generation = scanner.nextInt() + 1;
-            System.out.println("Generation" +  generation);
+            System.out.println("Generation " +  generation);
             // Write generation to file
             PrintWriter writer = new PrintWriter(generationFile);
             writer.print(generation);
