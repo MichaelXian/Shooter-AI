@@ -18,7 +18,7 @@ public class ShooterAI {
     private GameDrawer gameDrawer;
     private Game game;
     private int gameNum = 0;
-
+    private int killNum = 0;
 
     public ShooterAI() {
         // Create a new evolver
@@ -41,6 +41,9 @@ public class ShooterAI {
                 break;
             }
             gameNum++;
+            if (game.isKilled()) {
+                killNum ++;
+            }
             //int totalMatchups = evolver.getNumMatchups();
             //System.out.print("Matchup " + gameNum + "/" + totalMatchups + ": ");
             matchup = evolver.next(game, matchup);
@@ -49,6 +52,9 @@ public class ShooterAI {
                     new AI(matchup.get(1), false)
             );
             if (evolver.isEvolved()) {
+                System.out.println("Number of kills: " +  killNum);
+                System.out.println("Percentage kills: " + killNum * 100.0 / gameNum * 1.0 + "%");
+                killNum = 0;
                 gameNum = 0;
                 FileManager.incrementGeneration();
             }
