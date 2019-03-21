@@ -1,13 +1,2 @@
 .DS_STORE
-/NeuralNets/*
-./NeuralNets/*
-NeuralNets/*
-/NeuralNets/
-./NeuralNets/
-NeuralNets/
-./.idea/
-/.idea/
-.idea/
-./.idea/*
-/.idea/*
-.idea/*
+*.nnet
