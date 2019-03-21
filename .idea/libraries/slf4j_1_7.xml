@@ -1,9 +1,10 @@
 <component name="libraryTable">
   <library name="slf4j-1.7">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/neuroph/libs/slf4j-api-1.7.5.jar!/" />
+      <root url="file://$PROJECT_DIR$/../slfuckinglogger" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../slfuckinglogger" recursive="false" />
   </library>
 </component>

@@ -2,212 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aca7e546-8db9-4075-9b3f-890cea3e967f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/slf4j_1_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_1_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generation/generation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Generation/generation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net0.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net1.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net10.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net11.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net11.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net12.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net12.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net13.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net13.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net14.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net14.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net15.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net15.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net16.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net16.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net17.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net17.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net18.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net18.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net19.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net19.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net2.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net2.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net20.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net20.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net21.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net21.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net22.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net22.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net23.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net23.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net24.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net24.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net25.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net25.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net26.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net26.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net27.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net27.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net28.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net28.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net29.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net29.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net3.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net3.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net30.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net30.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net31.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net31.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net32.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net32.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net33.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net33.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net34.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net34.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net35.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net35.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net36.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net36.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net37.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net37.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net38.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net38.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net39.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net39.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net4.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net4.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net40.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net40.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net41.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net41.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net42.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net42.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net43.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net43.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net44.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net44.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net45.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net45.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net46.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net46.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net47.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net47.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net48.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net48.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net49.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net49.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net5.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net5.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net50.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net50.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net51.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net51.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net52.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net52.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net53.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net53.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net54.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net54.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net55.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net55.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net56.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net56.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net57.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net57.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net58.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net58.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net59.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net59.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net6.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net6.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net60.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net60.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net61.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net61.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net62.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net62.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net63.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net63.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net64.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net64.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net65.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net65.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net66.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net66.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net67.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net67.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net68.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net68.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net69.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net69.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net7.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net7.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net70.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net70.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net71.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net71.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net72.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net72.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net73.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net73.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net74.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net74.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net75.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net75.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net76.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net76.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net77.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net77.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net78.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net78.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net79.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net79.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net8.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net8.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net80.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net80.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net81.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net81.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net82.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net82.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net83.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net83.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net84.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net84.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net85.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net85.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net86.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net86.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net87.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net87.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net88.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net88.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net89.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net89.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net9.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net9.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net90.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net90.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net91.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net91.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net92.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net92.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net93.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net93.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net94.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net94.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net95.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net95.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net96.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net96.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net97.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net97.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net98.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net98.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/backup/net99.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/backup/net99.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net0.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net0.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net1.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net1.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net10.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net10.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net11.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net11.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net12.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net12.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net13.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net13.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net14.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net14.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net15.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net15.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net16.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net16.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net17.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net17.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net18.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net18.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net19.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net19.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net2.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net2.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net20.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net20.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net21.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net21.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net22.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net22.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net23.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net23.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net24.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net24.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net25.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net25.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net26.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net26.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net27.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net27.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net28.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net28.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net29.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net29.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net3.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net3.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net30.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net30.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net31.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net31.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net32.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net32.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net33.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net33.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net34.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net34.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net35.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net35.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net36.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net36.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net37.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net37.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net38.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net38.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net39.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net39.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net4.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net4.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net40.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net40.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net41.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net41.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net42.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net42.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net43.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net43.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net44.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net44.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net45.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net45.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net46.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net46.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net47.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net47.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net48.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net48.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net49.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net49.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net5.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net5.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net50.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net50.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net51.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net51.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net52.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net52.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net53.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net53.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net54.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net54.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net55.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net55.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net56.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net56.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net57.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net57.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net58.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net58.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net59.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net59.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net6.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net6.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net60.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net60.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net61.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net61.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net62.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net62.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net63.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net63.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net64.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net64.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net65.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net65.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net66.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net66.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net67.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net67.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net68.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net68.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net69.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net69.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net7.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net7.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net70.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net70.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net71.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net71.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net72.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net72.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net73.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net73.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net74.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net74.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net75.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net75.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net76.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net76.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net77.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net77.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net78.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net78.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net79.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net79.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net8.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net8.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net80.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net80.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net81.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net81.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net82.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net82.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net83.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net83.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net84.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net84.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net85.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net85.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net86.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net86.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net87.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net87.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net88.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net88.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net89.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net89.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net9.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net9.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net90.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net90.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net91.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net91.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net92.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net92.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net93.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net93.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net94.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net94.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net95.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net95.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net96.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net96.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net97.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net97.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net98.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net98.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/net99.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/net99.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNets/temp/clone.nnet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Shooter AI/Utility/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Shooter AI/Utility/FileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Evolution/Mutator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Evolution/Mutator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Utility/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utility/FileManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -271,14 +67,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Game/Game.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="98">
+              <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -286,17 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/GamePlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -304,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Observable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
+            <state relative-caret-position="381">
               <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
@@ -313,11 +97,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2190">
-              <caret line="155" selection-start-line="155" selection-end-line="155" />
+            <state relative-caret-position="186">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -325,28 +118,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
+            <state relative-caret-position="1275">
               <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Utility/FileManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="1815">
               <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
             </state>
           </provider>
@@ -355,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UI/NewGenOneNetworks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="190">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -367,8 +148,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="270">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controllers/AI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -483,10 +276,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="294" />
-    <option name="y" value="802" />
+    <option name="x" value="646" />
+    <option name="y" value="42" />
     <option name="width" value="1356" />
-    <option name="height" value="772" />
+    <option name="height" value="899" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -567,7 +360,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Groovy JUnit" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/neuroph/libs/slf4j-api-1.7.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slfuckinglogger" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -778,13 +571,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16081000" />
+    <option name="totallyTimeSpent" value="16779000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
+    <frame x="646" y="42" width="1356" height="899" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21504803" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3129771" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -793,8 +585,8 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286638" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49739778" weight="0.3286638" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39870688" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49739778" visible="true" weight="0.39405686" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39870688" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1085,15 +877,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/Selection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/AI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,22 +960,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/GamePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
+        <state relative-caret-position="381">
           <caret line="82" selection-start-line="82" selection-end-line="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/Evolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
+        <state relative-caret-position="186">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1189,22 +984,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/MatchMaker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
+        <state relative-caret-position="1275">
           <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/NeuralNetwork/NeuralNetworkFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+        <state relative-caret-position="270">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/ShooterAI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="98">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1220,8 +1015,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UI/NewGenOneNetworks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="190">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1230,7 +1025,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Evolution/Mutator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="1815">
           <caret line="128" column="76" selection-start-line="128" selection-start-column="76" selection-end-line="128" selection-end-column="76" />
         </state>
       </provider>
