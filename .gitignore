@@ -1,2 +1,5 @@
 .DS_STORE
 *.nnet
+Generation/generation.txt
+quit.txt
+.idea/workspace.xml
